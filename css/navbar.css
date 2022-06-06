@@ -70,7 +70,7 @@ header {
     top: 0;
     background-color: #24252a;
     overflow-x: hidden;
-    transition: width 0.5s ease 0s;
+    transition: width 0.5s ease 200ms;
 }
 
 .overlay--active {
@@ -100,18 +100,77 @@ header {
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
+    font-size: 20px;
     color: #edf0f1;
 }
 
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px;
-    }
-    .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+/*hamburger menu*/
+header .hamburger-label-wrapper{
+    /*border: solid 1px red;*/
+    padding: 28px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.5s ease 150ms;
+}
+
+header .hamburger-label-wrapper .hamburger-lines{
+/*background: #333;*/
+    background: #fff;
+    display: block; /*because span is inline by default*/
+    height: 3px;
+    width: 18px;
+    border-radius: 1px;
+    position: relative;
+    transition: background .2s ease;
+}
+
+/*made individual lines (before/after) for easier animations*/
+header .hamburger-label-wrapper .hamburger-lines:before{
+    /*background: #333;*/
+    content: "";
+    background: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    transition: background .2s ease;
+}
+
+header .hamburger-label-wrapper .hamburger-lines:after{
+    /*background: #333;*/
+    content: "";
+    background: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -6px;
+    transition: background .2s ease;
+}
+
+header .menu-checkbox{
+    display: none;
+}
+
+.opacity-zero{
+    opacity: 0;
+}
+.opacity-one{
+    opacity: 1;
+}
+
+@media screen and (min-width: 801px) {
+    /*.overlay a {*/
+    /*    font-size: 20px;*/
+    /*}*/
+    /*.overlay .close {*/
+    /*    font-size: 40px;*/
+    /*    top: 15px;*/
+    /*    right: 35px;*/
+    /*}*/
+    header .hamburger-label-wrapper{
+        display: none;
     }
 }
 

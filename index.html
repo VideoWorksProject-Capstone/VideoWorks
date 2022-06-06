@@ -15,16 +15,23 @@
   <nav>
     <ul class="nav__links">
       <li><a href="#">Profile</a></li>
-      <a href="#">Services</a>
-      <a href="#">Register</a>
-      <a href="#">Login</a>
+     <li><a href="#">Services</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Login</a></li>
     </ul>
   </nav>
   <a class="cta" href="#">Signup</a>
-  <p class="menu cta">Menu</p>
+
+<!--Hamburger Menu - Mobile-->
+<!--    menu-checkbox = menu-btn-->
+  <input id="menu-checkbox" class="menu-checkbox" type="checkbox"/>
+<!--  hamburger-lines class = nav-icon class-->
+<!--    hamburger-label-wrapper class = menu-icon class-->
+  <label for="menu-checkbox" class="hamburger-label-wrapper"><span class="hamburger-lines"></span></label>
+<!--  <p class="menu cta">Menu</p>-->
 </header>
 <div class="overlay">
-  <a class="close">&times;</a>
+  <a class="close">close</a>
   <div class="overlay__content">
     <a href="#">Profile</a>
     <a href="#">Services</a>
