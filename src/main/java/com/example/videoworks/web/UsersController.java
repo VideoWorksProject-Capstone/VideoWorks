@@ -32,6 +32,11 @@ public class UsersController {
         return userService.getUserByName(name);
     }
 
+    @GetMapping("email")
+    public User getByEmail(@RequestParam String email) {
+        return userService.getUserByEmail(email);
+    }
+
     @PostMapping("create")
     public void create(@RequestBody User newUser){
         userService.createUser(newUser);
