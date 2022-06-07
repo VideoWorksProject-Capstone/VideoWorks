@@ -27,12 +27,18 @@ header {
 .nav__links {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
 }
 
 .nav__links li {
     padding: 0px 20px;
 }
-
+.nav__links .services{
+    position: relative;
+}
 .nav__links li a {
     transition: color 0.3s ease 0s;
 }
@@ -40,6 +46,51 @@ header {
 .nav__links li a:hover {
     color: #0088a9;
 }
+
+/*dropdown menu - main navigation*/
+.services .services-list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+border: 1px black solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    /*height: ;*/
+    width: 200px;
+    padding: 20px 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    opacity: 0;
+    transition: all 450ms ease;
+}
+
+/*basically when ".services-nav-link is in focus. Do something to ".services-list"*/
+.services .services-nav-link:focus + .services-list{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.nav__links .services-list > li{
+    width: 100%;
+}
+.nav__links .services-list > li a{
+    padding: 10px 50%;
+    /*width: 100%;*/
+    /*height: ;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+}
+
+.nav__links .services-list > li a:hover{
+    background-color: rosybrown;
+}
+
+
 
 .cta {
     font-size:1.6rem;
@@ -159,6 +210,9 @@ header .menu-checkbox{
 .opacity-one{
     opacity: 1;
 }
+
+
+
 
 @media screen and (min-width: 801px) {
     /*.overlay a {*/
