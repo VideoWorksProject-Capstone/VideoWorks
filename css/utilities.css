@@ -82,4 +82,14 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
+:root{
+    --main-black:#111;
+    --main-purple:#28203f;
+    --btn-accent: #4c2fa1;
+    --white:whitesmoke;
+    --left-gradient: #5f3caf;
+    --right-gradient:#4c2fa1;
+    --text-accent:#a47cf6;
+}
 /* ########## END GLOBAL ########## */

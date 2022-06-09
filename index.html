@@ -7,46 +7,63 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>videoWorks | Hire your virtual assistant</title>
     <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
 </head>
 <body>
-<header>
-
-    <h1 class="logo"><a href="index.html">videoWorks</a></h1>
-    <nav>
-        <ul class="dropdown">
-            <li><a href="index.html">Home</a></li>
+<!--Mobile First-->
+<div class="hero">
+    <header class="mobile-header-container">
+        <nav class="mobile-nav">
+            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="40">
+                <path
+                        class="line top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path
+                        class="line middle"
+                        d="m 30,50 h 40" />
+                <path
+                        class="line bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+            </svg>
+            <div class="mobile-logo-wrapper">
+                <h1 id="mobile-logo">videoWorks</h1>
+            </div>
+            <div class="nav-login-btn-wrapper">
+                <button class="nav-login-btn">Login</button>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li><a href="#">Categories</a></li>
             <li><a href="#">Profile</a></li>
-            <li>
-                <div class="services-container">
-                    <button class="services-btn">Services</button>
-                    <ul>
-                        <li><a href="#">Weather App</a></li>
-                        <li><a href="#">Music App</a></li>
-                        <li><a href="#">React App</a></li>
-                        <li><a href="#">Youtube App</a></li>
-                    </ul>
-                </div>
-            </li>
+            <li><a href="#">Register/Login</a></li>
+            <li><a href="#">Support</a></li>
         </ul>
-    </nav>
-    <a class="cta" href="loginform/login.html">Login</a>
-
-    <!--    Hamburger Icon (mobile only)-->
-    <input id="menu-checkbox" class="menu-checkbox" type="checkbox"/>
-    <label for="menu-checkbox" class="hamburger-label-wrapper"><span class="hamburger-lines"></span></label>
-</header>
-
-<!--BEGIN MOBILE NAV-->
-<div class="overlay">
-    <a class="close">close</a>
-    <div class="overlay__content">
-        <a href="#">Profile</a>
-        <a href="#">Services</a>
-        <a href="#">Register</a>
-        <a href="#">Login</a>
     </div>
+    <header class="large-header-container">
+        <nav class="large-nav">
+            <ul class="large-menu__list">
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="large-logo-wrapper">
+                    <h1 id="large-logo">video<span>Works</span></h1>
+                </li>
+                <li><a href="#">Register/Login</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+<!--            <div class="large-nav-login-btn-wrapper">-->
+<!--                <button class="large-nav-login-btn">Login</button>-->
+<!--            </div>-->
+        </nav>
+    </header>
+    <main id="hero-section">
+        <div class="hero-section-wrapper">
+            <section class="hero-lede"></section>
+            <section class="hero-slider"></section>
+        </div>
+    </main>
 </div>
-<script type="text/javascript" src="js/navbar.js"></script>
+<script src="navbar/navbar.js"></script>
 </body>
 </html>
