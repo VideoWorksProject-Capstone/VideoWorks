@@ -20,17 +20,19 @@ public class User {
     private String username;
     private String email;
     private String password;
+    private String dob;
 
     @ManyToMany
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-    public User(Long id, String name, String username, String email, String password, Collection<Role> roles) {
+    public User(Long id, String name, String username, String email, String password, String dob, Collection<Role> roles) {
         this.id = id;
         this.name = name;
         this.username = username;
         this.email = email;
         this.password = password;
+        this.dob = dob;
         this.roles = roles;
     }
 
@@ -78,6 +80,14 @@ public class User {
         this.password = password;
     }
 
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
     public Collection<Role> getRoles() {
         return roles;
     }
@@ -93,6 +103,7 @@ public class User {
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", dob='" + dob + '\'' +
                 ", roles=" + roles +
                 '}';
     }

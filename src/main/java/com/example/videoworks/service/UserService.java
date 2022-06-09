@@ -30,6 +30,10 @@ public class UserService {
         return usersRepository.findByEmail(email);
     }
 
+    public User getUserByUsername(String username) {
+        return usersRepository.findByUsername(username);
+    }
+
     public void createUser(User user){
         usersRepository.save(user);
     }
