@@ -31,8 +31,9 @@ html {
 }
 
 /*Set section heading font*/
-   h1,h2,h3,h4,h5,h6,button,label{
+   h1,h2,h3,h4,h5,h6,button,label,p{
        font-family: 'Poppins', sans-serif;
+       color: var(--white);
    }
 /* Set core body defaults */
 body {
