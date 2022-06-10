@@ -28,10 +28,12 @@ html {
     /* resetting font size to 10px makes rem math much easier*/
     font-size: 10px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 /*Set section heading font*/
-   h1,h2,h3,h4,h5,h6,button,label,p{
+   h1,h2,h3,h4,h5,h6,button,label,p, i{
        font-family: 'Poppins', sans-serif;
        color: var(--white);
    }
@@ -40,8 +42,9 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+
 }
-P, li {
+P, li, i {
     font-size: 1.6rem;
 }
 /* A elements that don't have a class get default styles */

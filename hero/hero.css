@@ -21,13 +21,14 @@
     /*grid-template-columns: repeat(auto-fit,minmax(300px,500px));*/
     /*grid-row-gap: 60px;*/
     /*justify-content: center;*/
+    /*width: 100%;*/
 }
 .hero-lede{
     margin-bottom: 3rem;
 }
-.hero-slider{
-    flex:2;
-}
+/*.hero-slider{*/
+/*    flex:2;*/
+/*}*/
 .hero-lede h2{
     font-size: 3rem;
     letter-spacing: 0.08rem;
