@@ -4,74 +4,23 @@ export default function Register(){
         <!DOCTYPE html>
         <html lang="en">
         <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width">
+            <meta charset="UTF-8"/>
             <title>Register</title>
         </head>
         <body>
-        <div class="login-wrap">
-            <div class="login-html">
-                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign
-                In</label>
-                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
-                <div class="login-form">
-                    <div class="sign-in-htm">
-                        <div class="group">
-                            <label for="user" class="label">Username</label>
-                            <input id="user" type="text" class="input">
-                        </div>
-                        <div class="group">
-                            <label for="pass" class="label">Password</label>
-                            <input id="pass" type="password" class="input" data-type="password">
-                        </div>
-                        <div class="group">
-                            <input id="check" type="checkbox" class="check" checked>
-                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
-                        </div>
-                        <div class="group">
-                            <input id="agebox" type="checkbox" class="check" checked>
-                            <label for="agebox"><span class="icon"></span> Must Be Over Age 18</label>
-                        </div>
-                        <div class="group">
-                            <input type="submit" class="button" value="Sign In">
-                        </div>
-                        <div class="hr"></div>
-                        <div class="foot-lnk">
-                            <a href="#forgot">Forgot Password?</a>
-                        </div>
-                    </div>
-                    <div class="sign-up-htm">
-                        <div class="group">
-                            <label for="user" class="label">Username</label>
-                            <input id="user" type="text" class="input">
-                        </div>
-                        <div class="group">
-                            <label for="pass" class="label">Password</label>
-                            <input id="pass" type="password" class="input" data-type="password">
-                        </div>
-                        <div class="group">
-                            <label for="dateofbirth" class="label">date of birth</label>
-                            <input id="dateofbirth" type="number" class="input" data-type="number">
-                        </div>
-                        <div class="group">
-                            <label for="pass" class="label">Repeat Password</label>
-                            <input id="pass" type="password" class="input" data-type="password">
-                        </div>
-                        <div class="group">
-                            <label for="pass" class="label">Email Address</label>
-                            <input id="pass" type="text" class="input">
-                        </div>
-                        <div class="group">
-                            <input type="submit" class="button" value="Sign Up">
-                        </div>
-                        <div class="hr"></div>
-                        <div class="foot-lnk">
-                            <label for="tab-1">Already Member?</a></label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <form id="register-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text"/>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text"/>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password"/>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" name="dob" type="text"/>
+            <input id="register-btn" type="button" value="Register"/>
+        </form>
         </body>
         </html>
     `;
@@ -95,10 +44,16 @@ export function RegisterEvent(){
             body: JSON.stringify(reqBody)
         }
 
-        fetch("http://localhost:8080/api/users/create", options)
-            .then(res => res.json())
-            .then(data => console.log(data))
-            .catch(err => console.log(err))
-
-    })
+        fetch("http://localhost:8080/api/users/create", request)
+            .then(response => {
+                console.log(response)
+                console.log(response.status);
+                if (response.status === 500) {
+                    document.getElementById("emailOrUsernameExists").style.display = "block";
+                    document.getElementById("emailOrUsernameExists").style.color = "red";
+                    return;
+                }
+                createView( "/login")
+            });
+    });
 }

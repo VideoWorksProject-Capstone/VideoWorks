@@ -1,6 +1,8 @@
 import Home from "./views/Home.js";
 import Error404 from "./views/Error404.js";
 import Loading from "./views/Loading.js";
+import Login from "./views/Login.js";
+import LoginEvent from "./auth.js";
 import Register, {RegisterEvent} from "./views/Register.js";
 
 /**
@@ -15,6 +17,13 @@ export default function router(URI) {
             state: {},
             uri: '/',
             title: 'Home',
+        },
+        '/login': {
+            returnView: Login,
+            state: {},
+            uri: '/login',
+            title: "Login",
+            viewEvent: LoginEvent
         },
         '/error': {
             returnView: Error404,
