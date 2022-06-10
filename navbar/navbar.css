@@ -7,8 +7,14 @@
 }
 
 .mobile-header-container {
-    padding: 20px 20px 60px 20px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    max-height: 117.5px;
     transition: background 600ms ease-out 500ms;
+    /*margin-bottom: 60px;*/
 }
 
 .mobile-header-container.purp-container-background {
@@ -100,34 +106,36 @@
 /*TODO: MOBILE MENU SLIDEOUT*/
 .mobile-menu {
     width: 100%;
-    height: calc(100% - 80px); /*80px is the header height - removes overflow*/
+    height: 90%;/*80px is the header height - removes overflow*/
     background: var(--main-purple);
     /*display: flex;*/
     /*align-items: center;*/
     /*justify-content: center;*/
-    position: relative;
-    transform: translatey(55%);
+    position: absolute;
+    transform: translatey(20%);
     opacity: 0;
     pointer-events: none;
-    transition: all 600ms ease 150ms;
-    overflow: hidden;
+    /*transition: all 600ms ease 150ms;*/
+    transition: all 600ms ease;
+    /*overflow: hidden;*/
     display: none;
     z-index: 44;
 }
 
 .mobile-menu.open {
+    transition: all 600ms ease 150ms;
     opacity: 1;
     pointer-events: all;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    /*position: fixed;*/
     /*top: 0;*/
     /*bottom: 0;*/
     /*left: 0;*/
     /*right: 0;*/
-    height: 100%;
-    transform: translatey(0);
+    height: 90%;
+    transform: translatey(0px);
 }
 
 .mobile-menu__list {

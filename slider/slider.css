@@ -1,0 +1,18 @@
+/*.slider{*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+.slider .slides img{
+    width: 100%;
+    /*flex-grow: 1;*/
+    /*height: 100%;*/
+    min-width: 200px;
+    aspect-ratio: 16/9;
+}
+.slides-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    overflow-x: auto;
+}
