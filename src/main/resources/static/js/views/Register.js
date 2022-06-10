@@ -27,13 +27,13 @@ export default function Register(){
 }
 
 export function RegisterEvent(){
-    $(document).on('click', '.button', function(e){
+    $(document).on('click', '#register-btn', function(e){
         const reqBody = {
             name: $('#name').val(),
-            username: $('#user').val(),
+            username: $('#username').val(),
             email: $('#email').val(),
-            password: $('#pass').val(),
-            dob: $('#dateofbirth').val()
+            password: $('#password').val(),
+            dob: $('#dob').val()
         }
 
         const options = {
@@ -44,7 +44,7 @@ export function RegisterEvent(){
             body: JSON.stringify(reqBody)
         }
 
-        fetch("http://localhost:8080/api/users/create", request)
+        fetch("http://localhost:8080/api/users/create", options)
             .then(response => {
                 console.log(response)
                 console.log(response.status);
