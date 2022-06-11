@@ -35,6 +35,7 @@
     color: var(--white);
     font-size: 2rem;
     font-weight: 200;
+    cursor: pointer;
 }
 
 /*TODO: Nav Login Button*/
@@ -193,7 +194,9 @@
         width: 100%;
         max-width: 1000px;
     }
-
+#large-logo{
+    cursor: pointer;
+}
     /*logo*/
     .large-logo-wrapper span {
         color: var(--text-accent);

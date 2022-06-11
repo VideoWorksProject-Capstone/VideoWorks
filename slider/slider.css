@@ -1,14 +1,17 @@
 .media-element{
     scroll-snap-align: center;
-    border-radius: 3px;
+    border-radius: 13px;
     overflow: hidden;
+    background-color: var(--white);
     box-shadow: 0 7px 21px 0 rgb(0 0 0 / 10%);
 }
+.media-element .user-avatar{
+
+}
 .media-scroller .media-element > img{
-    margin-bottom: 2rem;
+    /*margin-bottom: 2rem;*/
     aspect-ratio: 1/1;
     object-fit: cover;
-
     inline-size: 100%; /*logical property for vertical text*/
 }
 .media-element__title-wrapper{
@@ -21,7 +24,7 @@
 .media-scroller{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 80%;
+    grid-auto-columns: 50%;
 
     /*border: limegreen 3px solid;*/
     grid-column-gap: 20px;

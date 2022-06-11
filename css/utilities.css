@@ -40,6 +40,7 @@ html {
 /* Set core body defaults */
 body {
     min-height: 100vh;
+    background-color: #111;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
@@ -94,5 +95,11 @@ select {
     --left-gradient: #5f3caf;
     --right-gradient:#4c2fa1;
     --text-accent:#a47cf6;
+
+/*avatar accent colors*/
+    --green:#b9d7b5;
+    --blue:#70afd5;
+    --pink: ;
+    --orange: ;
 }
 /* ########## END GLOBAL ########## */
