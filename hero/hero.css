@@ -1,7 +1,7 @@
 /*TODO: HERO SECTION*/
 .hero {
     background-color: #111;
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
 }
@@ -10,7 +10,7 @@
     height: calc(90vh - 60px);
     width: calc(100% - 60px);
     margin:0 auto;
-    overflow: auto;
+    /*overflow: auto; !*change if you dont want "pseudo" fixed nav bar*!*/
     padding-top: 60px;
 }
 /*hero-section-wrapper*/

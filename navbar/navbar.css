@@ -31,7 +31,7 @@
 }
 
 /*TODO: Logo*/
-.hero .mobile-logo-wrapper #mobile-logo {
+.hero .mobile-logo-wrapper #mobile-logo > a{
     color: var(--white);
     font-size: 2rem;
     font-weight: 200;
@@ -52,7 +52,6 @@
 
 .nav-login-btn:hover {
     background-image: linear-gradient(to left, var(--left-gradient), var(--right-gradient));
-
 }
 
 .nav-login-btn:active {
