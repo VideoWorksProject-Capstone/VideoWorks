@@ -1,17 +1,102 @@
+
+
 .media-element{
     scroll-snap-align: center;
     border-radius: 13px;
     overflow: hidden;
+    width: 280px;
+    /*height: 450px;*/
     background-color: var(--white);
     box-shadow: 0 7px 21px 0 rgb(0 0 0 / 10%);
+    border-top: var(--green) solid 5px;
+    border-bottom: var(--green) solid 5px;
+    padding-bottom: 20px;
 }
-.media-element .user-avatar{
+.media-element__border{
+    /*padding: 5px 1rem;*/
+    width: 100%;
+    border-top: 4px var(--green)dashed;
+    /*background-color: var(--green);*/
+    margin-bottom: 1.5rem;
+}
+/*AVATAR CONTAINER*/
+.media-element .user-avatar-box{
+background-color: var(--green);
+    width: 170px;
+    height: 170px;
+    margin:20px auto 2rem auto;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
 
 }
+.media-element .user-avatar-box img{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*hover effects*/
+/*USERNAME*/
+.media-element .username-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 25px;
+    margin-bottom: 1rem;
+}
+
+.media-element  p, .username-box  i{
+    color: var(--main-black);
+    font-size: 1.8rem;
+}
+.media-element .username-box p{
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: .7px;
+}
+.username-box  i{
+    /*color: var(--main-purple);*/
+    margin-right: 1rem;
+}
+
+/*DESCRIPTION*/
+.media-element__creator-description{
+    padding: 0 25px;
+    margin-bottom: 1rem;
+}
+/*RATINGS*/
+.ratings-box{
+display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 25px;
+    margin-bottom: 1rem;
+}
+.ratings-box .fa-star,.ratings-box .user-rating{
+    color: var(--orange);
+    margin-right: 1rem;
+}
+.ratings-box .fa-star{
+    margin-right: .5rem;
+}
+.ratings-box .number-of-jobs{
+    color: #b2b2b2;
+    font-weight: 300;
+}
+
+/*creator price*/
+.creator-price-box{
+    padding: 0 25px;
+}
+
+
 .media-scroller .media-element > img{
     /*margin-bottom: 2rem;*/
-    aspect-ratio: 1/1;
-    object-fit: cover;
+    /*aspect-ratio: 1/1;*/
+    /*object-fit: cover;*/
     inline-size: 100%; /*logical property for vertical text*/
 }
 .media-element__title-wrapper{
