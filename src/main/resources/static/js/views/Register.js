@@ -16,7 +16,6 @@ export default function Register(){
                     background:white;
                     font:600 16px/18px 'Open Sans',sans-serif;
                 }
-
                 .login-wrap{
                     width:100%;
                     margin:auto;
@@ -32,7 +31,6 @@ export default function Register(){
                     padding:90px 70px 50px 70px;
                     background:rgba(40,57,101,.9);
                 }
-                
                 .login-html .tab{
                     font-size:22px;
                     margin-right:15px;
@@ -87,7 +85,6 @@ export default function Register(){
                     display:inline-block;
                     background:rgba(255,255,255,.1);
                 }
-
                 .hr{
                     height:2px;
                     margin:05px 0 50px 0;
