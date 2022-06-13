@@ -43,6 +43,11 @@ body {
     background-color: #111;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+
+}
+body.no-scroll{
+    /*prevents mobile nav from scrolling when hamburger is active*/
+    overflow: hidden;
 }
 P, li, i {
     font-size: 1.6rem;

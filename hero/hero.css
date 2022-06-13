@@ -9,6 +9,7 @@ padding-bottom: 40px;
 #hero-section {
     /*height: calc(90vh - 60px);*/
     width: calc(100% - 60px);
+    max-width: 1400px;
     margin:0 auto;
     /*overflow: auto; !*change if you dont want "pseudo" fixed nav bar*!*/
     padding-top: 60px;
@@ -23,12 +24,18 @@ padding-bottom: 40px;
     /*justify-content: center;*/
     /*width: 100%;*/
 }
+.hero-section-wrapper__main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
 .hero-lede{
     margin-bottom: 3rem;
-
+    /*flex: 1;*/
 }
 
-/*.hero-slider{*/
+/*.hero-graphic{*/
 /*    flex:2;*/
 /*}*/
 .hero-lede h2{
@@ -87,12 +94,52 @@ padding-bottom: 40px;
     transform: translateX(16px);
 }
 
-
+/*hero graphic*/
+.hero-graphic{
+    display: none;
+}
 
 /*hero slider*/
-.hero-slider-title{
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: 2.7rem;
-    letter-spacing: 0.08rem;
+
+
+@media screen and (min-width: 768px) {
+    .hero-lede h2{
+        font-size: 5rem;
+        font-weight: 500;
+        letter-spacing: 0.08rem;
+        margin-bottom: 2.5rem;
+    }
+    .hero-lede p{
+        font-weight: 300;
+        margin-bottom: 4.6rem;
+        letter-spacing: 0.08rem;
+        padding-bottom: 4rem;
+        position: relative;
+        font-size: 1.8rem;
+    }
+    .hero-graphic{
+display: flex;
+        align-items: center;
+        justify-content: center;
+        /*perspective: 400px;*/
+    }
+    
+    .hero-graphic .falling-lady{
+        width: 60%;
+        /*perspective: 400px;*/
+        animation: soft-float 7s ease-in-out alternate infinite ;
+    }
+    @keyframes soft-float {
+        0% {
+            transform: scale(0.7) rotateX(2deg) rotate(5deg);
+            opacity: .6;
+        }
+        100%{
+            transform: scale(1) rotateX(-1deg) rotate(-1);
+            opacity: 1;
+        }
+        /*100%{*/
+        /*    scale(1);*/
+        /*}*/
+    }
 }
