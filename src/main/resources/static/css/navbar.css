@@ -14,6 +14,7 @@
     height: 10vh;
     max-height: 117.5px;
     transition: background 600ms ease-out 500ms;
+    /*position: fixed;*/
     /*margin-bottom: 60px;*/
 }
 
@@ -27,6 +28,7 @@
     justify-content: space-between;
     width: 100%;
     margin: auto;
+
     /*background: white;*/
 }
 
@@ -35,6 +37,7 @@
     color: var(--white);
     font-size: 2rem;
     font-weight: 200;
+    cursor: pointer;
 }
 
 /*TODO: Nav Login Button*/
@@ -110,7 +113,8 @@
     /*display: flex;*/
     /*align-items: center;*/
     /*justify-content: center;*/
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     transform: translatey(20%);
     opacity: 0;
     pointer-events: none;
@@ -119,6 +123,7 @@
     /*overflow: hidden;*/
     display: none;
     z-index: 44;
+    overflow: hidden;
 }
 
 .mobile-menu.open {
@@ -193,7 +198,9 @@
         width: 100%;
         max-width: 1000px;
     }
-
+#large-logo{
+    cursor: pointer;
+}
     /*logo*/
     .large-logo-wrapper span {
         color: var(--text-accent);
