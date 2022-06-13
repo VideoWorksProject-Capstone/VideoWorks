@@ -33,15 +33,21 @@ html {
 }
 
 /*Set section heading font*/
-h1,h2,h3,h4,h5,h6,button,label,p, i{
-    font-family: 'Poppins', sans-serif;
-    color: var(--white);
-}
+   h1,h2,h3,h4,h5,h6,button,label,p, i{
+       font-family: 'Poppins', sans-serif;
+       color: var(--white);
+   }
 /* Set core body defaults */
 body {
     min-height: 100vh;
+    background-color: #111;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+
+}
+body.no-scroll{
+    /*prevents mobile nav from scrolling when hamburger is active*/
+    overflow: hidden;
 }
 P, li, i {
     font-size: 1.6rem;
@@ -94,5 +100,12 @@ select {
     --left-gradient: #5f3caf;
     --right-gradient:#4c2fa1;
     --text-accent:#a47cf6;
+
+/*avatar accent colors*/
+    --green:#b9d7b5;
+    --blue:#70afd5;
+    --pink:#e497c9 ;
+    --purple: #776bce;
+    --orange:coral;
 }
 /* ########## END GLOBAL ########## */
