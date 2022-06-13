@@ -258,7 +258,7 @@ display: flex;
                     <button class="hero-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
                 </section>
                 <section class="hero-graphic">
-                    <img src="img/avatars/Artist.png" alt="" class="falling-lady">
+                    <img src="" alt="" class="falling-lady">
                 </section>
             </div>
             <section class="hero-slider">
@@ -267,7 +267,7 @@ display: flex;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="" alt="lady">
+                                <img class="user-avatar-image1" src="img/avatars/woman.png" alt="lady">
                             </div>
                         </div>
                         <!--                        <div class="media-element__creator-details">-->

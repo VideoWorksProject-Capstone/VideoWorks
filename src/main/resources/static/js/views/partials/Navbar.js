@@ -280,8 +280,6 @@ export default function Navbar(props) {
         letter-spacing: 0.07rem;
         cursor: pointer;
     }
-
-
 }
 </style>
     <script>
