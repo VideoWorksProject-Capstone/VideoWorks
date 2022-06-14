@@ -43,3 +43,5 @@ INSERT INTO status (id, status)
 VALUES (1, 'active'),
        (2, 'inactive');
 
+INSERT INTO appointments (id, date, time)
+VALUES (1, '07122022', '12:00 PM')

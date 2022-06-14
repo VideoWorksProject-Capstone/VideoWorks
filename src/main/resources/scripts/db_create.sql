@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS profiles (
 CREATE TABLE IF NOT EXISTS appointments (
     id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
     date            VARCHAR(8)      NOT NULL,
-    time            DOUBLE          NOT NULL
+    time            VARCHAR(8)      NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS service_status (
