@@ -15,15 +15,9 @@ padding-bottom: 40px;
     padding-top: 60px;
 }
 /*hero-section-wrapper*/
-.hero-section-wrapper{
-    /*display: flex;*/
-    /*flex*/
-    /*flex-wrap: wrap;*/
-    /*grid-template-columns: repeat(auto-fit,minmax(300px,500px));*/
-    /*grid-row-gap: 60px;*/
-    /*justify-content: center;*/
-    /*width: 100%;*/
-}
+/*.hero-section-wrapper{*/
+/*}*/
+
 .hero-section-wrapper__main{
     display: flex;
     align-items: center;
@@ -70,7 +64,7 @@ padding-bottom: 40px;
     border-radius: 3px;
     font-size: 1.4rem;
     background-color: var(--btn-accent);
-    letter-spacing: 0.10rem;
+    letter-spacing: var(--spacing10);
     cursor: pointer;
     color: var(--white);
     transition: color 450ms ease, padding-right 450ms ease;
@@ -103,6 +97,9 @@ padding-bottom: 40px;
 
 
 @media screen and (min-width: 768px) {
+    #hero-section {
+        padding: 0 50px;
+    }
     .hero-lede h2{
         font-size: 5rem;
         font-weight: 500;
@@ -127,6 +124,7 @@ display: flex;
     
     .hero-graphic .falling-lady{
         width: 60%;
+        min-width: 50%;
         pointer-events: none;
         /*perspective: 400px;*/
         animation: soft-float 7s ease-in-out alternate infinite ;

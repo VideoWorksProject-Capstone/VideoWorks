@@ -832,41 +832,21 @@
             </section>
         </div>
     </main>
-    <section class="category-grid">
-        <div class="first category-card">
-            <img class="category-card-img"
-                 src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg"
-                 alt="">
-            <div class="category-card-description-bk"></div>
-            <!--            <div class="hero-logo">-->
-            <!--                <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">-->
-            <!--            </div>-->
-            <div class="category-card-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="category-card-title">
-                <p>20.02.2019</p>
-            </div>
-            <button type="submit"><a href="#" class="category-card-btn">Get Started</a></button>
-        </div>
-        <div class="second category-card">
-            <img class="category-card-img"
-                 src="https://cdn.gamer-network.net/2018/metabomb/leagueoflegendsbestcarrychampions2018pantheon.jpg"
-                 alt="">
-            <div class="category-card-description-bk"></div>
-            <!--            <div class="hero-logo">-->
-            <!--                <img src="https://miscmedia-9gag-fun.9cache.com/images/thumbnail-facebook/1557291375.3948_Dy2yZu_n.jpg" alt="">-->
-            <!--            </div>-->
-            <div class="category-card-description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="category-card-title">
-                <p>20.02.2019</p>
-            </div>
-            <button type="submit"><a href="#" class="category-card-btn">Get Started</a></button>
-        </div>
 
-
+    <section class="category-grid"> <!--loosely following BEM-->
+        <div class="category-cards">
+            <div class="category-image-container">
+                <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            </div>
+            <div class="category-cards__shape"></div>
+            <div class="category-cards__description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="category-cards__details">
+                <p class="category-cards__details__title">Virtual DJ's</p>
+                <a href="#">Get Started</a>
+            </div>
+        </div>
     </section>
 </div>
 <script src="navbar/navbar.js"></script>
