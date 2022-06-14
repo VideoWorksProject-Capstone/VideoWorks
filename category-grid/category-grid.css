@@ -31,13 +31,53 @@
     height: 69%;
     width: 120%;
     transform: skew(19deg, -9deg);
+    transition: all 450ms ease-in;
+    z-index: 21;
 }
+
+/*.category-cards__shape:hover*/
+.category-cards .category-cards__shape.hovered {
+    transform: skew(0deg, 0deg);
+    top: 45%;
+}
+.category-cards:hover .category-cards__img {
+    filter: blur(0);
+    transition: filter 450ms ease-in;
+}
+.category-cards:hover .category-cards__img.hovered {
+    filter: blur(4px);
+}
+.category-cards__person-popup{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+    transition: all 450ms ease-in-out 250ms;
+}
+.category-cards__person-popup.hovered{
+    position: absolute;
+    /*z-index: 20;*/
+    width: 50%;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -35%);
+    opacity: 1;
+}
+
+
+
+
+
 .category-cards__description {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: min-content;
 top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 /*    bottom: 0;*/
+    z-index: 22;
 }
 
 .category-cards__description p{
@@ -55,6 +95,7 @@ top: 50%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 22;
 
 }
 .category-cards__details p{
@@ -76,114 +117,24 @@ top: 50%;
     text-underline-offset: 2px;
     /*flex: 2;*/
 }
-/*!* BEGIN CARD DESIGN *!*/
-/*.category-grid{*/
-/*    width: calc(100% - 60px);*/
-/*    max-width: 1400px;*/
-/*    margin:0 auto;*/
-/*    !**!*/
 
-/*}*/
-
-/*.category-card{*/
-/*    display: inline-block;*/
-/*    position: relative;*/
-/*    width: 300px;*/
-/*    !*min-width: 400px;*!*/
-/*    height: 400px;*/
-/*    !*min-height: 200px;*!*/
-/*    border-radius: 30px;*/
-/*    overflow:hidden;*/
-/*    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);*/
-/*    margin: 30px;*/
-/*}*/
-
-/*.category-card-profile-img {*/
-/*    height: 40%;*/
-/*}*/
-
-/*.category-card-description-bk {*/
-/*    background-image: linear-gradient(0deg , #3f5efb, #fc466b);*/
-/*    border-radius: 30px;*/
-/*    position: absolute;*/
-/*    top: 55%;*/
-/*    left: -5px;*/
-/*    height: 65%;*/
-/*    width: 108%;*/
-/*    transform: skew(19deg, -9deg);*/
-/*}*/
-
-/*.second .category-card-description-bk {*/
-/*    background-image: linear-gradient(-20deg , #bb7413, #e7d25c)*/
-/*}*/
-
-/*.category-card-logo {*/
-/*    height: 80px;*/
-/*    width: 80px;*/
-/*    border-radius: 20px;*/
-/*    background-color: #fff;*/
-/*    position: absolute;*/
-/*    bottom: 30%;*/
-/*    left: 30px;*/
-/*    overflow:hidden;*/
-/*    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);*/
-/*}*/
-
-/*.category-card-logo img {*/
-/*    height: 100%;*/
-/*}*/
-
-/*.category-card-description {*/
-/*    position: absolute;*/
-/*    color: #fff;*/
-/*    font-weight: 900;*/
-/*    left: 150px;*/
-/*    bottom: 26%;*/
-/*}*/
-
-/*.category-card-btn {*/
-/*    position: absolute;*/
-/*    color: #fff;*/
-/*    right: 30px;*/
-/*    bottom: 10%;*/
-/*    padding: 10px 20px;*/
-/*    border: 1px solid #fff;*/
-/*}*/
-
-/*.category-card-btn a {*/
-/*    color: #fff;*/
-/*}*/
-
-/*.category-card-date {*/
-/*    position: absolute;*/
-/*    color: #fff;*/
-/*    left: 30px;*/
-/*    bottom: 10%;*/
-/*}*/
-/* END CARD DESIGN */
-
-/*body {*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    margin: 0;*/
-/*    background-color: #eee;*/
-/*    min-height: 100vh;*/
-/*}*/
-/*.btn i:before {*/
-/*    width: 14px;*/
-/*    height: 14px;*/
-/*    position: fixed;*/
-/*    color: #fff;*/
-/*    background: #0077B5;*/
-/*    padding: 10px;*/
-/*    border-radius: 50%;*/
-/*    top:5px;*/
-/*    right:5px;*/
-/*}*/
 
 
 @media (min-width: 768px){
     .category-grid {
         grid-template-columns: repeat(2,1fr);
+    }
+    .category-cards__person-popup{
+        left: 50%;
+        top: 68%;
+        transform: translate(-50%, -68%);
+    }
+    .category-cards__person-popup.hovered{
+
+        width: 55%;
+        left: 50%;
+        top: 27%;
+        transform: translate(-50%, -27%);
     }
 }
 @media (min-width: 960px){
