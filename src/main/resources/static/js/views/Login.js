@@ -39,10 +39,6 @@ export default function Login(props) {
                 display:inline-block;
                 border-bottom:2px solid transparent;
             }
-            .login-html .sign-in:checked + .tab {
-                color:#fff;
-                border-color:black;
-            }
             .login-form{
                 min-height:345px;
                 position:relative;
@@ -54,13 +50,13 @@ export default function Login(props) {
             }
             .login-form .group .label,
             .login-form .group .input,
-            .login-form .group #login-btn{
+            .login-form .group .login-btn{
                 width:100%;
                 color:#fff;
                 display:block;
             }
             .login-form .group .input,
-            .login-form .group #login-btn{
+            .login-form .group .login-btn{
                 border:none;
                 padding:15px 20px;
                 border-radius:25px;
@@ -74,16 +70,8 @@ export default function Login(props) {
                 color:#aaa;
                 font-size:12px;
             }
-            .login-form .group #login-btn{
+            .login-form .group .login-btn{
                 background:#1161ee;
-            }
-            .login-form .group label .icon{
-                width:15px;
-                height:15px;
-                border-radius:2px;
-                position:relative;
-                display:inline-block;
-                background:rgba(255,255,255,.1);
             }
             .hr{
                 height:2px;
@@ -102,22 +90,14 @@ export default function Login(props) {
                         <div class="sign-in-htm">
                             <div class="group">
                                 <label for="username">Username</label>
-                                <input id="user" type="text" class="input">
+                                <input id="username" type="text" class="input">
                             </div>
                             <div class="group">
                                 <label for="password">Password</label>
                                 <input id="password" type="password" class="input" data-type="password">
                             </div>
                             <div class="group">
-                                <input id="check" type="checkbox" class="check" checked>
-                                <label for="check"><span class="icon"></span> Keep me Signed in</label>
-                            </div>
-                            <div class="group">
-                                <input id="agebox" type="checkbox" class="check" checked>
-                                <label for="agebox"><span class="icon"></span> Must Be Over Age 18</label>
-                            </div>
-                            <div class="group">
-                                <input type="submit" id="login-btn" value="Sign In">
+                                <input type="submit" class="login-btn" value="Sign In">
                             </div>
                             <div class="hr"></div>
                             <div class="foot-lnk">
