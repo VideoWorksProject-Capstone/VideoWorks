@@ -7,7 +7,7 @@ import createView from "./createView.js";
  */
 export default function addLoginEvent() {
     console.log("entered addLoginEvent")
-    document.querySelector("#login-btn").addEventListener("click", function () {
+    document.querySelector(".login-btn").addEventListener("click", function () {
         let obj = {
             username: document.querySelector("#username").value,
             password: document.querySelector("#password").value,

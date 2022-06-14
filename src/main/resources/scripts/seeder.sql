@@ -15,3 +15,33 @@ VALUES (1, 1),
        (3, 1),
        (3, 2),
        (4, 1);
+
+INSERT INTO profiles (id, rating, bio, name)
+VALUES (1, 4.3, 'Insert bio here', 'Bobby John'),
+       (2, 3.5, 'Insert bio here', 'Sally Joe Hopkins'),
+       (3, 4.8, 'Insert bio here', 'Thomas Cruise'),
+       (4, 2.7, 'Insert bio here', 'Ricky Bobby');
+
+INSERT INTO categories (id, name)
+VALUES (1, 'Cooking'),
+       (2, 'Tutoring'),
+       (3, 'Reading'),
+       (4, 'Music'),
+       (5, 'DJ'),
+       (6, 'Technology'),
+       (7, 'Design'),
+       (8, 'Marketing'),
+       (9, 'Business');
+
+INSERT INTO services (id, title, description, rate)
+VALUES (1, 'DJ Services', 'I will DJ for any event. Custom to fit any theme.', 20.00),
+       (2, 'Cooking Lessons', 'One on one, Live training in the kitchen. Whatever you want to cook, I can teach you!', 15.00),
+       (3, 'Math Tutoring', 'Live math tutoring for all ages. Anything up to calculus.', 50.00),
+       (4, 'Logo Design', 'I will design a logo for you or your business.', 10.00);
+
+INSERT INTO status (id, status)
+VALUES (1, 'active'),
+       (2, 'inactive');
+
+INSERT INTO appointments (id, date, time)
+VALUES (1, '07122022', '12:00 PM')

@@ -1,8 +1,8 @@
 package com.example.videoworks.web;
 
 import com.example.videoworks.data.User;
-import com.example.videoworks.data.UsersRepository;
 import com.example.videoworks.service.UserService;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,9 +12,11 @@ import java.util.List;
 public class UsersController {
 
     private final UserService userService;
+    private PasswordEncoder passwordEncoder;
 
-    public UsersController (UserService userService) {
+    public UsersController(UserService userService, PasswordEncoder passwordEncoder) {
         this.userService = userService;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @GetMapping
@@ -44,6 +46,7 @@ public class UsersController {
 
     @PostMapping("create")
     public void create(@RequestBody User newUser){
+        newUser.setPassword(passwordEncoder.encode(newUser.getPassword()));
         userService.createUser(newUser);
     }
 }
