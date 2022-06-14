@@ -1,0 +1,73 @@
+:root{
+    --color:black;
+    --t-color:darkblue;
+    --d-c:black;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body {
+    overflow-x: hidden;
+    background: black;
+    background-position: center;
+    background: repeat;
+}
+ul, li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
+    background: #ffffff;
+    box-shadow: 0 0 4px blanchedalmond;
+    height: 69px;
+    z-index:10;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+header .logo {
+    padding: 15px 25px;
+}
+header .logo h1 {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: var(--t-color) ;
+}
+header .nav{
+    position: relative;
+    border-left: 1px solid #e9e9e9;
+}
+header .nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav ul li {
+    padding: 26px 20px 24px 20px;
+    transition: all .4s ease-in;
+    cursor: pointer;
+}
+header .nav ul li h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-transform:uppercase ;
+    font-size: 1em;
+}
+header .nav ul li.active,header .nav ul li:hover {
+    background: var(--d-c);
+    box-shadow: 0 -4px 0px var(--color) inset;
+    color: red;
+}
+.bars {
+    /*display: none;*/
+    margin-right: 20px;
+    color: ;
+}

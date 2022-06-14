@@ -13,7 +13,7 @@ export default function Register(){
                 body{
                     margin:0;
                     color:white;
-                    background:white;
+                    background:black;
                     font:600 16px/18px 'Open Sans',sans-serif;
                 }
 
@@ -28,14 +28,13 @@ export default function Register(){
                 .login-html{
                     width:100%;
                     height:100%;
-                    position:absolute;
+                    position:relative;
                     padding:90px 70px 50px 70px;
-                    background:rgba(40,57,101,.9);
+                    background:rebeccapurple;
                 }
                 
                 .login-html .tab{
                     font-size:22px;
-                    margin-right:15px;
                     padding-bottom:5px;
                     margin:0 15px 10px 0;
                     display:inline-block;
@@ -123,7 +122,7 @@ export default function Register(){
                         </div>
                         <div class="group">
                         <label for="dob" class="label">Date of Birth</label>
-                        <input id="dob" name="dob" class="input" type="number" data-type="number"/>
+                        <input id="dob" name="dob" class="input" type="input" data-type="number"/>
                         </div>
                         <div class="group">
                         <input class="button" type="button" value="Register"/>
