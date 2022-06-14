@@ -13,7 +13,7 @@ export default function Register(){
                 body{
                     margin:0;
                     color:white;
-                    background:black;
+                    background:#111111;
                     font:600 16px/18px 'Open Sans',sans-serif;
                 }
                 .login-wrap{
@@ -29,7 +29,7 @@ export default function Register(){
                     height:100%;
                     position:relative;
                     padding:90px 70px 50px 70px;
-                    background:rebeccapurple;
+                    background:#28203f;
                 }
                 .login-html .tab{
                     font-size:22px;

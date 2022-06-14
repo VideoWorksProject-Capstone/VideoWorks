@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title></title>
     <link rel="stylesheet" href="Profile.css">
 </head>
-<header>
-
-</header>
 <body>
+<header>
 <div class= "logo">
     <h1>test</h1>
 </div>
@@ -32,5 +31,97 @@
         </li>
     </ul>
 </div>
+</header>
+<div class="nav-mobile">
+    <ul>
+        <li>
+        <li>
+        <span><i class="fa fa-house"></i> </span>
+            <h3>Home</h3>
+        </li>
+        <li>
+            <span><i class="fa fa-address-card"></i> </span>
+            <h3>about</h3>
+        </li>
+        <li>
+            <span><i class="fa fa-phone-square-alt"></i> </span>
+            <h3>contacts</h3>
+        </li>
+        <li class="active">
+            <span><i class="fa fa-user-circle"></i> </span>
+            <h3>account</h3>
+        </li>
+    </ul>
+</div>
+<div class="m-bar">
+<m-bar>
+    <span><i class="fa fa-ellipsis-y"></i> </span>
+</m-bar>
+</div>
+<aside class="sidebar">
+    <h1>sidebar <span><i class="fa fa-times"></i> </span></h1>
+    <div class="user-pic">
+        <img width="100" src=../src/main/resources/static/js/views/img/avatars/Artist.png alt=""><img>
+    </div>
+    <div class="user-info">
+        <span class="name">Anthony</span>
+        <span class="mail">ants.hernandez@gmail.com</span>
+        <span class="status">online</span>
+    </div>
+   <div class="search">
+       <form>
+           <div class="row">
+               <input type="text" placeholder="Search Profile..">
+               <button type="submit"><span><i class="fa fa-search"></i> </span></button>
+           </div>
+       </form>
+   </div>
+    <div class="side-nav">
+        <nav>
+            <ul>
+                <li class="active" onclick="show(0)">
+                    <span><i class="fa fa-tachometer"></i></span>
+                    <h3>Dashboard</h3>
+                </li>
+                <li  onclick="show(1)">
+                    <span><i class="fa fa-star"></i></span>
+                    <h3>Reviews</h3>
+                </li>
+                <li onclick="show(2)">
+                    <span><i class="fa fa-comments"></i></span>
+                    <h3>Comments</h3>
+                </li>
+                <li onclick="show(3)">
+                    <span><i class="fa fa-cog"></i></span>
+                    <h3>Setting</h3>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bt-nav">
+        <ul>
+            <li class="alert" title="Alert">
+                <span><i class="fa fa-bell"></i></span>
+            </li>
+            <li class="message" title="Message">
+                <span><i class="fa fa-envelope"></i></span>
+            </li>
+            <li class="set" title="Settings">
+                <span><i class="fa fa-cog"></i></span>
+            </li>
+        </ul>
+
+    </div>
+
+</aside>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
