@@ -6,14 +6,12 @@ public class Service {
     private String title;
     private String description;
     private Double rate;
-    private Boolean status;
 
-    public Service(Long id, String title, String description, Double rate, Boolean status) {
+    public Service(Long id, String title, String description, Double rate) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.rate = rate;
-        this.status = status;
     }
 
     public Service() {
@@ -52,14 +50,6 @@ public class Service {
         this.rate = rate;
     }
 
-    public Boolean getStatus() {
-        return status;
-    }
-
-    public void setStatus(Boolean status) {
-        this.status = status;
-    }
-
     @Override
     public String toString() {
         return "Service{" +
@@ -67,7 +57,6 @@ public class Service {
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", rate='" + rate + '\'' +
-                ", status='" + status + '\'' +
                 '}';
     }
 }
