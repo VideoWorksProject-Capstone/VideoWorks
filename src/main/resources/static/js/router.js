@@ -4,6 +4,7 @@ import Loading from "./views/Loading.js";
 import Login from "./views/Login.js";
 import LoginEvent from "./auth.js";
 import Register, {RegisterEvent} from "./views/Register.js";
+import Profile from "./views/Profile.js";
 
 /**
  * Returns the route object for a specific route based on the given URI
@@ -17,6 +18,13 @@ export default function router(URI) {
             state: {},
             uri: '/',
             title: 'Home',
+        },
+        '/profile': {
+            returnView: Profile,
+            state: {},
+            uri: '/profile',
+            title: "Profile",
+            viewEvent: Profile,
         },
         '/login': {
             returnView: Login,
