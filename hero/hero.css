@@ -3,6 +3,7 @@
     background-color: #111;
     /*height: 100%;*/
     width: 100%;
+    /*height: 100vh;*/
 padding-bottom: 40px;
 }
 
@@ -21,11 +22,14 @@ padding-bottom: 40px;
 .hero-section-wrapper__main{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 10rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
 }
 .hero-lede{
     margin-bottom: 3rem;
+    /*border: red 1px solid;*/
+    width: max-content;
+    /*height: 100%;*/
     /*flex: 1;*/
 }
 
@@ -33,7 +37,7 @@ padding-bottom: 40px;
 /*    flex:2;*/
 /*}*/
 .hero-lede h2{
-    font-size: 3.7rem;
+    font-size: clamp(3rem, 2.375rem + 3.5714vw, 5.5rem);
     font-weight: 500;
     letter-spacing: 0.08rem;
     margin-bottom: 2.5rem;
@@ -44,6 +48,7 @@ padding-bottom: 40px;
     letter-spacing: 0.08rem;
     padding-bottom: 4rem;
     position: relative;
+    font-size: clamp(1.6rem, 1.55rem + 0.2857vw, 1.8rem);
 }
 .hero-lede p:before{
     content: "";
@@ -83,7 +88,7 @@ padding-bottom: 40px;
     position: relative;
     z-index: 3;
 }
-/*Im basically saying, select any fa-arrow-right thats inside of a hovered hero lede btn*/
+
 .hero-lede .hero-lede-btn:hover > .fa-arrow-right{
     transform: translateX(16px);
 }
@@ -93,46 +98,34 @@ padding-bottom: 40px;
     display: none;
 }
 
-/*hero slider*/
-
 
 @media screen and (min-width: 768px) {
     #hero-section {
         padding: 0 50px;
     }
-    .hero-lede h2{
-        font-size: 5rem;
-        font-weight: 500;
-        letter-spacing: 0.08rem;
-        margin-bottom: 2.5rem;
-    }
+
     .hero-lede p{
-        font-weight: 300;
-        margin-bottom: 4.6rem;
-        letter-spacing: 0.08rem;
-        padding-bottom: 4rem;
-        position: relative;
-        font-size: 1.8rem;
+        width: fit-content;
     }
+
     .hero-graphic{
-display: flex;
+        /*border: lime 1px solid;*/
+        display: flex;
         align-items: center;
         justify-content: center;
-        /*perspective: 400px;*/
+        width: 100%;
         pointer-events: none;
     }
     
     .hero-graphic .falling-lady{
-        width: 60%;
-        min-width: 50%;
+        width: 550px;
         pointer-events: none;
-        /*perspective: 400px;*/
         animation: soft-float 7s ease-in-out alternate infinite ;
     }
     @keyframes soft-float {
         0% {
-            transform: scale(0.8) rotateX(4deg) rotate(5deg);
-            opacity: .6;
+            transform: scale(0.7) rotateX(4deg) rotate(5deg);
+            opacity: .5;
         }
         100%{
             transform: scale(1) rotateX(-1deg) rotate(-1deg);
