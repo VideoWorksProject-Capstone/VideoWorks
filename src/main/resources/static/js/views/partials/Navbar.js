@@ -35,7 +35,7 @@ export default function Navbar(props) {
         <header class="large-header-container">
             <nav class="large-nav">
                 <ul class="large-menu__list">
-                    <li><a href="/categories" data-link>Categories</a></li>
+                    <li><a href="/categories-section" data-link>Categories</a></li>
                     <li><a href="/profile" data-link>Profile</a></li>
                     <li class="large-logo-wrapper">
                         <h1 id="large-logo"><a href="/" data-link>video<span>Works</span></a></h1>

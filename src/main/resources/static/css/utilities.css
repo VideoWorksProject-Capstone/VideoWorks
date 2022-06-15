@@ -33,14 +33,14 @@ html {
 }
 
 /*Set section heading font*/
-   h1,h2,h3,h4,h5,h6,button,label,p, i{
-       font-family: 'Poppins', sans-serif;
-       color: var(--white);
-   }
+h1,h2,h3,h4,h5,h6,button,label,p, i{
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+}
 /* Set core body defaults */
 body {
     min-height: 100vh;
-    background-color: #111;
+    /*background-color: #111;*/
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 
@@ -101,11 +101,27 @@ select {
     --right-gradient:#4c2fa1;
     --text-accent:#a47cf6;
 
-/*avatar accent colors*/
+    /*avatar accent colors*/
     --green:#b9d7b5;
     --blue:#70afd5;
     --pink:#e497c9 ;
     --purple: #776bce;
     --orange:coral;
+
+    /*spacing*/
+    --spacing10:0.10rem;
+    --spacing4:0.04em;
+    --spacing8:0.08rem;
+}
+
+.section-titles{
+    font-size: clamp(3.3rem, 2.875rem + 2.4286vw, 5rem);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 0 2rem 0;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: var(--spacing8);
 }
 /* ########## END GLOBAL ########## */
