@@ -127,3 +127,127 @@ aside .name {
     text-transform: uppercase;
     font-weight: 900;
 }
+aside .mail,
+aside .status {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+aside .status {
+    margin-top: 3px;
+    position: relative;
+    margin-left: 10px;
+}
+aside .status:before::before{
+    content:"";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: lightgreen;
+    border-radius: 50%;
+    left: -10px;
+    top: 5.5px;
+}
+aside .search {
+    border-top:1px solid #e9e9e9e9;
+    padding: 20px;
+}
+aside .search .row {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+aside .search input{
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border:1px solid #dfdfdfdf;
+    border-radius: 4px 0 0 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+aside .search input button{
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid var(--d-c);
+    color: #ffff;
+    outline: none;
+    cursor: pointer;
+    border-left: 0;
+}
+.side-nav{
+    border-top: solid #e9e9e9;
+    padding: 20px 0 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+.side-nav h2 {
+    font-size: 1.2em;
+    padding: 10px 0px 5px 20px;
+    color: var(--t-color);
+    margin-bottom: 10px;
+}
+.side-nav ul li {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 8px 0px 8px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.side-nav ul li.active,
+.side-nav ul li:hover {
+    background: #eee;
+}
+.side-nav ul li span {
+    margin-right: 10px;
+    font-size: 12px;
+    width:  30px;
+    height:  30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    background: darkblue;
+    color: #fff;
+}
+.side-nav ul li h3 {
+    line-height: 30px;
+    font-size: 1.2em;
+    color:var(--t-color);
+    font-weight: 100;
+}
+.bt-nav{
+    background: var(--t-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.bt-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+.bt-nav ul li {
+    line-height: 30px;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+.alert::after,
+.message::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 2px;
+    background: red;
+}
+.alert::after{
+    background: lightgreen;
+}
+.m-bar {
+    display: none;
+}
