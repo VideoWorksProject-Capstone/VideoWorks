@@ -4,7 +4,7 @@
     /*height: 100%;*/
     width: 100%;
     /*height: 100vh;*/
-padding-bottom: 40px;
+padding-bottom: 100px;
 }
 
 #hero-section {
@@ -15,10 +15,6 @@ padding-bottom: 40px;
     /*overflow: auto; !*change if you dont want "pseudo" fixed nav bar*!*/
     padding-top: 60px;
 }
-/*hero-section-wrapper*/
-/*.hero-section-wrapper{*/
-/*}*/
-
 .hero-section-wrapper__main{
     display: flex;
     align-items: center;
@@ -27,15 +23,9 @@ padding-bottom: 40px;
 }
 .hero-lede{
     margin-bottom: 3rem;
-    /*border: red 1px solid;*/
     width: max-content;
-    /*height: 100%;*/
-    /*flex: 1;*/
 }
 
-/*.hero-graphic{*/
-/*    flex:2;*/
-/*}*/
 .hero-lede h2{
     font-size: clamp(3rem, 2.375rem + 3.5714vw, 5.5rem);
     font-weight: 500;

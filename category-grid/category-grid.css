@@ -11,7 +11,15 @@
     grid-gap: 25px;
 
 }
-
+.homepage-category-section__title-wrapper{
+    width: calc(100% - 60px);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.homepage-category-section__title-wrapper h2{
+/*override style in utilities*/
+    padding: 100px 0 20px 0;
+}
 .category-cards{
     width: 100%;
     height: 400px;
