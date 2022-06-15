@@ -89,8 +89,8 @@ export default function Login(props) {
                     <form class="login-form">
                         <div class="sign-in-htm">
                             <div class="group">
-                                <label for="username">Username</label>
-                                <input id="username" type="text" class="input">
+                                <label for="email">Email</label>
+                                <input id="email" type="text" class="input">
                             </div>
                             <div class="group">
                                 <label for="password">Password</label>
