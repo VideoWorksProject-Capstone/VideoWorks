@@ -1,4 +1,16 @@
-// "use strict"
+"use strict"
+
+let categoryCardsPersonPopup = document.querySelector(".category-cards__person-popup");
+
+categoryCardsPersonPopup.addEventListener("dblclick", ()=>{
+    console.log("OOUUCHHHH")
+})
+
+
+
+
+
+
 //
 // let categoryCardsPopupPerson = document.querySelector(".category-cards__person-popup");
 // // let categoryCards = Array.from(document.querySelectorAll(".category-cards"));
