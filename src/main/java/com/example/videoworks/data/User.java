@@ -21,18 +21,22 @@ public class User {
     private String email;
     private String password;
     private String dob;
+    private String bio;
+    private Double rating;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-    public User(Long id, String name, String username, String email, String password, String dob, Collection<Role> roles) {
+    public User(Long id, String name, String username, String email, String password, String dob, String bio, Double rating, Collection<Role> roles) {
         this.id = id;
         this.name = name;
         this.username = username;
         this.email = email;
         this.password = password;
         this.dob = dob;
+        this.bio = bio;
+        this.rating = rating;
         this.roles = roles;
     }
 
@@ -88,6 +92,22 @@ public class User {
         this.dob = dob;
     }
 
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+
+    public Double getRating() {
+        return rating;
+    }
+
+    public void setRating(Double rating) {
+        this.rating = rating;
+    }
+
     public Collection<Role> getRoles() {
         return roles;
     }
@@ -100,10 +120,13 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
+                ", name=" + name +
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", dob='" + dob + '\'' +
+                ", bio='" + bio + '\'' +
+                ", rating='" + rating + '\'' +
                 ", roles=" + roles +
                 '}';
     }
