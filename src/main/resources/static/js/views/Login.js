@@ -13,7 +13,7 @@ export default function Login(props) {
             body{
                 margin:0;
                 color:white;
-                background:#111111;
+                background:var(--main-black);
                 font:600 16px/18px 'Open Sans',sans-serif;
             }
             .login-wrap{
