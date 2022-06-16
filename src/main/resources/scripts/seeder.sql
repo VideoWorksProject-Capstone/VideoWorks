@@ -10,8 +10,3 @@ VALUES (1, 1),
        (3, 2),
        (4, 1);
 
-INSERT INTO profiles (id, rating, bio, name, user_id)
-VALUES (1, 4.3, 'Insert bio here', 'Bobby John', 1),
-       (2, 3.5, 'Insert bio here', 'Sally Joe Hopkins', 2),
-       (3, 4.8, 'Insert bio here', 'Thomas Cruise', 3),
-       (4, 2.7, 'Insert bio here', 'Ricky Bobby', 4);

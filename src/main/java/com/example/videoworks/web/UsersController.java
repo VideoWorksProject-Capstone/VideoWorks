@@ -2,7 +2,10 @@ package com.example.videoworks.web;
 
 import com.example.videoworks.data.User;
 import com.example.videoworks.service.UserService;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -44,9 +47,20 @@ public class UsersController {
         return userService.getUserByUsername(username);
     }
 
+    @GetMapping("me")
+    public User getCurrentUser(OAuth2Authentication auth) {
+        System.out.println(auth.getName());
+        return userService.getUserByEmail(auth.getName());
+    }
+
     @PostMapping("create")
     public void create(@RequestBody User newUser){
         newUser.setPassword(passwordEncoder.encode(newUser.getPassword()));
         userService.createUser(newUser);
+    }
+
+    @PutMapping("{userId}")
+    public void updateUser(@PathVariable Long userId, @RequestBody User updatedUser) {
+        userService.updateUser(userId, updatedUser);
     }
 }

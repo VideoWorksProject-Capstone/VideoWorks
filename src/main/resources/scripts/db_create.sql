@@ -5,7 +5,6 @@ CREATE DATABASE if not exists videoworks;
 USE videoworks;
 
 DROP TABLE IF EXISTS user_roles;
-DROP TABLE IF EXISTS profiles;
 DROP TABLE IF EXISTS roles;
 DROP TABLE IF EXISTS users;
 
@@ -20,7 +19,11 @@ CREATE TABLE IF NOT EXISTS users
     username        VARCHAR(60)     NOT NULL,
     password        VARCHAR(60)     NOT NULL,
     email           VARCHAR(200)    NOT NULL,
-    name            VARCHAR(60)     NOT NULL
+    name            VARCHAR(60)     NOT NULL,
+    dob             VARCHAR(8)      NOT NULL,
+    bio             TEXT            NULL,
+    rating          DOUBLE          NULL,
+    photo           VARCHAR(60)     NULL
 );
 
 CREATE TABLE IF NOT EXISTS user_roles (
