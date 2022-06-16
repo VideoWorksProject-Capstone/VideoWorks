@@ -6,7 +6,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 275px;
-/*position: absolute;*/
+    /*position: absolute;*/
     /*border: limegreen 3px solid;*/
     grid-column-gap: 10px;
     overflow-x: auto;
@@ -43,11 +43,10 @@
     margin-bottom: 1.5rem;
 }
 /*AVATAR CONTAINER*/
-	@@ -52,25 +27,31 @@
-}
+
 
 .media-element .user-avatar-box{
-/*background-color: var(--green);*/
+    /*background-color: var(--green);*/
     width: 170px;
     height: 170px;
     margin:20px auto 2rem auto;
@@ -69,14 +68,13 @@
     /*padding-bottom: 80px;*/
 }
 
-	@@ -148,6 +129,8 @@ display: flex;
 
 .media-scroller .media-element > img{
     /*margin-bottom: 2rem;*/
     inline-size: 100%; /*logical property for vertical text*/
 }
 .media-element__title-wrapper{
-	@@ -157,13 +140,35 @@ display: flex;
+ display: flex;
 
 }
 
