@@ -257,3 +257,15 @@ aside .search input button{
 .m-bar {
     display: none;
 }
+.main section{
+   width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+}
+.main section h1{
+    margin: 0 auto 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}

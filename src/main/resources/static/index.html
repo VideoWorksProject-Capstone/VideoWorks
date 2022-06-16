@@ -5,39 +5,14 @@
     <title>VideoWorks</title>
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/hero.css">
-
+    <link rel="stylesheet" href="css/Profile.css">
+    <title>VideoWorks</title>
 </head>
 <body>
 <div id="app"></div>
+
+
 <script type="module" src="js/main.js"></script>
-<script>
-    "use strict";
-
-    let hamburgerImg = document.querySelector(".ham1");
-    let mobileMenu = document.querySelector(".mobile-menu");
-    let headerContainer = document.querySelector(".mobile-header-container");
-
-    let slideInMobileMenu = () => {
-        mobileMenu.classList.toggle("open");
-        hamburgerImg.classList.toggle("active");
-        headerContainer.classList.toggle("purp-container-background");
-    }
-
-
-    hamburgerImg.addEventListener("click",slideInMobileMenu);
-
-    "use strict";
-
-    let heroLedeBtn = document.querySelector(".hero-lede-btn");
-    let heroLedeBtnArrow = document.querySelector(".fa-arrow-right");
-
-
-    let growHeroLedeBtnFunc = () =>{
-        heroLedeBtn.classList.toggle()
-    }
-    heroLedeBtn.addEventListener("click",growHeroLedeBtnFunc)
-</script>
-
 <script src="js/views/partials/Navbar.js"></script>
 <script src="js/hero.js"></script>
 <script src="js/slider.js"></script>

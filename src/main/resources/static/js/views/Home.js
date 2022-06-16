@@ -435,7 +435,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Black%20Woman.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Black Woman.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -457,7 +457,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Western%20Man.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Western Man.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -479,7 +479,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/West%20Woman.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/woman.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -500,7 +500,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Muslim%20Woman.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Muslim Woman.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -522,7 +522,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Astronaut.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Astronaut.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -543,7 +543,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Farmer.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Farmer.png" alt="lady">
                             </div>
                         </div>
                        <div class="username-box">
@@ -565,7 +565,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Designer.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Designer.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -586,7 +586,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Doctor.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Doctor.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -607,7 +607,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Artist.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Doctor.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -629,7 +629,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Asia%20Woman.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Artist.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -652,7 +652,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/College%20Student.png"
+                                <img class="user-avatar-image1" src="../../img/avatars/West%20Woman.png"
                                      alt="lady">
                             </div>
                         </div>
@@ -674,7 +674,7 @@ flex: 1;
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="slider/img/avatars/Nerd%20Woman.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Baby.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -710,10 +710,10 @@ flex: 1;
     <!--loosely following BEM-->
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/Nerd%20Woman.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/Nerd%20Woman.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>Host an unforgettable event with our VIP Dj's from around the world </p>
         </div>
@@ -724,10 +724,10 @@ flex: 1;
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/Artist.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/West%20Woman.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>Learn to cook your favorite dish with one of our elite chef's</p>
         </div>
@@ -738,10 +738,10 @@ flex: 1;
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/Doctor.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/Black%20Man.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>Our tutor's cover a wide range of topics</p>
         </div>
@@ -752,10 +752,10 @@ flex: 1;
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/Artist.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>Books are better when you can hear them</p>
         </div>
@@ -766,10 +766,10 @@ flex: 1;
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/Asian%20Man.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/West%20Woman.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>Let our producers mix and master your songs with studio quality</p>
         </div>
@@ -780,10 +780,10 @@ flex: 1;
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/Artist.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/Doctor.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>Frontend, backend, fullstack. end-to-end IT solutions</p>
         </div>
@@ -794,10 +794,10 @@ flex: 1;
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/Black%20Man.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/Doctor.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>World-class design - At your service</p>
         </div>
@@ -808,10 +808,10 @@ flex: 1;
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/Baby.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>Convert your visitors into leads and then into paying customers</p>
         </div>
@@ -822,10 +822,10 @@ flex: 1;
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="category-grid/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
+            <img src="../../img/avatars/West%20Woman.png" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
-        <img src="slider/img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
+        <img src="../../img/avatars/Western%20Man.png" alt="face avatar" class="category-cards__person-popup">
         <div class="category-cards__description">
             <p>We handle your business affairs so you and help your business grow</p>
         </div>
