@@ -12,9 +12,9 @@ let mediaElementBorder = Array.from(document.querySelectorAll(".media-element__b
 changeAvatarColors(avatarBox, mediaElementBorder);
 
 
-let body = document.querySelector("body");
-let hamburgerMenuIcon = document.querySelector(".ham");
-hamburgerMenuIcon.addEventListener("click", () => body.classList.toggle("no-scroll"));
+// let body = document.querySelector("body");
+// let hamburgerMenuIcon = document.querySelector(".ham");
+// hamburgerMenuIcon.addEventListener("click", () => body.classList.toggle("no-scroll"));
 
 
 function changeAvatarColors(avatarBox, mediaElementBorder){
@@ -26,3 +26,22 @@ function changeAvatarColors(avatarBox, mediaElementBorder){
         mediaElementBorder[i].style.borderTop = `var(${colorsArray[rand]}) dashed 4px`;
     }
 }
+
+
+
+//---------------------------------------------------------
+
+// let body = document.querySelector("body");
+// let hamburgerMenuIcon = document.querySelector(".ham");
+// hamburgerMenuIcon.addEventListener("click", () => body.classList.toggle("no-scroll"));
+//
+//
+// function changeAvatarColors(avatarBox, mediaElementBorder){
+//     for(let i = 0; i < sliderCards.length; i++){
+//         let rand = Math.floor(Math.random() * colorsArray.length);
+//         sliderCards[i].style.borderTop = `var(${colorsArray[rand]}) solid 5px`;
+//         sliderCards[i].style.borderBottom = `var(${colorsArray[rand]}) solid 5px`;
+//         avatarBox[i].style.backgroundColor = `var(${colorsArray[rand]})`;
+//         mediaElementBorder[i].style.borderTop = `var(${colorsArray[rand]}) dashed 4px`;
+//     }
+// }

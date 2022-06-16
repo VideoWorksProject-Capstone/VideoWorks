@@ -1,7 +1,5 @@
 export default function Home(props) {
     return `
-        <header>   
-        </header> 
         <style>
         /*media scroller*/
 .hero-slider{
