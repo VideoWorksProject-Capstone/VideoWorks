@@ -22,13 +22,14 @@ public class User {
     private String password;
     private String dob;
     private String bio;
+    private String photo = "./img/default-user.png";
     private Double rating;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-    public User(Long id, String name, String username, String email, String password, String dob, String bio, Double rating, Collection<Role> roles) {
+    public User(Long id, String name, String username, String email, String password, String dob, String bio, String photo, Double rating, Collection<Role> roles) {
         this.id = id;
         this.name = name;
         this.username = username;
@@ -36,6 +37,7 @@ public class User {
         this.password = password;
         this.dob = dob;
         this.bio = bio;
+        this.photo = photo;
         this.rating = rating;
         this.roles = roles;
     }
@@ -100,6 +102,14 @@ public class User {
         this.bio = bio;
     }
 
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photos) {
+        this.photo = photo;
+    }
+
     public Double getRating() {
         return rating;
     }
@@ -126,6 +136,7 @@ public class User {
                 ", password='" + password + '\'' +
                 ", dob='" + dob + '\'' +
                 ", bio='" + bio + '\'' +
+                ", photo='" + photo + '\'' +
                 ", rating='" + rating + '\'' +
                 ", roles=" + roles +
                 '}';

@@ -13,7 +13,7 @@ export default function Login(props) {
             body{
                 margin:0;
                 color:white;
-                background:var(--main-black);
+                background:white;
                 font:600 16px/18px 'Open Sans',sans-serif;
             }
             .login-wrap{
@@ -29,7 +29,7 @@ export default function Login(props) {
                 height:100%;
                 position:absolute;
                 padding:90px 70px 50px 70px;
-                background:#28203f;
+                background:rgba(40,57,101,.9);
             }
             .login-html .tab{
                 font-size:22px;
@@ -111,3 +111,5 @@ export default function Login(props) {
         </html>
     `;
 }
+
+createView( "/login");

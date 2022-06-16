@@ -21,7 +21,7 @@ export default function router(URI) {
         },
         '/profile': {
             returnView: Profile,
-            state: {},
+            state: {user: '/api/users/me'},
             uri: '/profile',
             title: "Profile",
             viewEvent: Profile,

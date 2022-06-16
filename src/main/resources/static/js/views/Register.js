@@ -138,10 +138,6 @@ export default function Register() {
                         <div class="group">
                             <input class="button" type="button" value="Register"/>
                         </div>
-                        <div class="hr"></div>
-                        <div class="foot-lnk">
-                            <label for="tab-1">Already Member?</a></label>
-                        </div>
                     </div>
                 </form>
             </div>
