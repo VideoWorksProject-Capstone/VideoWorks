@@ -13,7 +13,7 @@ export default function Login(props) {
             body{
                 margin:0;
                 color:white;
-                background:#111111;
+                background: #111111;
                 font:600 16px/18px 'Open Sans',sans-serif;
             }
             .login-wrap{
@@ -89,8 +89,8 @@ export default function Login(props) {
                     <form class="login-form">
                         <div class="sign-in-htm">
                             <div class="group">
-                                <label for="username">Username</label>
-                                <input id="username" type="text" class="input">
+                                <label for="email">Email</label>
+                                <input id="email" type="text" class="input">
                             </div>
                             <div class="group">
                                 <label for="password">Password</label>
@@ -111,3 +111,4 @@ export default function Login(props) {
         </html>
     `;
 }
+createView( "/login");
