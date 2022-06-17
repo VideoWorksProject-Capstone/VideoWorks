@@ -4,180 +4,421 @@ export default function Profile(props) {
         <!DOCTYPE html>
         <html lang="en">
         <body>
-        <div class="nav-mobile">
-            <ul>
-                <li>
-                <li>
-                    <span><i class="fa fa-house"></i> </span>
-                    <h3>Home</h3>
-                </li>
-                <li>
-                    <span><i class="fa fa-address-card"></i> </span>
-                    <h3>about</h3>
-                </li>
-                <li>
-                    <span><i class="fa fa-phone-square-alt"></i> </span>
-                    <h3>contacts</h3>
-                </li>
-                <li class="active">
-                    <span><i class="fa fa-user-circle"></i> </span>
-                    <h3>account</h3>
-                </li>
-            </ul>
-        </div>
-        <div class="m-bar">
-            <span><i class="fa fa-ellipsis-y"></i></span>
-        </div>
-        <aside class="sidebar">
-            <h1>Profile<span><i class="fa fa-times"></i> </span></h1>
-            <div class="user-side">
-                <div class="user-pic">
-                    <img width="150" src="../../img/IMG_3801.jpg" alt=""><img>
-                </div>
-                <br>
-                <div class="user-info">
-                    <span class="name">Anthony</span>
-                    <span class="mail">ants.hernandez@gmail.com</span>
-                    <span class="status">online</span>
-                </div>
-            </div>
-            <div class="search">
-                <form>
-                    <div class="row">
-                        <input type="text" placeholder="Search Profile..">
-                        <button type="submit"><span><i class="fa fa-search"></i> </span></button>
-                    </div>
-                </form>
-            </div>
-            <div class="side-nav">
-                <h2>General</h2>
-                <nav>
-                    <ul>
-                        <li class="active" onclick="show(0)">
-                            <span><i class="fa fa-tachometer"></i></span>
-                            <h3>Dashboard</h3>
-                        </li>
-                        <li onclick="show(1)">
-                            <span><i class="fa fa-star"></i></span>
-                            <h3>Reviews</h3>
-                        </li>
-                        <li onclick="show(2)">
-                            <span><i class="fa fa-comments"></i></span>
-                            <h3>Bio</h3>
-                        </li>
-                        <li onclick="show(3)">
-                            <span><i class="fa fa-cog"></i></span>
-                            <h3>Setting</h3>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="bt-nav">
-                <ul>
-                    <li class="alert" title="Alert">
-                        <span><i class="fa fa-bell"></i></span>
-                    </li>
-                    <li class="message" title="Message">
-                        <span><i class="fa fa-envelope"></i></span>
-                    </li>
-                    <li class="set" title="Settings">
-                        <span><i class="fa fa-cog"></i></span>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-        <div class="main">
-            <section class="profile tabs">
-                <h1>Services</h1>
-                <div class="userpost">
-                    <div class="posts">
-                        <span><i class="fa fa-plus"></i> </span>
-                    </div>
-                    <div class="posts">
-                        <img width="200" src="../../img/maxresdefault.jpeg" alt="">
-                        <p>Title or name</p>
-                    </div>
-                    <div class="posts">
-                        <img width="200" src="../../img/maxresdefault.jpeg" alt="">
-                        <p>Title or name</p>
-                    </div>
-                    <div class="posts">
-                        <img width="200" src="../../img/maxresdefault.jpeg" alt="">
-                        <p>Title or name</p>
-                    </div>
-                    <div class="posts">
-                        <img width="200" src="../../img/maxresdefault.jpeg" alt=""/>
-                        <p>Title or name</p>
+        <div class='columns'>
+            <div class='container profile'>
+                <div class='modal' id='edit-preferences-modal'>
+                    <div class='modal-background'></div>
+                    <div class='modal-card'>
+                        <header class='modal-card-head'>
+                            <p class='modal-card-title'>Edit Preferences</p>
+                            <button class='delete'></button>
+                        </header>
+                        <section class='modal-card-body'>
+                            <label class='label'>Name</label>
+                            <p class='control'>
+                                <input class='input' placeholder='Text input' type='text'>
+                            </p>
+                            <label class='label'>Username</label>
+                            <p class='control has-icon has-icon-right'>
+                                <input class='input' placeholder='Text input' type='text' value='pmillerk'>
+                            </p>
+                            <label class='label'>Email</label>
+                            <p class='control has-icon has-icon-right'>
+                                <input class='input' placeholder='Email input' type='text' value='hello@'>
+                                <i class='fa fa-warning'></i>
+                                <span class='help is-danger'>This email is invalid</span>
+                            </p>
+                            <div class='control'>
+                                <div class='control-label is-pulled-left'>
+                                    <label class='label'>Date of Birth</label>
+                                </div>
+                                <span>
+              <span class='select'>
+                <select>
+                  <option>Month</option>
+                  <option>With options</option>
+                </select>
+              </span>
+              <span class='select'>
+                <select>
+                  <option>Day</option>
+                  <option>With options</option>
+                </select>
+              </span>
+              <span class='select'>
+                <select>
+                  <option>Year</option>
+                  <option>With options</option>
+                </select>
+              </span>
+            </span>
+                            </div>
+                            <label class='label'>Description</label>
+                            <p class='control'>
+                                <textarea class='textarea' placeholder='Describe Yourself!'></textarea>
+                            </p>
+                            <div class='content'>
+                                <h1>Optional Information</h1>
+                            </div>
+                            <label class='label'>Phone Number</label>
+                            <p class='control has-icon has-icon-right'>
+                                <input class='input' placeholder='Text input' type='text' value='+1 *** *** 0535'>
+                            </p>
+                            <label class='label'>Work</label>
+                            <p class='control has-icon has-icon-right'>
+                                <input class='input' placeholder='Text input' type='text'
+                                       value='Greater Washington Publishing'>
+                            </p>
+                            <label class='label'>School</label>
+                            <p class='control has-icon has-icon-right'>
+                                <input class='input' placeholder='Text input' type='text'
+                                       value='George Mason University'>
+                            </p>
+                        </section>
+                        <footer class='modal-card-foot'>
+                            <a class='button is-primary modal-save'>Save changes</a>
+                            <a class='button modal-cancel'>Cancel</a>
+                        </footer>
                     </div>
                 </div>
-            </section>
-            <h1>Services</h1>
-            </section>
-            <section class="tabs">
-                <h1>Reviews</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore
-                    eu
-                    fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt
-                    mollit
-                    anim id est laborum."</p>
-            </section>
-            <section class="tabs">
-                <h1>Comments</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore
-                    eu
-                    fugiat ."</p>
-            </section>
-            <section class="tabs">
-                <h1>Setting</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam,</p>
-            </section>
+                <div class='section profile-heading'>
+                    <div class='columns is-mobile is-multiline'>
+                        <div class='column is-2'>
+          <span class='header-icon user-profile-image'>
+            <img alt='' src='../src/main/resources/static/img/IMG_3801.jpg'>
+          </span>
+                        </div>
+                        <div class='column is-4-tablet is-10-mobile name'>
+                            <p>
+                                <span class='title is-bold'>Anthony Hernandez</span>
+                                <br>
+                                <a class='button is-primary is-outlined' href='#' id='edit-preferences'
+                                   style='margin: 5px 0'>
+                                    Edit Preferences
+                                </a>
+                                <br>
+                            </p>
+                            <p class='tagline'>
+                                Hello, My Name is Anthony Hernandez I am a virtual dj who would love to provide my
+                                services for
+                                your events please look at my list of services and let me know if you need anything.
+                            </p>
+                        </div>
+                        <div class='column is-2-tablet is-4-mobile has-text-centered'>
+                            <p class='stat-val'>30</p>
+                            <p class='stat-key'>services</p>
+                        </div>
+                        <div class='column is-2-tablet is-4-mobile has-text-centered'>
+                            <p class='stat-val'>10</p>
+                            <p class='stat-key'>likes</p>
+                        </div>
+                        <div class='column is-2-tablet is-4-mobile has-text-centered'>
+                            <p class='stat-val'>3</p>
+                            <p class='stat-key'>lists</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='profile-options is-fullwidth'>
+                    <div class='tabs is-fullwidth is-medium'>
+                        <ul>
+                            <li class='link'>
+                                <a>
+              <span class='icon'>
+                <i class='fa fa-list'></i>
+              </span>
+                                    <span>My Lists</span>
+                                </a>
+                            </li>
+                            <li class='link is-active'>
+                                <a>
+              <span class='icon'>
+                <i class='fa fa-thumbs-up'></i>
+              </span>
+                                    <span>My Reviews</span>
+                                </a>
+                            </li>
+                            <li class='link'>
+                                <a>
+              <span class='icon'>
+                <i class='fa fa-search'></i>
+              </span>
+                                    <span>My Searches</span>
+                                </a>
+                            </li>
+                            <li class='link'>
+                                <a>
+              <span class='icon'>
+                <i class='fa fa-balance-scale'></i>
+              </span>
+                                    <span>My OddJobs</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='box' style='border-radius: 0px;'>
+                    <!-- Main container -->
+                    <div class='columns'>
+                        <div class='column is-2-tablet user-property-count has-text-centered'>
+                            <p class='subtitle is-5'>
+                                <strong></strong>
+                                20
+                                <br>
+                                Services
+                            </p>
+                        </div>
+                        <div class='column is-8'>
+                            <p class='control has-addons'>
+                                <input class='input' placeholder='Search for services' style='width: 100% !important'
+                                       type='text'>
+                                <button class='button'>
+                                    Search
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='columns is-mobile'>
+                    <div class='column is-3-tablet is-6-mobile'>
+                        <div class='card'>
+                            <div class='card-image'>
+                                <figure class='image is-4by3'>
+                                    <img alt='' src='../src/main/resources/static/img/5.jpeg'>
+                                </figure>
+                            </div>
+                            <div class='card-content'>
+                                <div class='content'>
+                                    <span class='tag is-dark subtitle'>#1</span>
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this proeprty from saved listings
+                                        does not
+                                        auto remove the notes.</p>
+                                </div>
+                            </div>
+                            <footer class='card-footer'>
+                                <a class='card-footer-item'>Hire</a>
+                                <a class='card-footer-item'>ShareLink</a>
+                                <a class='card-footer-item'>Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                    </div>
+                    <div class='column is-3-tablet is-6-mobile'>
+                        <div class='card'>
+                            <div class='card-image'>
+                                <figure class='image is-4by3'>
+                                    <img alt='' src='../src/main/resources/static/img/4.jpeg'>
+                                </figure>
+                            </div>
+                            <div class='card-content'>
+                                <div class='content'>
+                                    <span class='tag is-dark subtitle'>#2</span>
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this proeprty from saved listings
+                                        does not
+                                        auto remove the notes.</p>
+                                </div>
+                            </div>
+                            <footer class='card-footer'>
+                                <a class='card-footer-item'>Hire</a>
+                                <a class='card-footer-item'>ShareLink</a>
+                                <a class='card-footer-item'>Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                    </div>
+                    <div class='column is-3'>
+                        <div class='card'>
+                            <div class='card-image'>
+                                <figure class='image is-4by3'>
+                                    <img alt='' src='../src/main/resources/static/img/3.jpeg'>
+                                </figure>
+                            </div>
+                            <div class='card-content'>
+                                <div class='content'>
+                                    <span class='tag is-dark subtitle'>#3</span>
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this proeprty from saved listings
+                                        does not
+                                        auto remove the notes.</p>
+                                </div>
+                            </div>
+                            <footer class='card-footer'>
+                                <a class='card-footer-item'>Hire</a>
+                                <a class='card-footer-item'>ShareLink</a>
+                                <a class='card-footer-item'>Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                    </div>
+                    <div class='column is-3'>
+                        <div class='card'>
+                            <div class='card-image'>
+                                <figure class='image is-4by3'>
+                                    <img alt='' src='../src/main/resources/static/img/2.jpeg'>
+                                </figure>
+                            </div>
+                            <div class='card-content'>
+                                <div class='content'>
+                                    <span class='tag is-dark subtitle'>#4</span>
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this proeprty from saved listings
+                                        does not
+                                        auto remove the notes.</p>
+                                </div>
+                            </div>
+                            <footer class='card-footer'>
+                                <a class='card-footer-item'>Hire</a>
+                                <a class='card-footer-item'>ShareLink</a>
+                                <a class='card-footer-item'>Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class='columns is-mobile'>
+                    <div class='column is-3'>
+                        <div class='card'>
+                            <div class='card-image'>
+                                <figure class='image is-4by3'>
+                                    <img alt='' src='../src/main/resources/static/img/1.jpeg'>
+                                </figure>
+                            </div>
+                            <div class='card-content'>
+                                <div class='content'>
+                                    <span class='tag is-dark subtitle'>#5</span>
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this proeprty from saved listings
+                                        does not
+                                        auto remove the notes.</p>
+                                </div>
+                            </div>
+                            <footer class='card-footer'>
+                                <a class='card-footer-item'>Hire</a>
+                                <a class='card-footer-item'>ShareLink</a>
+                                <a class='card-footer-item'>Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                    </div>
+                    <div class='column is-3'>
+                        <div class='card'>
+                            <div class='card-image'>
+                                <figure class='image is-4by3'>
+                                    <img alt='' src='../src/main/resources/static/img/6.jpeg'>
+                                </figure>
+                            </div>
+                            <div class='card-content'>
+                                <div class='content'>
+                                    <span class='tag is-dark subtitle'>#6</span>
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this proeprty from saved listings
+                                        does not
+                                        auto remove the notes.</p>
+                                </div>
+                            </div>
+                            <footer class='card-footer'>
+                                <a class='card-footer-item'>Hire</a>
+                                <a class='card-footer-item'>ShareLink</a>
+                                <a class='card-footer-item'>Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                    </div>
+                    <div class='column is-3'>
+                        <div class='card'>
+                            <div class='card-image'>
+                                <figure class='image is-4by3'>
+                                    <img alt='' src='../src/main/resources/static/img/1.jpeg'>
+                                </figure>
+                            </div>
+                            <div class='card-content'>
+                                <div class='content'>
+                                    <span class='tag is-dark subtitle'>#7</span>
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this proeprty from saved listings
+                                        does not
+                                        auto remove the notes.</p>
+                                </div>
+                            </div>
+                            <footer class='card-footer'>
+                                <a class='card-footer-item'>Hire</a>
+                                <a class='card-footer-item'>ShareLink</a>
+                                <a class='card-footer-item'>Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                    </div>
+                    <div class='column is-3'>
+                        <div class='card'>
+                            <div class='card-image'>
+                                <figure class='image is-4by3'>
+                                    <img alt='' src=''>
+                                </figure>
+                            </div>
+                            <div class='card-content'>
+                                <div class='content'>
+                                    <span class='tag is-dark subtitle'>#8</span>
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this proeprty from saved listings
+                                        does not
+                                        auto remove the notes.</p>
+                                </div>
+                            </div>
+                            <footer class='card-footer'>
+                                <a class='card-footer-item'>Hire</a>
+                                <a class='card-footer-item'>ShareLink</a>
+                                <a class='card-footer-item'>Delete</a>
+                            </footer>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-<!--        <script>-->
-<!--            "use strict"-->
-<!--            const tbtn = document.querySelectorAll(".side-nav ul li");-->
-<!--            const tab = document.querySelectorAll(".tabs");-->
-<!--            document.on("click", ".tabs", (e) => {-->
-<!--                tab.forEach(function (node) {-->
-<!--                    node.style.display = "none";-->
-<!--                })-->
-<!--                console.log(e)-->
-<!--                // tab[panelIndex].style.display = "block";-->
-<!--            })-->
-<!--        </script>-->
-<!--        <script>-->
-<!--            $(".side-nav ul li").click(function () {-->
-<!--                $(this).addClass("active").siblings().removeClass("active")-->
-<!--            })-->
-<!--        </script>-->
         </body>
         </html>
     `;
-}
-
-export function ProfileEvent() {
-        $(function() {
-        $( "#tabs" ).tabs();
-    });
 }
 
 // fn1() {fn2(); fn3();}
