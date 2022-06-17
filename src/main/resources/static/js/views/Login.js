@@ -111,5 +111,4 @@ export default function Login(props) {
         </html>
     `;
 }
-
 createView( "/login");

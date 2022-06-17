@@ -32,7 +32,7 @@ export default function Profile(props) {
             <h1>Profile<span><i class="fa fa-times"></i> </span></h1>
             <div class="user-side">
                 <div class="user-pic">
-                    <img width="75" src="../../img/IMG_3801.jpg" alt=""><img>
+                    <img width="150" src="../../img/IMG_3801.jpg" alt=""><img>
                 </div>
                 <br>
                 <div class="user-info">
@@ -172,6 +172,12 @@ export default function Profile(props) {
         </body>
         </html>
     `;
+}
+
+export function ProfileEvent() {
+        $(function() {
+        $( "#tabs" ).tabs();
+    });
 }
 
 // fn1() {fn2(); fn3();}

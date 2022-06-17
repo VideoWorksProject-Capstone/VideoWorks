@@ -1,7 +1,5 @@
 export default function Home(props) {
     return `
-        <header>   
-        </header> 
         <style>
         /*media scroller*/
 .hero-slider{
@@ -426,7 +424,7 @@ flex: 1;
                     <button class="hero-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
                 </section>
                 <section class="hero-graphic">
-<!--                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">-->
+                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">
                 </section>
             </div>
             <section class="hero-slider">
