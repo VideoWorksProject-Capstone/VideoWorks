@@ -29,6 +29,7 @@ let floatingHeroImages = [pointingPerson, floatingWoman, leaningMan, divingWoman
 
 // random image generator (from floatingHeroImages array)
 let setFloatingHeroImage = () => {
+    // let randRandNum = Math.floor(Math.random() * 999);
     heroGraphicDiv.appendChild(floatingHeroImages[Math.floor(Math.random() * 4)])
 };
 
