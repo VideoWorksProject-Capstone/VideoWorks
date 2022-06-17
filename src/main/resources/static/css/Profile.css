@@ -1,3 +1,7 @@
+body {
+    background: #111111;
+}
+
 .stat-val {
     font-size: 3em;
     padding-top: 20px;
@@ -32,4 +36,3 @@
     padding: 20px;
     background-color: #F1F1F1;
 }
-

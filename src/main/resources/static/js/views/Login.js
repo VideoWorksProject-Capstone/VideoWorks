@@ -12,7 +12,6 @@ export default function Login(props) {
         <style type="text/css">
             body{
                 margin:0;
-                color:white;
                 background: #111111;
                 font:600 16px/18px 'Open Sans',sans-serif;
             }

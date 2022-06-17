@@ -87,7 +87,6 @@ export default function Navbar(props) {
 
 /*TODO: Logo*/
 .hero .mobile-logo-wrapper #mobile-logo > a{
-    color: var(--white);
     font-size: 2rem;
     font-weight: 200;
     cursor: pointer;
