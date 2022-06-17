@@ -33,7 +33,7 @@ html {
 }
 
 /*Set section heading font*/
-h1,h2,h3,h4,h5,h6,button,label,p, i{
+h1,h2,h3,h4,h5,h6,button,label,p, i, a{
     font-family: 'Poppins', sans-serif;
     color: var(--white);
 }
