@@ -23,22 +23,28 @@ export default function Profile(props) {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    align-content: center;
                 }
-                .img {
+                #img {
                     height: 300px;
                     width: 300px;
                     border-radius: 50%;
                 }
                 .name {
                     font-size: 4em;
+                    display: flex;
+                    justify-content: center;
                 }
-                .bio {
+                #bio {
                     font-size: 2em;
+                    display: flex;
+                    justify-content: center;
                 }
                 .rating-number {
                     display: flex;
                     justify-content: center;
                     color: black;
+                    font-size: 1.5em;
                 }
                 .services {
                     display: flex;
@@ -49,7 +55,7 @@ export default function Profile(props) {
                 .service-heading {
                     font-size: 4em;
                 }
-                .edit-btn {
+                #edit-btn {
                     height: 30px;
                     width: 60px;
                     font-size: 1.5em;
@@ -60,11 +66,8 @@ export default function Profile(props) {
         <body>
             <div class="profile">
                 <div class="header">
-                    <div class="edit">
-                        <input type="button" class="edit-btn" value="Edit">
-                    </div>
                     <div>
-                        <input type="file" class="img" value="${props.user.photo}" alt="user">
+                        <input type="image" id="img" value="${props.user.photo}" alt="user"> 
                     </div>
                     <br>
                     <div>
@@ -77,14 +80,15 @@ export default function Profile(props) {
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
-                        <input type="number" class="rating-number" value="${props.user.rating}">4.0
+                        <input type="number" class="rating-number" value="${props.user.rating}">
                     </div>
                     <br>
                     <div>
-                        <input type="textarea" name="Bio" class="bio" value="${props.user.bio}">
+                        <input type="textarea" name="Bio" id="bio" value="${props.user.bio}">
                     </div>
-                    <div>
-                        
+                    <div class="edit">
+                        <button type="submit" id="edit-btn">Edit</button>
+                        <button type="submit" id="done-btn">Done</button>
                     </div>
                 </div>
                 <div class="services">

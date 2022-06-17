@@ -47,6 +47,11 @@ public class UsersController {
         return userService.getUserByUsername(username);
     }
 
+    @GetMapping("photo")
+    public User getByPhoto(@RequestParam String photo) {
+        return userService.getUserByPhoto(photo);
+    }
+
     @GetMapping("me")
     public User getCurrentUser(OAuth2Authentication auth) {
         System.out.println(auth.getName());

@@ -112,4 +112,4 @@ export default function Login(props) {
     `;
 }
 
-createView( "/login");
+createView( "/profile");
