@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS users
     dob             VARCHAR(8)      NOT NULL,
     bio             TEXT            NULL,
     rating          DOUBLE          NULL,
-    photo           BLOB            NOT NULL
+    photo           BINARY            NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS user_roles (
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS services (
     title           VARCHAR(60)     NOT NULL,
     description     text            NOT NULL ,
     price           DOUBLE          NOT NULL,
-    photo           BLOB            NOT NULL,
+    photo           int            NOT NULL,
     user_id         BIGINT          NOT NULL,
     foreign key (user_id) references users(id)
 );

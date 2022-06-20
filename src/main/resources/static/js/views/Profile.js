@@ -98,7 +98,7 @@ export default function Profile(props) {
                                 </a>
                                 <br>
                             </p>
-                            <input type="textarea" name="Bio" id="bio" value="${props.user.bio}">
+                        <input type="text" name="Bio" id="bio" value="${props.user.bio}">
                         </div>
                         <div class='column is-2-tablet is-4-mobile has-text-centered'>
                             <p class='stat-val'>30</p>
@@ -185,15 +185,7 @@ export default function Profile(props) {
                             <div class='card-content'>
                                 <div class='content'>
                                     <span class='tag is-dark subtitle'>#1</span>
-                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
-                                        in and
-                                        clicking out of text area) - these are unique to the user - they will show up as
-                                        part of
-                                        a saved listings' info here - but adding notes to a property does not
-                                        automatically
-                                        create a saved listing. Likewise, removing this proeprty from saved listings
-                                        does not
-                                        auto remove the notes.</p>
+                                    <input type="text" id="text" value="${props.user.description}" alt="user">
                                 </div>
                             </div>
                             <footer class='card-footer'>
@@ -390,7 +382,7 @@ export default function Profile(props) {
                             <div class='card-content'>
                                 <div class='services'>
                                     <span class='tag is-dark subtitle'>#8</span>
-                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                    <p contentEditable="true">Personal Notes on the Property (can be edited and saved automatically by clicking
                                         in and
                                         clicking out of text area) - these are unique to the user - they will show up as
                                         part of
@@ -412,12 +404,10 @@ export default function Profile(props) {
                 </div>
             </div>
         </div>
-        <script src="/js/userProfile.js"></script>
         </body>
         </html>
     `;
 }
-
 // fn1() {fn2(); fn3();}
 
 // fn2(){}

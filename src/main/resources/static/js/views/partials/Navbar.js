@@ -87,6 +87,7 @@ export default function Navbar(props) {
 
 /*TODO: Logo*/
 .hero .mobile-logo-wrapper #mobile-logo > a{
+    color: var(--white);
     font-size: 2rem;
     font-weight: 200;
     cursor: pointer;
@@ -250,9 +251,9 @@ export default function Navbar(props) {
         width: 100%;
         max-width: 1000px;
     }
-#large-logo{
-    cursor: pointer;
-}
+    #large-logo{
+        cursor: pointer;
+    }
     /*logo*/
     .large-logo-wrapper span {
         color: var(--text-accent);
@@ -279,23 +280,11 @@ export default function Navbar(props) {
         letter-spacing: 0.07rem;
         cursor: pointer;
     }
+
+
 }
+/*nav end*/
 </style>
-    <script>
-    
-let hamburgerImg = document.querySelector(".ham1");
-let mobileMenu = document.querySelector(".mobile-menu");
-let headerContainer = document.querySelector(".mobile-header-container");
-
-let slideInMobileMenu = () => {
-    mobileMenu.classList.toggle("open");
-    hamburgerImg.classList.toggle("active");
-    headerContainer.classList.toggle("purp-container-background");
-}
-
-
-hamburgerImg.addEventListener("click",slideInMobileMenu);
-</script>
     `;
 }
 
