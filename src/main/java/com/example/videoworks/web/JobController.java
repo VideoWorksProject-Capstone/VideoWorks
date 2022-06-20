@@ -1,9 +1,11 @@
 package com.example.videoworks.web;
 
 import com.example.videoworks.data.Job;
+import com.example.videoworks.data.User;
 import com.example.videoworks.dto.CreateJobDto;
 import com.example.videoworks.service.JobService;
 import com.example.videoworks.service.UserService;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
