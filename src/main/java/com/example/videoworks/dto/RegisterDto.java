@@ -6,14 +6,14 @@ public class RegisterDto {
     private String username;
     private String email;
     private String password;
-    private String dob;
+    private String bio;
 
-    public RegisterDto(String name, String username, String email, String password, String dob) {
+    public RegisterDto(String name, String username, String email, String password, String bio) {
         this.name = name;
         this.username = username;
         this.email = email;
         this.password = password;
-        this.dob = dob;
+        this.bio = bio;
     }
 
     public RegisterDto() {
@@ -52,11 +52,11 @@ public class RegisterDto {
         this.password = password;
     }
 
-    public String getDob() {
-        return dob;
+    public String getBio() {
+        return bio;
     }
 
-    public void setDob(String dob) {
-        this.dob = dob;
+    public void setBio(String bio) {
+        this.bio = bio;
     }
 }

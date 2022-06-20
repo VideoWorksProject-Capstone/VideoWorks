@@ -20,25 +20,25 @@ public class User {
     private String username;
     private String email;
     private String password;
-    private String dob;
     private String bio;
     private String photo = "./img/default-user.png";
-    private Double rating;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-    public User(Long id, String name, String username, String email, String password, String dob, String bio, String photo, Double rating, Collection<Role> roles) {
+    @OneToMany(mappedBy = "user")
+    @JsonIgnoreProperties("user")
+    private List<Booking> bookings = new ArrayList<>();
+
+    public User(Long id, String name, String username, String email, String password, String dob, String bio, String photo, Collection<Role> roles) {
         this.id = id;
         this.name = name;
         this.username = username;
         this.email = email;
         this.password = password;
-        this.dob = dob;
         this.bio = bio;
         this.photo = photo;
-        this.rating = rating;
         this.roles = roles;
     }
 
@@ -86,14 +86,6 @@ public class User {
         this.password = password;
     }
 
-    public String getDob() {
-        return dob;
-    }
-
-    public void setDob(String dob) {
-        this.dob = dob;
-    }
-
     public String getBio() {
         return bio;
     }
@@ -110,20 +102,20 @@ public class User {
         this.photo = photo;
     }
 
-    public Double getRating() {
-        return rating;
-    }
-
-    public void setRating(Double rating) {
-        this.rating = rating;
-    }
-
     public Collection<Role> getRoles() {
         return roles;
     }
 
     public void setRoles(Collection<Role> roles) {
         this.roles = roles;
+    }
+
+    public List<Booking> getBookings() {
+        return bookings;
+    }
+
+    public void setBookings(List<Booking> bookings) {
+        this.bookings = bookings;
     }
 
     @Override
@@ -134,10 +126,8 @@ public class User {
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", dob='" + dob + '\'' +
                 ", bio='" + bio + '\'' +
                 ", photo='" + photo + '\'' +
-                ", rating='" + rating + '\'' +
                 ", roles=" + roles +
                 '}';
     }

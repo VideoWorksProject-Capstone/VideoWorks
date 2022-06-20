@@ -38,10 +38,6 @@ public class UserService {
         return usersRepository.findByBio(bio);
     }
 
-    public User getUserByRating(Double rating) {
-        return usersRepository.findByRating(rating);
-    }
-
     public User getUserByPhoto(String photo) {
         return usersRepository.findByPhoto(photo);
     }
@@ -54,7 +50,6 @@ public class UserService {
         User userToUpdate = getUserById(userId);
         userToUpdate.setBio(updatedUser.getBio());
         userToUpdate.setPhoto(updatedUser.getPhoto());
-        userToUpdate.setRating(updatedUser.getRating());
         usersRepository.save(userToUpdate);
     }
 }

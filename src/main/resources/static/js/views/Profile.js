@@ -85,7 +85,7 @@ export default function Profile(props) {
                     <div class='columns is-mobile is-multiline'>
                         <div class='column is-2'>
           <span class='header-icon user-profile-image'>
-             <input type="image" id="img" value="${props.user.photo}" alt="user">
+             <input type="image" id="img" src="${props.user.photo}" alt="user">
           </span>
                         </div>
                         <div class='column is-4-tablet is-10-mobile name'>
@@ -98,7 +98,7 @@ export default function Profile(props) {
                                 </a>
                                 <br>
                             </p>
-                        <input type="text" name="Bio" id="bio" value="${props.user.bio}">
+                            <p type="text" id="bio" value="${props.user.bio}"></p>
                         </div>
                         <div class='column is-2-tablet is-4-mobile has-text-centered'>
                             <p class='stat-val'>30</p>

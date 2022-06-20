@@ -132,8 +132,8 @@ export default function Register() {
                             <input id="password" name="password" class="input" type="password" data-type="password"/>
                         </div>
                         <div class="group">
-                            <label for="dob" class="label">Date of Birth</label>
-                            <input id="dob" name="dob" class="input" type="input" data-type="number"/>
+                            <label for="bio" class="label">Tell us about yourself</label>
+                            <textarea id="bio" name="bio" class="input"></textarea>
                         </div>
                         <div class="group">
                             <input class="button" type="button" value="Register"/>
@@ -154,7 +154,7 @@ export function RegisterEvent() {
             username: $('#username').val(),
             email: $('#email').val(),
             password: $('#password').val(),
-            dob: $('#dob').val()
+            bio: $('#bio').val()
         }
 
         const options = {
