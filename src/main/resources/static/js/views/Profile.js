@@ -85,7 +85,7 @@ export default function Profile(props) {
                     <div class='columns is-mobile is-multiline'>
                         <div class='column is-2'>
           <span class='header-icon user-profile-image'>
-             <input type="image" id="img" value="${props.user.photo}" alt="user">
+             <input type="image" id="img" src="${props.user.photo}" alt="user">
           </span>
                         </div>
                         <div class='column is-4-tablet is-10-mobile name'>
@@ -179,13 +179,21 @@ export default function Profile(props) {
                         <div class='card'>
                             <div class='card-image'>
                                 <figure class='image is-4by3'>
-                                    <img alt='' src='../src/main/resources/static/img/5.jpeg'>
+                                    <img alt='' src='../../img/1.jpeg'>
                                 </figure>
                             </div>
                             <div class='card-content'>
                                 <div class='content'>
                                     <span class='tag is-dark subtitle'>#1</span>
-                                    <input type="text" id="text" value="${props.user.description}" alt="user">
+                                    <p>Personal Notes on the Property (can be edited and saved automatically by clicking
+                                        in and
+                                        clicking out of text area) - these are unique to the user - they will show up as
+                                        part of
+                                        a saved listings' info here - but adding notes to a property does not
+                                        automatically
+                                        create a saved listing. Likewise, removing this property from saved listings
+                                        does not
+                                        auto remove the notes.</p>
                                 </div>
                             </div>
                             <footer class='card-footer'>
@@ -200,7 +208,7 @@ export default function Profile(props) {
                         <div class='card'>
                             <div class='card-image'>
                                 <figure class='image is-4by3'>
-                                    <img alt='' src='../src/main/resources/static/img/4.jpeg'>
+                                    <img alt='' src='../../img/2.jpeg'>
                                 </figure>
                             </div>
                             <div class='card-content'>
@@ -229,7 +237,7 @@ export default function Profile(props) {
                         <div class='card'>
                             <div class='card-image'>
                                 <figure class='image is-4by3'>
-                                    <img alt='' src='../src/main/resources/static/img/3.jpeg'>
+                                    <img alt='' src='../../img/3.jpeg'>
                                 </figure>
                             </div>
                             <div class='card-content'>
@@ -258,7 +266,7 @@ export default function Profile(props) {
                         <div class='card'>
                             <div class='card-image'>
                                 <figure class='image is-4by3'>
-                                    <img alt='' src='../src/main/resources/static/img/2.jpeg'>
+                                    <img alt='' src='../../img/4.jpeg'>
                                 </figure>
                             </div>
                             <div class='card-content'>
@@ -289,7 +297,7 @@ export default function Profile(props) {
                         <div class='card'>
                             <div class='card-image'>
                                 <figure class='image is-4by3'>
-                                    <img alt='' src='../src/main/resources/static/img/1.jpeg'>
+                                    <img alt='' src='../../img/5.jpeg'>
                                 </figure>
                             </div>
                             <div class='card-content'>
@@ -318,7 +326,7 @@ export default function Profile(props) {
                         <div class='card'>
                             <div class='card-image'>
                                 <figure class='image is-4by3'>
-                                    <img alt='' src='../src/main/resources/static/img/6.jpeg'>
+                                    <img alt='' src='../../img/6.jpeg'>
                                 </figure>
                             </div>
                             <div class='card-content'>
@@ -347,7 +355,7 @@ export default function Profile(props) {
                         <div class='card'>
                             <div class='card-image'>
                                 <figure class='image is-4by3'>
-                                    <img alt='' src='../src/main/resources/static/img/1.jpeg'>
+                                    <img alt='' src='../../img/1.jpeg'>
                                 </figure>
                             </div>
                             <div class='card-content'>
@@ -376,7 +384,7 @@ export default function Profile(props) {
                         <div class='card'>
                             <div class='card-image'>
                                 <figure class='image is-4by3'>
-                                    <img alt='' src=''>
+                                    <img alt='' src='../../img/3.jpeg'>
                                 </figure>
                             </div>
                             <div class='card-content'>
