@@ -78,7 +78,7 @@ export default function Navbar(props){
 }
 
 /*TODO: Logo*/
-.hero .mobile-logo-wrapper #mobile-logo > a{
+.hero-area .mobile-logo-wrapper #mobile-logo > a{
     font-size: 2rem;
     font-weight: 200;
     cursor: pointer;
@@ -257,7 +257,7 @@ export default function Navbar(props){
         justify-content: center;
     }
 
-    .hero .large-header-container #large-logo {
+    .hero-area .large-header-container #large-logo {
         color: var(--white);
         font-size: 2.5rem;
         font-weight: 500;

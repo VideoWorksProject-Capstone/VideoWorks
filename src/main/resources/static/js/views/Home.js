@@ -2,23 +2,23 @@ export default function Home(props) {
     return `
         <body>
         <!--Mobile First-->
-<div class="hero">
+<div class="hero-area">
 <!--    Removed navbar-->
-        <main id="hero-section">
-        <div class="hero-section-wrapper">
-            <div class="hero-section-wrapper__main">
-                <section class="hero-lede">
+        <main id="hero-area-section">
+        <div class="hero-area-section-wrapper">
+            <div class="hero-area-section-wrapper__main">
+                <section class="hero-area-lede">
                     <h2>Talented Virtual Creators.<br>At Your Service.</h2>
                     <p>Connect with hand-picked talent, that is vetted and expertly matched to fit your needs.
                     </p>
-                    <button class="hero-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="hero-area-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
                 </section>
-                <section class="hero-graphic">
+                <section class="hero-area-graphic">
                     <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">
                 </section>
             </div>
-            <section class="hero-slider">
-                <h2 id="hero-slider-title" class="hero-slider-title section-titles">Seller Spotlight</h2>
+            <section class="hero-area-slider">
+                <h2 id="hero-area-slider-title" class="hero-area-slider-title section-titles">Seller Spotlight</h2>
                 <div class="media-scroller scroller-controls">
                     <div class="media-element">
                         <div class="avatar-hover-box">
@@ -286,7 +286,7 @@ export default function Home(props) {
         </div>
     </main>
 </div>
-<!--End of hero section-->
+<!--End of hero-area section-->
 <!--Start of Wheel-->
 <!--*****-->
 <!--START CATEGORY SECTION-->
@@ -298,7 +298,7 @@ export default function Home(props) {
     <!--loosely following BEM-->
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/Nerd%20Woman.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/7.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/Nerd%20Woman.png" alt="face avatar" class="category-cards__person-popup">
@@ -312,7 +312,7 @@ export default function Home(props) {
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/Artist.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/4.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/West%20Woman.png" alt="face avatar" class="category-cards__person-popup">
@@ -326,7 +326,7 @@ export default function Home(props) {
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/Doctor.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/3.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/Black%20Man.png" alt="face avatar" class="category-cards__person-popup">
@@ -340,7 +340,7 @@ export default function Home(props) {
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/Artist.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/5.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
@@ -354,7 +354,7 @@ export default function Home(props) {
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/Asian%20Man.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/2.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/West%20Woman.png" alt="face avatar" class="category-cards__person-popup">
@@ -368,7 +368,7 @@ export default function Home(props) {
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/Artist.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/6.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/Doctor.png" alt="face avatar" class="category-cards__person-popup">
@@ -382,7 +382,7 @@ export default function Home(props) {
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/Black%20Man.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/3.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/Doctor.png" alt="face avatar" class="category-cards__person-popup">
@@ -396,7 +396,7 @@ export default function Home(props) {
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/Baby.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/3.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
@@ -410,7 +410,7 @@ export default function Home(props) {
     </div>
     <div class="category-cards">
         <div class="category-image-container">
-            <img src="../../img/avatars/West%20Woman.png" alt="DJ BOOTH" class="category-cards__img">
+            <img src="/img/3.jpeg" alt="DJ BOOTH" class="category-cards__img">
         </div>
         <div class="category-cards__shape"></div>
         <img src="../../img/avatars/Western%20Man.png" alt="face avatar" class="category-cards__person-popup">

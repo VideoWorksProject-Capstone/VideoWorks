@@ -1,6 +1,7 @@
 /*media scroller*/
-.hero-slider{
+.hero-area-slider{
     position: relative;
+    overflow: hidden;
 }
 .media-scroller{
     display: grid;

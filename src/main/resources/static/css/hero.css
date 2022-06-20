@@ -1,12 +1,12 @@
-/*TODO: HERO SECTION*/
-.hero {
+/*TODO: hero-area SECTION*/
+.hero-area {
     background-color: #111;
     width: 100%;
     padding-bottom: 100px;
     overflow: hidden;
 }
 
-#hero-section {
+#hero-area-section {
     /*height: calc(90vh - 60px);*/
     width: calc(100% - 60px);
     max-width: 1400px;
@@ -16,26 +16,26 @@
     /*overflow: hidden;*/
 }
 
-.hero-section-wrapper__main {
+.hero-area-section-wrapper__main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5rem;
 }
 
-.hero-lede {
+.hero-area-lede {
     margin-bottom: 3rem;
     width: max-content;
 }
 
-.hero-lede h2 {
+.hero-area-lede h2 {
     font-size: clamp(3rem, 2.375rem + 3.5714vw, 5.5rem);
     font-weight: 500;
     letter-spacing: 0.08rem;
     margin-bottom: 2.5rem;
 }
 
-.hero-lede p {
+.hero-area-lede p {
     font-weight: 300;
     margin-bottom: 4.6rem;
     letter-spacing: 0.08rem;
@@ -44,7 +44,7 @@
     font-size: clamp(1.6rem, 1.55rem + 0.2857vw, 1.8rem);
 }
 
-.hero-lede p:before {
+.hero-area-lede p:before {
     content: "";
     position: absolute;
     width: 45px;
@@ -54,7 +54,7 @@
     background-color: var(--white);
 }
 
-.hero-lede-btn {
+.hero-area-lede-btn {
     /*width: 120px;*/
     /*height: 30px;*/
     /*padding: 12px 30px;*/
@@ -70,12 +70,12 @@
     transition: color 450ms ease, padding-right 450ms ease;
 }
 
-.hero-lede-btn:hover {
+.hero-area-lede-btn:hover {
     background-color: var(--orange);
     padding-right: calc(30px + 18px);
 }
 
-.hero-lede-btn:active {
+.hero-area-lede-btn:active {
     transform: scale(0.9);
 }
 
@@ -86,26 +86,26 @@
     z-index: 3;
 }
 
-.hero-lede .hero-lede-btn:hover > .fa-arrow-right {
+.hero-area-lede .hero-area-lede-btn:hover > .fa-arrow-right {
     transform: translateX(16px);
 }
 
-/*hero graphic*/
-.hero-graphic {
+/*hero-area graphic*/
+.hero-area-graphic {
     display: none;
 }
 
 
 @media screen and (min-width: 768px) {
-    #hero-section {
+    #hero-area-section {
         padding: 0 50px;
     }
 
-    .hero-lede p {
+    .hero-area-lede p {
         width: fit-content;
     }
 
-    .hero-graphic {
+    .hero-area-graphic {
         /*border: lime 1px solid;*/
         display: flex;
         align-items: center;
