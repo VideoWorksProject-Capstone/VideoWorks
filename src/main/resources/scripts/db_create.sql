@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS users
     dob             VARCHAR(8)      NOT NULL,
     bio             TEXT            NULL,
     rating          DOUBLE          NULL,
-    photo           BINARY            NOT NULL
+    photo           BLOB            NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS user_roles (
