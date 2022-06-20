@@ -28,7 +28,6 @@ export default function Navbar(props){
         <li><a href="/profile" data-link>Profile</a></li>
         <li><a href="/register" data-link>Register</a></li>
         <li><a href="/login" data-link>Login</a></li>
-        <li><a href="/support" data-link>Support</a></li>
         </ul>
     </div>
 
@@ -42,7 +41,6 @@ export default function Navbar(props){
                 </li>
         <li><a href="/register" data-link>Register</a></li>
         <li><a href="/login" data-link>Login</a></li>
-        <li><a href="/support" data-link>Support</a></li>
             </ul>
         </nav>
     </header>

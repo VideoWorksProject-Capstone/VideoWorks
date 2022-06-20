@@ -12,6 +12,7 @@ export default function Home(props) {
                     <p>Connect with hand-picked talent, that is vetted and expertly matched to fit your needs.
                     </p>
                     <button class="hero-area-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+                    <input type="search" name="search-services" id="">
                 </section>
                 <section class="hero-area-graphic">
                     <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">
