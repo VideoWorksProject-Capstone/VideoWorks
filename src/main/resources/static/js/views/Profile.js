@@ -20,7 +20,7 @@ export default function Profile(props) {
                             </p>
                             <label class='label'>Username</label>
                             <p class='control has-icon has-icon-right'>
-                                <input class='input' placeholder='Text input' type='text' value='pmillerk'>
+                                <input class='input' placeholder='Text input' type='text' value='name'>
                             </p>
                             <label class='label'>Email</label>
                             <p class='control has-icon has-icon-right'>
@@ -85,12 +85,12 @@ export default function Profile(props) {
                     <div class='columns is-mobile is-multiline'>
                         <div class='column is-2'>
           <span class='header-icon user-profile-image'>
-            <img alt='' src='../src/main/resources/static/img/IMG_3801.jpg'>
+             <input type="image" id="img" value="${props.user.photo}" alt="user">
           </span>
                         </div>
                         <div class='column is-4-tablet is-10-mobile name'>
                             <p>
-                                <span class='title is-bold'>Anthony Hernandez</span>
+                                <input type="text" class="name" value="${props.user.name}">
                                 <br>
                                 <a class='button is-primary is-outlined' href='#' id='edit-preferences'
                                    style='margin: 5px 0'>
@@ -98,11 +98,7 @@ export default function Profile(props) {
                                 </a>
                                 <br>
                             </p>
-                            <p class='tagline'>
-                                Hello, My Name is Anthony Hernandez I am a virtual dj who would love to provide my
-                                services for
-                                your events please look at my list of services and let me know if you need anything.
-                            </p>
+                            <input type="textarea" name="Bio" id="bio" value="${props.user.bio}">
                         </div>
                         <div class='column is-2-tablet is-4-mobile has-text-centered'>
                             <p class='stat-val'>30</p>
@@ -392,7 +388,7 @@ export default function Profile(props) {
                                 </figure>
                             </div>
                             <div class='card-content'>
-                                <div class='content'>
+                                <div class='services'>
                                     <span class='tag is-dark subtitle'>#8</span>
                                     <p>Personal Notes on the Property (can be edited and saved automatically by clicking
                                         in and
@@ -416,6 +412,7 @@ export default function Profile(props) {
                 </div>
             </div>
         </div>
+        <script src="/js/userProfile.js"></script>
         </body>
         </html>
     `;

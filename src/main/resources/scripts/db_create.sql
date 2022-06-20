@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS user_roles (
 CREATE TABLE IF NOT EXISTS services (
     id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title           VARCHAR(60)     NOT NULL,
-    description     TEXT            NOT NULL,
+    description     text            NOT NULL ,
     price           DOUBLE          NOT NULL,
     photo           BLOB            NOT NULL,
     user_id         BIGINT          NOT NULL,
