@@ -92,24 +92,78 @@ export default function Profile(props) {
             </style>
         </head>
         <body>
-            <div class="profile">
-                <div class="header">
-                <p id="userId">${props.user.id}</p>
-                    <div>
-                        <input type="image" id="img" src="${props.user.photo}" alt="user" readonly> 
-                    </div>
-                    <br>
-                    <div>
-                        <h2 class="name">${props.user.name}</h2>
-                    </div>
-                    <br>
-                    <div>
-                        <p id="bio">${props.user.bio}</p>
-                    </div>
-                    <br>
-                </div>
-                <text class="service-heading">Services</text>
-                <div class="services">
+          <div id="hero-area-section">
+            <div class="hero-area-section-wrapper">
+                <div class="profile-container">
+                    <div class="profile-details-wrapper">
+                        <div class="profile-details">
+                            <div class="profile-pic-div">
+                                <input type="image" id="img" src="${props.user.photo}" alt="user" readonly> 
+                                <input type="file" name="img-file" id="img-file">
+                                <label for="img-file" id="upload-btn">Choose photo</label>
+                            </div>
+                            <div class="user-edit">
+                                <p id="userId">${props.user.id}</p>
+                                <button class="profile-edit-btn">Edit</button>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="seller-profile-description-wrapper">
+<!--                            <i class="fa-solid fa-pencil"></i>-->
+                          <p id="bio">${props.user.bio}</p>
+                        </div>
+                        
+                        
+<!--Start Modal-->
+                    <dialog class="edit-profile-modal">
+                        
+                    </dialog>
+<!--End Modal-->
+                    <nav class="profile-navigation">
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </nav>
+                    <main class="services-profile">
+                        <div class="services-profile__services-container">
+                            <h3 class="section-titles">Latest services:</h3>
+                            <div class="services-profile-card__flex-wrapper">
+                                <div class="services-profile__cards">
+                                    <img src="../../img/3.jpeg" alt="test alt"/>
+                                    <div class="services-profile-card__username">Tomcat77</div>
+                                    <div class="services-profile__cards-bottom">
+                                        <a href="#" class="services-card-hyperlinks"
+                                        ><p class="services-profile-card__description">
+                                            I will teach you how to make your bed
+                                        </p></a
+                                        >
+                                        <div class="services-profile-card__description-wrapper">
+                                            <div class="services-profile-card__ratings">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="services-profile-card__ratings-percent">
+                                                    4.7
+                                                </p>
+                                                <p class="services-profile-card__ratings-jobs">(167)</p>
+                                            </div>
+                                            <p class="services-profile-card-price">
+                                                starting at
+                                                <a href="#" class="services-card-hyperlinks"
+                                                ><span class="services-profile-card-price-span"
+                                                >$37</span
+                                                ></a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services-profile__cards">
+                                    <img src="../../img/3.jpeg" alt="test alt"/>
+                                    <div class="services-profile-card__username">Tomcat77</div>
+                                    <div class="services-profile__cards-bottom">
+                                        <a href="#" class="services-card-hyperlinks"
+                                                       <div class="services">
                     <div id="create-job">             
                         <input type="text" id="job-title" placeholder="Title">
                         <br>
@@ -122,8 +176,210 @@ export default function Profile(props) {
                         <input type="button" id="submit-btn" value="Create Service +"/>
                     </div>
                                    ${props.user.jobs.map(job => getJobCard(job)).join('')}
+                                        <div class="services-profile-card__description-wrapper">
+                                            <div class="services-profile-card__ratings">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="services-profile-card__ratings-percent">
+                                                    4.7
+                                                </p>
+                                                <p class="services-profile-card__ratings-jobs">(167)</p>
+                                            </div>
+                                            <p class="services-profile-card-price">
+                                                starting at
+                                                <a href="#" class="services-card-hyperlinks"
+                                                ><span class="services-profile-card-price-span"
+                                                >$37</span
+                                                ></a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services-profile__cards">
+                                    <img src="../../img/3.jpeg" alt="test alt"/>
+                                    <div class="services-profile-card__username">Tomcat77</div>
+                                    <div class="services-profile__cards-bottom">
+                                        <a href="#" class="services-card-hyperlinks"
+                                        ><p class="services-profile-card__description">
+                                            I will teach you how to make your bed
+                                        </p></a
+                                        >
+                                        <div class="services-profile-card__description-wrapper">
+                                            <div class="services-profile-card__ratings">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="services-profile-card__ratings-percent">
+                                                    4.7
+                                                </p>
+                                                <p class="services-profile-card__ratings-jobs">(167)</p>
+                                            </div>
+                                            <p class="services-profile-card-price">
+                                                starting at
+                                                <a href="#" class="services-card-hyperlinks"
+                                                ><span class="services-profile-card-price-span"
+                                                >$37</span
+                                                ></a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services-profile__cards">
+                                    <img src="../../img/3.jpeg" alt="test alt"/>
+                                    <div class="services-profile-card__username">Tomcat77</div>
+                                    <div class="services-profile__cards-bottom">
+                                        <a href="#" class="services-card-hyperlinks"
+                                        ><p class="services-profile-card__description">
+                                            I will teach you how to make your bed
+                                        </p></a
+                                        >
+                                        <div class="services-profile-card__description-wrapper">
+                                            <div class="services-profile-card__ratings">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="services-profile-card__ratings-percent">
+                                                    4.7
+                                                </p>
+                                                <p class="services-profile-card__ratings-jobs">(167)</p>
+                                            </div>
+                                            <p class="services-profile-card-price">
+                                                starting at
+                                                <a href="#" class="services-card-hyperlinks"
+                                                ><span class="services-profile-card-price-span"
+                                                >$37</span
+                                                ></a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services-profile__cards">
+                                    <img src="../../img/3.jpeg" alt="test alt"/>
+                                    <div class="services-profile-card__username">Tomcat77</div>
+                                    <div class="services-profile__cards-bottom">
+                                        <a href="#" class="services-card-hyperlinks"
+                                        ><p class="services-profile-card__description">
+                                            I will teach you how to make your bed
+                                        </p></a
+                                        >
+                                        <div class="services-profile-card__description-wrapper">
+                                            <div class="services-profile-card__ratings">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="services-profile-card__ratings-percent">
+                                                    4.7
+                                                </p>
+                                                <p class="services-profile-card__ratings-jobs">(167)</p>
+                                            </div>
+                                            <p class="services-profile-card-price">
+                                                starting at
+                                                <a href="#" class="services-card-hyperlinks"
+                                                ><span class="services-profile-card-price-span"
+                                                >$37</span
+                                                ></a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services-profile__cards">
+                                    <img src="../../img/3.jpeg" alt="test alt"/>
+                                    <div class="services-profile-card__username">Tomcat77</div>
+                                    <div class="services-profile__cards-bottom">
+                                        <a href="#" class="services-card-hyperlinks"
+                                        ><p class="services-profile-card__description">
+                                            I will teach you how to make your bed
+                                        </p></a
+                                        >
+                                        <div class="services-profile-card__description-wrapper">
+                                            <div class="services-profile-card__ratings">
+                                                <i class="fa-solid fa-star"></i>
+                                                <p class="services-profile-card__ratings-percent">
+                                                    4.7
+                                                </p>
+                                                <p class="services-profile-card__ratings-jobs">(167)</p>
+                                            </div>
+                                            <p class="services-profile-card-price">
+                                                starting at
+                                                <a href="#" class="services-card-hyperlinks"
+                                                ><span class="services-profile-card-price-span"
+                                                >$37</span
+                                                ></a
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="section-titles">Reviews:</h3>
+                        <div class="services-profile__reviews-container">
+                            <div class="new-review_customer-wrapper">
+                                <div class="customer-username-wrapper">
+                                    <p class="customer-username">coolGuy30</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <sup class="reviews__customer-rating">4.7</sup>
+                                    customers-rating
+                                </div>
+                                <p class="new-review_customer-review">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Doloribus temporibus non magnam excepturi molestias eaque
+                                    cumque sequi molestiae ab praesentium. Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. Doloribus temporibus non
+                                    magnam excepturi molestias eaque cumque sequi molestiae ab
+                                    praesentium.
+                                </p>
+                            </div>
+                            <div class="new-review_customer-wrapper">
+                                <div class="customer-username-wrapper">
+                                    <p class="customer-username">coolGuy30</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <sup class="reviews__customer-rating">4.7</sup>
+                                    customers-rating
+                                </div>
+                                <p class="new-review_customer-review">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Doloribus temporibus non magnam excepturi molestias eaque
+                                    cumque sequi molestiae ab praesentium. Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. Doloribus temporibus non
+                                    magnam excepturi molestias eaque cumque sequi molestiae ab
+                                    praesentium.
+                                </p>
+                            </div>
+                            <div class="new-review_customer-wrapper">
+                                <div class="customer-username-wrapper">
+                                    <p class="customer-username">coolGuy30</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <sup class="reviews__customer-rating">4.7</sup>
+                                    customers-rating
+                                </div>
+                                <p class="new-review_customer-review">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Doloribus temporibus non magnam excepturi molestias eaque
+                                    cumque sequi molestiae ab praesentium. Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. Doloribus temporibus non
+                                    magnam excepturi molestias eaque cumque sequi molestiae ab
+                                    praesentium.
+                                </p>
+                            </div>
+                            <div class="new-review_customer-wrapper">
+                                <div class="customer-username-wrapper">
+                                    <p class="customer-username">coolGuy30</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <sup class="reviews__customer-rating">4.7</sup>
+                                    customers-rating
+                                </div>
+                                <p class="new-review_customer-review">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Doloribus temporibus non magnam excepturi molestias eaque
+                                    cumque sequi molestiae ab praesentium. Lorem ipsum dolor sit,
+                                    amet consectetur adipisicing elit. Doloribus temporibus non
+                                    magnam excepturi molestias eaque cumque sequi molestiae ab
+                                    praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </main>
                 </div>
             </div>
+        </div>
         </body>
         </html>
     `;
