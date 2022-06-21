@@ -18,22 +18,19 @@ public class Job {
     private String title;
     private String description;
     private Double price;
-
-    @ManyToOne
-    @JsonIgnoreProperties("services")
-    private Category category;
+    private String photo  = "../static/img/dj.png";
 
     @ManyToOne
     @JsonIgnoreProperties({"services", "password"})
     private User user;
 
-    public Job(Long id, String title, String description, Double price, User user, Category category) {
+    public Job(Long id, String title, String description, Double price, String photo, User user) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.price = price;
+        this.photo = photo;
         this.user = user;
-        this.category = category;
     }
 
     public Job() {
@@ -72,6 +69,14 @@ public class Job {
         this.price = price;
     }
 
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
     public User getUser() {
         return user;
     }
@@ -80,11 +85,14 @@ public class Job {
         this.user = user;
     }
 
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
+    @Override
+    public String toString() {
+        return "Job{" +
+                "id=" + id +
+                ", title=" + title +
+                ", description=" + description +
+                ", price=" + price +
+                ", photo=" + photo +
+                '}';
     }
 }
