@@ -27,6 +27,10 @@ function changeAvatarColors(avatarBox, mediaElementBorder){
     }
 }
 
+$("p").click(function(){
+    alert("The paragraph was clicked.");
+});
+
 
 
 //---------------------------------------------------------

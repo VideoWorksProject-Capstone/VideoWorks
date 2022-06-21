@@ -48,9 +48,10 @@
 
 .media-element:hover .user-avatar-box{
     border-radius: 25px;
-     width: 205px;
-    height: 205px;
+    /* width: 205px;*/
+    /*height: 205px;*/
     opacity: 1;
+    overflow: hidden;
 }
 
 .media-scroller .media-element > img{
@@ -88,6 +89,7 @@
 .media-element__creator-description{
     padding: 0 25px;
     margin-bottom: 2rem;
+    color: var(--main-black);
 }
 
 /*RATINGS*/
