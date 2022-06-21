@@ -5,6 +5,8 @@ CREATE DATABASE if not exists videoworks;
 USE videoworks;
 
 DROP TABLE IF EXISTS user_roles;
+DROP TABLE IF EXISTS bookings;
+DROP TABLE IF EXISTS categories;
 DROP TABLE IF EXISTS services;
 DROP TABLE IF EXISTS roles;
 DROP TABLE IF EXISTS users;
@@ -40,5 +42,22 @@ CREATE TABLE IF NOT EXISTS services (
     price           DOUBLE          NOT NULL,
     photo           BLOB            NOT NULL,
     user_id         BIGINT          NOT NULL,
-    foreign key (user_id) references users(id)
+    category_id     BIGINT          NOT NULL,
+    foreign key (user_id) references users(id),
+    foreign key (category_id) references categories(id)
+);
+
+CREATE TABLE IF NOT EXISTS categories (
+    id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name            VARCHAR(60)     NOT NULL,
+    photo           BLOB            NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS bookings (
+    id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    dateTime        DATETIME        NOT NULL,
+    user_id         BIGINT          NOT NULL,
+    job_id          BIGINT          NOT NULL,
+    foreign key (user_id) references users(id),
+    foreign key (job_id) references services(id)
 );

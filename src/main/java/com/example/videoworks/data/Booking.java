@@ -27,8 +27,8 @@ public class Booking {
     public Booking(Long id, LocalDateTime dateTime, User user, Job job) {
         this.id = id;
         this.dateTime = dateTime;
-        this.user=user;
-        this.job=job;
+        this.user = user;
+        this.job = job;
     }
 
     public Booking() {
@@ -65,15 +65,5 @@ public class Booking {
 
     public void setJob(Job job) {
         this.job = job;
-    }
-
-    @Override
-    public String toString() {
-        return "Booking{" +
-                "id=" + id +
-                ", dateTime='" + dateTime + '\'' +
-                ", User='" + user + '\'' +
-                ", Job='" + job + '\'' +
-                '}';
     }
 }
