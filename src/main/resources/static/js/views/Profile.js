@@ -168,6 +168,6 @@ export function createJobEvent() {
                 createView("/profile");
             }).catch(function (err) {
             console.log("There was an error of " + err)
-            })
+        })
     })
 }
