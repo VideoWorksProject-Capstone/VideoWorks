@@ -1,7 +1,7 @@
 package com.example.videoworks.service;
 
 import com.example.videoworks.data.*;
-import com.example.videoworks.dto.CreateJobDto;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,10 +11,12 @@ public class JobService {
 
     private final JobRepository jobRepository;
     private final UserService userService;
+    private final UsersRepository usersRepository;
 
-    public JobService(JobRepository jobRepository, UserService userService) {
+    public JobService(JobRepository jobRepository, UserService userService, UsersRepository usersRepository) {
         this.jobRepository = jobRepository;
         this.userService = userService;
+        this.usersRepository = usersRepository;
     }
 
     public List<Job> getJobList() {
@@ -25,14 +27,19 @@ public class JobService {
         return jobRepository.searchByTitleLike(keyword);
     }
 
-    public void addJob(CreateJobDto dto, Job newJob, String username) {
+    public List<Job> getJobByUser(User user) {
+        return jobRepository.findByUser(user);
+    }
 
-        User user = userService.getUserByUsername(username);
-
-        newJob.setTitle(dto.getTitle());
-        newJob.setDescription(dto.getDescription());
-        newJob.setPrice(dto.getPrice());
-        newJob.setPhoto(dto.getPhoto());
+    public void addJob(Job newJob, OAuth2Authentication auth) {
+        String email = auth.getName();
+        // User user = userService.getUserByUsername(username);
+        User user = usersRepository.findByEmail(email).get();
+        newJob.setUser(user);
+        // newJob.setTitle(dto.getTitle());
+        // newJob.setDescription(dto.getDescription());
+        // newJob.setPrice(dto.getPrice());
+        // newJob.setPhoto(dto.getPhoto());
         jobRepository.save(newJob);
     }
 

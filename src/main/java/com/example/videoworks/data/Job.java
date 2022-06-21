@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "services")
@@ -16,19 +18,22 @@ public class Job {
     private String title;
     private String description;
     private Double price;
-    private String photo;
+
+    @ManyToOne
+    @JsonIgnoreProperties("services")
+    private Category category;
 
     @ManyToOne
     @JsonIgnoreProperties({"services", "password"})
     private User user;
 
-    public Job(Long id, String title, String description, Double price, String photo, User user) {
+    public Job(Long id, String title, String description, Double price, User user, Category category) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.price = price;
-        this.photo = photo;
         this.user = user;
+        this.category = category;
     }
 
     public Job() {
@@ -67,14 +72,6 @@ public class Job {
         this.price = price;
     }
 
-    public String getPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(String photo) {
-        this.photo = photo;
-    }
-
     public User getUser() {
         return user;
     }
@@ -83,14 +80,11 @@ public class Job {
         this.user = user;
     }
 
-    @Override
-    public String toString() {
-        return "Job{" +
-                "id=" + id +
-                ", title=" + title +
-                ", description=" + description +
-                ", price=" + price +
-                ", photo=" + photo +
-                '}';
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
