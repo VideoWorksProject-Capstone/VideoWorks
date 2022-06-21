@@ -20,30 +20,35 @@ export default function Profile(props){
                     <div class="profile-details-wrapper">
                         <div class="profile-details">
                             <div class="profile-pic-div">
-                                <img src="../../img/3.jpeg" alt="testing" class="main-profile-img" id="profile-photo"/>
-                                <input type="file" name="img-file" id="img-file">
+                                <!-- src="../../img/3.jpeg" -->
+                                <img
+                                        src="../../img/../../img/3.jpeg"
+                                        alt="testing"
+                                        class="main-profile-img"
+                                        id="profile-photo"
+                                />
+                                <input type="file" name="img-file" id="img-file"/>
                                 <label for="img-file" id="upload-btn">Choose photo</label>
                             </div>
                             <div class="user-edit">
                                 <h2 class="profile-username">Donald<br/>Duck</h2>
                                 <button class="profile-edit-btn">Edit</button>
                             </div>
-                            </div>
-                            
                         </div>
-                        <div class="seller-profile-description-wrapper">
-<!--                            <i class="fa-solid fa-pencil"></i>-->
-                            <p class="seller-profile-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate debitis dignissimos quam reiciendis, repellat sunt tempore? Consequuntur doloribus, error, facilis fugit inventore nobis nostrum quis recusandae, reprehenderit sint vitae!
-                            </p>
-                        </div>
-                        
-                        
-<!--Start Modal-->
-                    <dialog class="edit-profile-modal">
-                        
-                    </dialog>
-<!--End Modal-->
+                    </div>
+                    <div class="seller-profile-description-wrapper">
+                        <!--                            <i class="fa-solid fa-pencil"></i>-->
+                        <p class="seller-profile-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                            cupiditate debitis dignissimos quam reiciendis, repellat sunt
+                            tempore? Consequuntur doloribus, error, facilis fugit inventore
+                            nobis nostrum quis recusandae, reprehenderit sint vitae!
+                        </p>
+                    </div>
+
+                    <!--Start Modal-->
+                    <dialog class="edit-profile-modal"></dialog>
+                    <!--End Modal-->
                     <nav class="profile-navigation">
                         <ul>
                             <li><a href="#">Services</a></li>
@@ -53,7 +58,7 @@ export default function Profile(props){
 
                     <main class="services-profile">
                         <div class="services-profile__services-container">
-                            <h3 class="section-titles">Latest services:</h3>
+                            <h3 class="latest-services-title">Latest services:</h3>
                             <div class="services-profile-card__flex-wrapper">
                                 <div class="services-profile__cards">
                                     <img src="../../img/3.jpeg" alt="test alt"/>
@@ -231,7 +236,7 @@ export default function Profile(props){
                                 </div>
                             </div>
                         </div>
-                        <h3 class="section-titles">Reviews:</h3>
+                        <h3 class="profile-reviews-title">Reviews:</h3>
                         <div class="services-profile__reviews-container">
                             <div class="new-review_customer-wrapper">
                                 <div class="customer-username-wrapper">

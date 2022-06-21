@@ -1,6 +1,6 @@
 "use strict";
 // floating-hero-area-images
-let hero-areaGraphicDiv = document.querySelector(".hero-area-graphic");
+let heroAreaGraphicDiv = document.querySelector(".hero-area-graphic");
 
 
 
@@ -25,12 +25,12 @@ divingWoman.src = "hero-area/img/Metaverse Girl (4).png";
 divingWoman.classList.add("diving-woman-animation");
 
 // array of image objects
-let floatinghero-areaImages = [pointingPerson, floatingWoman, leaningMan, divingWoman];
+let floatingHeroAreaImages = [pointingPerson, floatingWoman, leaningMan, divingWoman];
 
 // random image generator (from floatinghero-areaImages array)
-let setFloatinghero-areaImage = () => {
+let setFloatingHeroAreaImage = () => {
     let randNum = Math.floor(Math.random() * 4);
-    hero-areaGraphicDiv.appendChild(floatinghero-areaImages[Math.floor(Math.random() * 4)])
+    heroAreaGraphicDiv.appendChild(floatingHeroAreaImages[Math.floor(Math.random() * 4)])
 };
 
 
