@@ -19,12 +19,31 @@ export default function Profile(props){
                 <div class="profile-container">
                     <div class="profile-details-wrapper">
                         <div class="profile-details">
-                            <img src="../../img/3.jpeg" alt="testing" class="sidebar-profile-img"/>
-                            <h2 class="profile-username">Donald<br/>Duck</h2>
+                            <div class="profile-pic-div">
+                                <img src="../../img/3.jpeg" alt="testing" class="main-profile-img" id="profile-photo"/>
+                                <input type="file" name="img-file" id="img-file">
+                                <label for="img-file" id="upload-btn">Choose photo</label>
+                            </div>
+                            <div class="user-edit">
+                                <h2 class="profile-username">Donald<br/>Duck</h2>
+                                <button class="profile-edit-btn">Edit</button>
+                            </div>
+                            </div>
+                            
                         </div>
-                        <button class="profile-edit-btn">Edit</button>
-                    </div>
-
+                        <div class="seller-profile-description-wrapper">
+<!--                            <i class="fa-solid fa-pencil"></i>-->
+                            <p class="seller-profile-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate debitis dignissimos quam reiciendis, repellat sunt tempore? Consequuntur doloribus, error, facilis fugit inventore nobis nostrum quis recusandae, reprehenderit sint vitae!
+                            </p>
+                        </div>
+                        
+                        
+<!--Start Modal-->
+                    <dialog class="edit-profile-modal">
+                        
+                    </dialog>
+<!--End Modal-->
                     <nav class="profile-navigation">
                         <ul>
                             <li><a href="#">Services</a></li>

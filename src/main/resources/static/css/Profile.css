@@ -5,8 +5,34 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 55px;
 }
-.profile-details img {
+.seller-profile-description-wrapper{
+    position: relative;
+}
+/*.seller-profile-description-wrapper .fa-pencil{*/
+/*    position: absolute;*/
+/*   top: -16px;*/
+/*    right: 0;*/
+/*}*/
+.profile-pic-div{
+    position: relative;
+    width: 300px;
+}
+.profile-pic-div #upload-btn{
+    position: absolute;
+    bottom: 45px;
+    /*right:117px;*/
+    height: 53px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(17, 17, 17, 0.69);
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+.profile-pic-div .main-profile-img {
     clip-path: ellipse(33% 40% at 50% 50%);
     width: 300px;
 }
