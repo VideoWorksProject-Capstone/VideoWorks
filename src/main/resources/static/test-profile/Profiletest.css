@@ -1,6 +1,24 @@
-/*body {*/
-/*    background: #111111;*/
+/*.profile-container {*/
+/*    !*height: calc(90vh - 60px);*!*/
+/*    width: 100%;*/
+/*    !*max-width: 1400px;*!*/
+/*    !*margin: 0 auto;*!*/
+/*    !*overflow: auto; !*change if you dont want "pseudo" fixed nav bar*!*!*/
+/*    !*padding-top: 60px;*!*/
+/*    !*overflow: hidden;*!*/
 /*}*/
+
+.profile-details img{
+    clip-path: ellipse(33% 40% at 50% 50%);
+}
+
+
+
+
+
+
+
+
 
 /*.stat-val {*/
 /*    font-size: 3em;*/
@@ -36,3 +54,4 @@
 /*    padding: 20px;*/
 /*    background-color: #F1F1F1;*/
 /*}*/
+
