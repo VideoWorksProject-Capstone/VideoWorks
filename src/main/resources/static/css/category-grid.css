@@ -1,94 +1,212 @@
-/* BEGIN CARD DESIGN */
-.hero {
-    display: inline-block;
-    position: relative;
-    width: 400px;
-    min-width: 400px;
+.homepage-category-section{
+    background-color: var(--main-purple);
+    width: 100%;
+    padding-bottom: 40px;
+}
+.category-grid {
+    width: calc(100% - 60px);
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 25px;
+}
+/*.homepage-category-section__title-wrapper{*/
+/*    width: calc(100% - 60px);*/
+/*    max-width: 1400px;*/
+/*    margin: 0 auto;*/
+/*}*/
+.homepage-category-section__title-wrapper h2{
+    padding: 100px 0 20px 0;
+}
+.category-cards{
+    width: 100%;
     height: 400px;
+    position: relative;
     border-radius: 30px;
-    overflow:hidden;
+    overflow: hidden;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-    margin: 30px;
+    border: 2px solid var(--purple);
 }
 
-.hero-profile-img {
-    height: 70%;
+.category-cards__img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
 }
 
-.hero-description-bk {
+.category-cards__shape {
     background-image: linear-gradient(0deg , #3f5efb, #fc466b);
-    border-radius: 30px;
+    border-radius: 25px;
     position: absolute;
-    top: 55%;
-    left: -5px;
-    height: 65%;
-    width: 108%;
+    top: 40%;
+    left: -30px;
+    height: 69%;
+    width: 120%;
     transform: skew(19deg, -9deg);
+    transition: all 300ms ease-in;
+    z-index: 21;
 }
 
-.second .hero-description-bk {
-    background-image: linear-gradient(-20deg , #bb7413, #e7d25c)
+.category-cards:hover .category-cards__shape{
+    transform: skew(0deg, 0deg);
+    top: 45%;
 }
 
-.hero-logo {
-    height: 80px;
-    width: 80px;
-    border-radius: 20px;
-    background-color: #fff;
+.category-cards .category-cards__img {
+    filter: blur(0);
+    transition: filter 450ms ease-in;
+}
+.category-cards:hover .category-cards__img {
+    filter: blur(4px);
+}
+
+.category-cards__person-popup{
     position: absolute;
-    bottom: 30%;
-    left: 30px;
-    overflow:hidden;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+    width: 50%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+    transition: all 300ms ease-in-out 250ms;
 }
-
-.hero-logo img {
-    height: 100%;
-}
-
-.hero-description {
+.category-cards:hover .category-cards__person-popup{
     position: absolute;
-    color: #fff;
-    font-weight: 900;
-    left: 150px;
-    bottom: 26%;
+    width: 50%;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -35%);
+    opacity: 1;
 }
 
-.category-card-btn {
+.category-cards__description {
     position: absolute;
+    width: 90%;
+    height: min-content;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 22;
+}
+
+.category-cards__description p{
+    font-size: clamp(1.4rem, 1.325rem + 0.4286vw, 1.7rem);
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: var(--spacing4);
+}
+.category-cards__details {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 22;
+    padding: 0 10px;
+
+}
+.category-cards__details p{
+    font-weight: bold;
+    font-size: clamp(1.7rem, 1.6rem + 0.4200vw, 2rem);
+    letter-spacing: var(--spacing4);
+    flex: 1;
+}
+.category-cards__details a{
+    background-color: transparent;
     color: #fff;
     right: 30px;
     bottom: 10%;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    margin-left: 5px;
     border: 1px solid #fff;
+    font-size: 1.4rem;
+    letter-spacing: var(--spacing10);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    max-width: 120px;
+    flex: 2;
 }
 
-.hero-btn a {
-    color: #fff;
+@media (min-width: 350px) and (max-width: 767px) {
+    .category-cards__shape {
+        background-image: linear-gradient(0deg , #3f5efb, #fc466b);
+        border-radius: 25px;
+        position: absolute;
+        top: 45%;
+        left: -30px;
+        height: 69%;
+        width: 115%;
+        transform: skew(19deg, -9deg);
+        transition: all 300ms ease-in;
+        z-index: 21;
+    }
+
+    .category-cards:hover .category-cards__shape{
+        transform: skew(0deg, 0deg);
+        top: 45%;
+    }
+    .category-cards__person-popup{
+        position: absolute;
+        width: 35%;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%, -0%);
+        transition: all 300ms ease-in-out 250ms;
+    }
+    .category-cards:hover .category-cards__person-popup{
+        position: absolute;
+        width: 40%;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -35%);
+        opacity: 1;
+    }
+    .category-cards__description {
+        position: absolute;
+        width: 50%;
+        height: min-content;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 22;
+    }
+
+    .category-cards__details {
+        justify-content: space-around;
+    }
 }
 
-.hero-date {
-    position: absolute;
-    color: #fff;
-    left: 30px;
-    bottom: 10%;
+@media (min-width: 350px){
+    .category-cards__details p{
+        letter-spacing: var(--spacing4);
+        width: max-content;
+    }
 }
-/* END CARD DESIGN */
+@media (min-width: 768px){
+    .category-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .category-cards__person-popup{
+        left: 50%;
+        top: 68%;
+        transform: translate(-50%, -68%);
+    }
+    .category-cards__person-popup.hovered{
 
-/*body {*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    margin: 0;*/
-/*    background-color: #eee;*/
-/*    min-height: 100vh;*/
-/*}*/
-/*.btn i:before {*/
-/*    width: 14px;*/
-/*    height: 14px;*/
-/*    position: fixed;*/
-/*    color: #fff;*/
-/*    background: #0077B5;*/
-/*    padding: 10px;*/
-/*    border-radius: 50%;*/
-/*    top:5px;*/
-/*    right:5px;*/
-/*}*/
+        width: 55%;
+        left: 50%;
+        top: 27%;
+        transform: translate(-50%, -27%);
+    }
+}
+@media (min-width: 960px){
+    .category-grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width: 1200px) {
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

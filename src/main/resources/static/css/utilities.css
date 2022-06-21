@@ -33,14 +33,14 @@ html {
 }
 
 /*Set section heading font*/
-h1,h2,h3,h4,h5,h6,button,label,p, i{
+h1,h2,h3,h4,h5,h6,button,label,p, i, a{
     font-family: 'Poppins', sans-serif;
     color: var(--white);
 }
 /* Set core body defaults */
 body {
     min-height: 100vh;
-    /*background-color: #111;*/
+    background-color: #111;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 
@@ -62,11 +62,11 @@ a {
 
 
 /* Make images easier to work with */
-img,
-picture, svg {
-    max-width: 100%;
-    display: block;
-}
+/*img,*/
+/*picture, svg {*/
+/*    max-width: 100%;*/
+/*    display: block;*/
+/*}*/
 
 /* Inherit fonts for inputs and buttons */
 input,

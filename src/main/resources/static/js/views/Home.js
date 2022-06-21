@@ -20,7 +20,7 @@ export default function Home(props) {
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Black Woman.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Artist.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -35,14 +35,30 @@ export default function Home(props) {
                             <p class="user-rating">4.5</p>
                             <p class="number-of-jobs">(149)</p>
                         </div>
-                        <div class="creator-price-box">
-                            <p>starting at <span class="creator-price-box__amount">$47</span></p>
-                        </div>
+                        <button id="modal-btn"> Hire me</button>
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <label>name</label>
+        <input type="text">
+        <label>time/date</label>
+        <input type="text">
+        <label>email</label>
+        <input type="text">
+        <button>submit</button>
+    </div>
+</div>
+<div class="modal">
+    <form class="form" method="dialog">
+    <div class="modal-header">
+        </div>
+    </form>
+</div>
                     </div>
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Western Man.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Asian Man.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -57,14 +73,31 @@ export default function Home(props) {
                             <p class="user-rating">4.5</p>
                             <p class="number-of-jobs">(149)</p>
                         </div>
-                        <div class="creator-price-box">
-                            <p>starting at <span class="creator-price-box__amount">$47</span></p>
-                        </div>
+                        <button id="modal-btn"> Hire me</button>
+<div class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <label>name</label>
+        <input type="text">
+        <label>time/date</label>
+        <input type="text">
+        <label>email</label>
+        <input type="text">
+        <button>submit</button>
+    </div>
+</div>
+<div class="modal">
+    <form class="form" method="dialog">
+    <div class="modal-header">
+        </div>
+    </form>
+</div>
+
                     </div>
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/woman.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Astronaut.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -85,7 +118,7 @@ export default function Home(props) {
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Muslim Woman.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Baby.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -101,13 +134,21 @@ export default function Home(props) {
                             <p class="number-of-jobs">(149)</p>
                         </div>
                         <div class="creator-price-box">
-                            <p>starting at <span class="creator-price-box__amount">$47</span></p>
+                            <div class='column is-4-tablet is-10-mobile name'>
+                    <p>
+                        <br>
+                        <a class='button is-primary is-outlined' href='#' id='edit-preferences' style='margin: 5px 0'>
+                            Hire Me
+                        </a>
+                        <br>
+                    </p>
+                </div>
                         </div>
                     </div>
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Astronaut.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Black Man.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -128,7 +169,7 @@ export default function Home(props) {
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Farmer.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Black Woman.png" alt="lady">
                             </div>
                         </div>
                        <div class="username-box">
@@ -150,7 +191,7 @@ export default function Home(props) {
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Designer.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/College Student.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -171,7 +212,7 @@ export default function Home(props) {
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Doctor.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Designer.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -214,7 +255,7 @@ export default function Home(props) {
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Artist.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Farmer.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -237,7 +278,7 @@ export default function Home(props) {
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/West%20Woman.png"
+                                <img class="user-avatar-image1" src="../../img/avatars/Muslim Woman.png"
                                      alt="lady">
                             </div>
                         </div>
@@ -259,7 +300,7 @@ export default function Home(props) {
                     <div class="media-element">
                         <div class="avatar-hover-box">
                             <div class="user-avatar-box">
-                                <img class="user-avatar-image1" src="../../img/avatars/Baby.png" alt="lady">
+                                <img class="user-avatar-image1" src="../../img/avatars/Nerd Woman.png" alt="lady">
                             </div>
                         </div>
                         <div class="username-box">
@@ -420,7 +461,23 @@ export default function Home(props) {
         </div>
     </div>
 </div>
-</section>        
+</section>   
         </body>
+
     `;
+    let modalBtn = document.getElementById("modal-btn")
+    let modal = document.querySelector(".modal")
+    let closeBtn = document.querySelector(".close-btn")
+    modalBtn.onclick = function(){
+        modal.style.display = "block"
+    }
+    closeBtn.onclick = function(){
+        modal.style.display = "none"
+    }
+    window.onclick = function(e) {
+        if (e.target == modal) {
+            modal.style.display = "none"
+        }
+    }
 }
+
