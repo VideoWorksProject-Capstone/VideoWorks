@@ -55,9 +55,6 @@ public class JobService {
         if (job.getPrice() != null && !job.getPrice().isNaN()) {
             jobToUpdate.setPrice(job.getPrice());
         }
-        if (job.getPhoto() != null && !job.getPhoto().isEmpty()) {
-            jobToUpdate.setPhoto(job.getPhoto());
-        }
     }
 
     public void deleteJobById(Long id) {
