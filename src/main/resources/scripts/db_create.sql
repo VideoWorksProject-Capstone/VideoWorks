@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS user_roles;
 DROP TABLE IF EXISTS services;
 DROP TABLE IF EXISTS roles;
 DROP TABLE IF EXISTS users;
-DROP TABLE if exists categories;
+DROP TABLE if exists category;
 
 CREATE TABLE IF NOT EXISTS roles
 (
@@ -44,14 +44,16 @@ CREATE TABLE IF NOT EXISTS services
     title       VARCHAR(60) NOT NULL,
     description text        NOT NULL,
     price       DOUBLE      NOT NULL,
-    photo       int         NOT NULL,
+    photo       blob         NOT NULL,
     user_id     BIGINT      NOT NULL,
-    foreign key (user_id) references users (id)
+    category_id    int not null,
+    foreign key (user_id) references users (id),
+    FOREIGN KEY (category_id) references category (id)
 );
 
-CREATE TABLE IF NOT EXISTS categories
+CREATE TABLE IF NOT EXISTS category
 (
-    category_name int  not null auto_increment primary key,
-    description   int  not null,
-    imageUrl      blob not null
-)
+    id       int         not null AUTO_INCREMENT PRIMARY KEY ,
+    name     VARCHAR(60) not null,
+    imageUrl blob        not null
+);

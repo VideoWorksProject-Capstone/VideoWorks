@@ -15,7 +15,7 @@ public class JobController {
 
     private final JobService jobService;
 
-    public JobController (JobService jobService) {
+    public JobController(JobService jobService) {
         this.jobService = jobService;
     }
 
