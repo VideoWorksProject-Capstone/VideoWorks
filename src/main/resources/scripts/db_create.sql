@@ -21,9 +21,7 @@ CREATE TABLE IF NOT EXISTS users
     password        VARCHAR(60)     NOT NULL,
     email           VARCHAR(200)    NOT NULL,
     name            VARCHAR(60)     NOT NULL,
-    dob             VARCHAR(8)      NOT NULL,
-    bio             TEXT            NULL,
-    rating          DOUBLE          NULL,
+    bio             TEXT            NOT NULL,
     photo           BLOB            NOT NULL
 );
 

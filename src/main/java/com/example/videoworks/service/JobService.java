@@ -25,6 +25,10 @@ public class JobService {
         return jobRepository.searchByTitleLike(keyword);
     }
 
+    public List<Job> getJobByUser(User user) {
+        return jobRepository.findByUser(user);
+    }
+
     public void addJob(CreateJobDto dto, Job newJob, String username) {
 
         User user = userService.getUserByUsername(username);

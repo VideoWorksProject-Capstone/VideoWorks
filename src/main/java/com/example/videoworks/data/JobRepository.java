@@ -10,4 +10,6 @@ public interface JobRepository extends JpaRepository<Job, Long> {
 
     @Query("from Job a where a.title like %:term%")
     List<Job> searchByTitleLike(@Param("term") String term);
+
+    List <Job> findByUser(User user);
 }

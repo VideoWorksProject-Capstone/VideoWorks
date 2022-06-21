@@ -26,6 +26,11 @@ public class JobController {
         return jobService.getJobList();
     }
 
+    @GetMapping("user")
+    public List<Job> getByUser(@RequestParam User user) {
+        return jobService.getJobByUser(user);
+    }
+
     @GetMapping("{id}")
     public Job getById(@PathVariable Long id) {
         for (Job job : jobService.getJobList()) {

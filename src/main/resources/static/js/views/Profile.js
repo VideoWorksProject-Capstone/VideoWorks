@@ -9,14 +9,8 @@ export default function Profile(props) {
             <style>
                 .profile {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     width: 100%;
-                }
-                .fa {
-                  font-size: 25px;
-                }
-                .checked {
-                  color: orange;
                 }
                 .header {
                     border: 5px solid lightgray;
@@ -33,18 +27,16 @@ export default function Profile(props) {
                 .name {
                     font-size: 4em;
                     display: flex;
+                    color: black;
                     justify-content: center;
                 }
                 #bio {
                     font-size: 2em;
                     display: flex;
-                    justify-content: center;
-                }
-                .rating-number {
-                    display: flex;
-                    justify-content: center;
                     color: black;
-                    font-size: 1.5em;
+                    justify-content: center;
+                    padding-left: 300px;
+                    padding-right: 300px;
                 }
                 .services {
                     display: flex;
@@ -55,47 +47,41 @@ export default function Profile(props) {
                 .service-heading {
                     font-size: 4em;
                 }
-                #edit-btn {
-                    height: 30px;
-                    width: 60px;
-                    font-size: 1.5em;
-                    border-radius: 5px;
-                }
             </style>
         </head>
         <body>
             <div class="profile">
                 <div class="header">
                     <div>
-                        <input type="image" id="img" value="${props.user.photo}" alt="user"> 
+                        <input type="image" id="img" src="${props.user.photo}" alt="user" readonly> 
                     </div>
                     <br>
                     <div>
-                        <input type="text" class="name" value="${props.user.name}">
-                    </div>
-                    <br>
-                    <div class="rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <input type="number" class="rating-number" value="${props.user.rating}">
+                        <h2 class="name">${props.user.name}</h2>
                     </div>
                     <br>
                     <div>
-                        <input type="textarea" name="Bio" id="bio" value="${props.user.bio}">
+                        <p id="bio">${props.user.bio}</p>
                     </div>
-                    <div class="edit">
-                        <button type="submit" id="edit-btn">Edit</button>
-                        <button type="submit" id="done-btn">Done</button>
-                    </div>
+                    <br>
                 </div>
+                <text class="service-heading">Services</text>
                 <div class="services">
-                    <text class="service-heading">Services</text>
+                                   ${props.user.jobs.map(job => getJobCard(job)).join('')}
                 </div>
             </div>
         </body>
         </html>
     `;
+}
+
+function getJobCard(job) {
+    return `<div class='card' id='${job.id}' data-id="${job.id}">
+            <div class='card-body'>
+                <h5>${job.title}</h5>
+                <input class='card-photo' src="${job.photo}" readonly>
+                <input class="card-description" value="${job.description}" readonly>
+                <input class="card-price" value="${job.price}" readonly>
+            </div>
+        </div>`
 }
