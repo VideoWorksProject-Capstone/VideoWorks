@@ -4,7 +4,6 @@ import createView from './createView.js';
 export default function init() {
     loadViewOnPageRequest();
     addListenerToNavLinks();
-    renderJobs();
 }
 /**
  * When the DOM loads, build the view given the current endpoint.

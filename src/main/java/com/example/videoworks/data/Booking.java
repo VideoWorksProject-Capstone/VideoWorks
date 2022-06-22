@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -14,20 +15,20 @@ public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDateTime dateTime;
+    private String localDate;
     private String email;
 
     @ManyToOne
-    @JsonIgnoreProperties("bookings")
+    @JsonIgnoreProperties({"bookings"})
     private User user;
 
     @ManyToOne
-    @JsonIgnoreProperties("bookings")
+    @JsonIgnoreProperties({"bookings"})
     private Job job;
 
-    public Booking(Long id, LocalDateTime dateTime, String email, User user, Job job) {
+    public Booking(Long id, String localDate, String email, User user, Job job) {
         this.id = id;
-        this.dateTime = dateTime;
+        this.localDate = localDate;
         this.email = email;
         this.user = user;
         this.job = job;
@@ -45,12 +46,12 @@ public class Booking {
         this.id = id;
     }
 
-    public LocalDateTime getDateTime() {
-        return dateTime;
+    public String getLocalDate() {
+        return localDate;
     }
 
-    public void setDateTime(LocalDateTime dateTime) {
-        this.dateTime = dateTime;
+    public void setDateTime(String localDate) {
+        this.localDate = localDate;
     }
 
     public String getEmail() {
