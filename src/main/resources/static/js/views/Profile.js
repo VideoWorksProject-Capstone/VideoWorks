@@ -16,7 +16,7 @@ export default function Profile(props) {
                     width: 100%;
                 }
                 .header {
-                    border: 5px solid lightgray;
+                    border: 5px solid white;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -30,13 +30,13 @@ export default function Profile(props) {
                 .name {
                     font-size: 4em;
                     display: flex;
-                    color: black;
+                    color: white;
                     justify-content: center;
                 }
                 #bio {
                     font-size: 2em;
                     display: flex;
-                    color: black;
+                    color: white;
                     justify-content: center;
                     padding-left: 300px;
                     padding-right: 300px;
@@ -50,11 +50,12 @@ export default function Profile(props) {
                 }
                 .service-heading {
                     font-size: 4em;
+                    color: white;
                 }
                 .card {
                     height: 400px;
                     width: 300px;
-                    border: 3px solid lightgray;
+                    border: 3px solid white;
                     border-radius: 5px;
                 }
                 .card-title {
@@ -63,7 +64,7 @@ export default function Profile(props) {
                 #create-job {
                     height: 400px;
                     width: 300px;
-                    border: 3px solid lightgray;
+                    border: 3px solid white;
                     border-radius: 5px;
                     display: flex;
                     flex-direction: column;
@@ -71,15 +72,15 @@ export default function Profile(props) {
                 }
                 #job-title {
                     font-size: 2em;
-                    border: 1px solid lightgray;
+                    border: 1px solid white;
                 }
                 #job-description {
                     height: 200px;
                     width: 200px;
-                    border: 1px solid lightgray;
+                    border: 1px solid white;
                 }
                 #job-price {
-                    border: 1px solid lightgray;
+                    border: 1px solid white;
                     font-size: 1.5em;
                 }
                 #submit-btn {
@@ -115,7 +116,7 @@ export default function Profile(props) {
                         <br>
                         <textarea type="text" id="job-description" placeholder="Description"></textarea>
                         <br>
-                        <input type="number" id="job-price" placeholder="$0.00">                      
+                        <input type="number" id="job-price" placeholder="$0.00/hr">                      
                         <br>
                         <input type="image" id="job-image" alt="Submit">
                         <br>
