@@ -31,7 +31,11 @@ public class User {
     @JsonIgnoreProperties("user")
     private List<Job> jobs = new ArrayList<>();
 
-    public User(Long id, String name, String username, String email, String password, String dob, String bio, String photo, Double rating, Collection<Role> roles, List<Job> jobs) {
+    @OneToMany(mappedBy = "user")
+    @JsonIgnoreProperties("user")
+    private List<Booking> bookings = new ArrayList<>();
+
+    public User(Long id, String name, String username, String email, String password, String dob, String bio, String photo, Double rating, Collection<Role> roles, List<Job> jobs, List<Booking> bookings) {
         this.id = id;
         this.name = name;
         this.username = username;
@@ -41,6 +45,7 @@ public class User {
         this.photo = photo;
         this.roles = roles;
         this.jobs = jobs;
+        this.bookings = bookings;
     }
 
     public User(){
@@ -117,6 +122,14 @@ public class User {
 
     public void setJobs(List<Job> jobs) {
         this.jobs = jobs;
+    }
+
+    public List<Booking> getBookings() {
+        return bookings;
+    }
+
+    public void setBookings(List<Booking> bookings) {
+        this.bookings = bookings;
     }
 
     @Override

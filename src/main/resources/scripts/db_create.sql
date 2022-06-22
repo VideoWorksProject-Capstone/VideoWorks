@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS users
 );
 
 CREATE TABLE IF NOT EXISTS user_roles (
-    id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+    id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
     user_id         BIGINT          NOT NULL,
     role_id         INT             NOT NULL,
     foreign key (user_id) references users(id),
@@ -45,17 +45,12 @@ CREATE TABLE IF NOT EXISTS services (
     foreign key (user_id) references users(id)
 );
 
-CREATE TABLE IF NOT EXISTS categories (
-    id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    name            VARCHAR(60)     NOT NULL,
-    photo           BLOB            NOT NULL
-);
-
 CREATE TABLE IF NOT EXISTS bookings (
     id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
     dateTime        DATETIME        NOT NULL,
+    email           VARCHAR(60)     NOT NULL,
     user_id         BIGINT          NOT NULL,
-    job_id          BIGINT          NOT NULL,
+    service_id      BIGINT          NOT NULL,
     foreign key (user_id) references users(id),
-    foreign key (job_id) references services(id)
+    foreign key (service_id) references services(id)
 );

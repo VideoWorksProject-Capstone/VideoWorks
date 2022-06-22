@@ -10,10 +10,10 @@ VALUES (1, 1),
        (3, 2),
        (4, 1);
 
-INSERT INTO services (id, title, description, price, photo, user_id)
-VALUES (1, 'DJ Services', 'Anytime, Anywhere! Schedule now for your next party or event. Whatever style you need, I can do.', 20.00, '../static/img/dj.png', 1),
-       (2, 'DJ Services', 'Anytime, Anywhere! Schedule now for your next party or event. Whatever style you need, I can do.', 20.00, '../static/img/dj.png', 1),
-       (3, 'DJ Services', 'Anytime, Anywhere! Schedule now for your next party or event. Whatever style you need, I can do.', 20.00, '../static/img/dj.png', 1),
-       (4, 'DJ Services', 'Anytime, Anywhere! Schedule now for your next party or event. Whatever style you need, I can do.', 20.00, '../static/img/dj.png', 1),
-       (5, 'DJ Services', 'Anytime, Anywhere! Schedule now for your next party or event. Whatever style you need, I can do.', 20.00, '../static/img/dj.png', 1),
-       (6, 'DJ Services', 'Anytime, Anywhere! Schedule now for your next party or event. Whatever style you need, I can do.', 20.00,'../static/img/dj.png', 1);
+INSERT INTO categories (name, photo)
+VALUES ('Music', '../static/img/music.png'),
+       ('Tutoring', '../static/img/tutoring.png'),
+       ('Reading', '../static/img/reading.png'),
+       ('DJ', '../static/img/dj.png'),
+       ('Cooking', '../static/img/cooking.png'),
+       ('Speaking', '../static/img/speaking.png');

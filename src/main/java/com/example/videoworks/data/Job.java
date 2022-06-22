@@ -18,19 +18,24 @@ public class Job {
     private String title;
     private String description;
     private Double price;
-    private String photo  = "../static/img/dj.png";
+    private String photo;
 
     @ManyToOne
     @JsonIgnoreProperties({"services", "password"})
     private User user;
 
-    public Job(Long id, String title, String description, Double price, String photo, User user) {
+    @OneToMany(mappedBy = "job")
+    @JsonIgnoreProperties("job")
+    private List<Booking> bookings = new ArrayList<>();
+
+    public Job(Long id, String title, String description, Double price, String photo, User user, List<Booking> bookings) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.price = price;
         this.photo = photo;
         this.user = user;
+        this.bookings = bookings;
     }
 
     public Job() {
@@ -83,6 +88,14 @@ public class Job {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public List<Booking> getBookings() {
+        return bookings;
+    }
+
+    public void setBookings(List<Booking> bookings) {
+        this.bookings = bookings;
     }
 
     @Override
