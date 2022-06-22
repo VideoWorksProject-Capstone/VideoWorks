@@ -8,88 +8,88 @@ export default function Profile(props) {
         <head>
             <meta charset="UTF-8"/>
             <title>Profile</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <style>
-                .profile {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                }
-                .header {
-                    border: 5px solid lightgray;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    align-content: center;
-                }
-                #img {
-                    height: 300px;
-                    width: 300px;
-                    border-radius: 50%;
-                }
-                .name {
-                    font-size: 4em;
-                    display: flex;
-                    color: black;
-                    justify-content: center;
-                }
-                #bio {
-                    font-size: 2em;
-                    display: flex;
-                    color: black;
-                    justify-content: center;
-                    padding-left: 300px;
-                    padding-right: 300px;
-                }
-                .services {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    flex-wrap: wrap;
-                    flex-grow: 3;
-                }
-                .service-heading {
-                    font-size: 4em;
-                }
-                .card {
-                    height: 400px;
-                    width: 300px;
-                    border: 3px solid lightgray;
-                    border-radius: 5px;
-                }
-                .card-title {
-                    font-size: 2em;
-                }
-                #create-job {
-                    height: 400px;
-                    width: 300px;
-                    border: 3px solid lightgray;
-                    border-radius: 5px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                #job-title {
-                    font-size: 2em;
-                    border: 1px solid lightgray;
-                }
-                #job-description {
-                    height: 200px;
-                    width: 200px;
-                    border: 1px solid lightgray;
-                }
-                #job-price {
-                    border: 1px solid lightgray;
-                    font-size: 1.5em;
-                }
-                #submit-btn {
-                    height: 50px;
-                    width: 150px;
-                    background-color: #4c2fa1;
-                    color: wheat;
-                    border-radius: 20px;
-                }
-            </style>
+<!--            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--            <style>-->
+<!--                .profile {-->
+<!--                    display: flex;-->
+<!--                    flex-direction: column;-->
+<!--                    width: 100%;-->
+<!--                }-->
+<!--                .header {-->
+<!--                    border: 5px solid lightgray;-->
+<!--                    display: flex;-->
+<!--                    flex-direction: column;-->
+<!--                    align-items: center;-->
+<!--                    align-content: center;-->
+<!--                }-->
+<!--                #img {-->
+<!--                    height: 300px;-->
+<!--                    width: 300px;-->
+<!--                    border-radius: 50%;-->
+<!--                }-->
+<!--                .name {-->
+<!--                    font-size: 4em;-->
+<!--                    display: flex;-->
+<!--                    color: black;-->
+<!--                    justify-content: center;-->
+<!--                }-->
+<!--                #bio {-->
+<!--                    font-size: 2em;-->
+<!--                    display: flex;-->
+<!--                    color: black;-->
+<!--                    justify-content: center;-->
+<!--                    padding-left: 300px;-->
+<!--                    padding-right: 300px;-->
+<!--                }-->
+<!--                .services {-->
+<!--                    display: flex;-->
+<!--                    flex-direction: row;-->
+<!--                    justify-content: space-evenly;-->
+<!--                    flex-wrap: wrap;-->
+<!--                    flex-grow: 3;-->
+<!--                }-->
+<!--                .service-heading {-->
+<!--                    font-size: 4em;-->
+<!--                }-->
+<!--                .card {-->
+<!--                    height: 400px;-->
+<!--                    width: 300px;-->
+<!--                    border: 3px solid lightgray;-->
+<!--                    border-radius: 5px;-->
+<!--                }-->
+<!--                .card-title {-->
+<!--                    font-size: 2em;-->
+<!--                }-->
+<!--                #create-job {-->
+<!--                    height: 400px;-->
+<!--                    width: 300px;-->
+<!--                    border: 3px solid lightgray;-->
+<!--                    border-radius: 5px;-->
+<!--                    display: flex;-->
+<!--                    flex-direction: column;-->
+<!--                    align-items: center;-->
+<!--                }-->
+<!--                #job-title {-->
+<!--                    font-size: 2em;-->
+<!--                    border: 1px solid lightgray;-->
+<!--                }-->
+<!--                #job-description {-->
+<!--                    height: 200px;-->
+<!--                    width: 200px;-->
+<!--                    border: 1px solid lightgray;-->
+<!--                }-->
+<!--                #job-price {-->
+<!--                    border: 1px solid lightgray;-->
+<!--                    font-size: 1.5em;-->
+<!--                }-->
+<!--                #submit-btn {-->
+<!--                    height: 50px;-->
+<!--                    width: 150px;-->
+<!--                    background-color: #4c2fa1;-->
+<!--                    color: wheat;-->
+<!--                    border-radius: 20px;-->
+<!--                }-->
+<!--            </style>-->
         </head>
         <body>
           <div id="hero-area-section">
