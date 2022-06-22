@@ -44,3 +44,13 @@ CREATE TABLE IF NOT EXISTS services (
     user_id         BIGINT          NOT NULL,
     foreign key (user_id) references users(id)
 );
+
+CREATE TABLE IF NOT EXISTS bookings (
+    id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    dateTime        DATETIME        NOT NULL,
+    email           VARCHAR(60)     NOT NULL,
+    user_id         BIGINT          NOT NULL,
+    service_id      BIGINT          NOT NULL,
+    foreign key (user_id) references users(id),
+    foreign key (service_id) references services(id)
+);
