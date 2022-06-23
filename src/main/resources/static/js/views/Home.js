@@ -15,7 +15,7 @@ export default function Home(props) {
                     <input type="search" name="search-services" id="">
                 </section>
                 <section class="hero-area-graphic">
-                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">
+<!--                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">-->
                 </section>
             </div>
             <section class="hero-area-slider">
