@@ -14,11 +14,15 @@ export default function Home(props) {
                     <button class="hero-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
                 </section>
                 <section class="hero-graphic">
-                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">
+                    <img src="" alt="" class="falling-lady">
+                    <div class="wrapper">
+<input type="text" class="input" 
+placeholder="What are you looking for?">
+<div class="searchbtn"><i class="fas fa-search"></i></div>
+</div>
                 </section>
      ${props.jobs.map(job => `${getJobCard(job)}`).join('')}
      
-  
  
 <!--            </div>-->
 <!--            <section class="hero-slider">-->
