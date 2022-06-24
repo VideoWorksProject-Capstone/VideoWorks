@@ -37,7 +37,7 @@ export default function Navbar(props) {
                     <li><a href="/categories" data-link>Categories</a></li>
                     <li><a href="/profile" data-link>Profile</a></li>
                     <li class="large-logo-wrapper">
-                        <h1 id="large-logo"><a href="/" data-link>video<span>Works</span></a></h1>
+                        <h1 id="large-logo"><a href="/" data-link>videoWorks</a></h1>
                     </li>
                     <li><a href="/login" data-link>Login</a></li>
                     <li><a href="/register" data-link>Register</a></li>

@@ -29,6 +29,7 @@ public class BookingService {
 
     public void addBooking(Booking newBooking, OAuth2Authentication auth) {
         String email = auth.getName();
+        newBooking.setEmail(auth.getName());
         User user = usersRepository.findByEmail(email).get();
         newBooking.setUser(user);
         bookingRepository.save(newBooking);
