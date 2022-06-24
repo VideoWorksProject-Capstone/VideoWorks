@@ -1,41 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VideoWorks | Hire your virtual assistant</title>
     <link rel="stylesheet" href="css/main.css">
-    <title>VideoWorks</title>
+    <!--        <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.1/css/bulma.min.css" rel="stylesheet" type="text/css"/>-->
+<!--    <link rel="stylesheet" href="css/utilities.css">-->
+<!--    <link rel="stylesheet" href="css/navbar.css">-->
+<!--    <link rel="stylesheet" href="css/hero.css">-->
+<!--    <link rel="stylesheet" href="css/slider.css">-->
+<!--    <link rel="stylesheet" href="css/category-grid.css">-->
+<!--    <link rel="stylesheet" href="css/Profile.css">-->
+<!--    <link rel="stylesheet" href="css/login.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"-->
+<!--          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="-->
+<!--          crossorigin="anonymous" referrerpolicy="no-referrer"/>-->
+
+
 </head>
 <body>
+
 <div id="app"></div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/userProfile.js"></script>
+<script src="js/hero.js"></script>
 <script type="module" src="js/main.js"></script>
-<script>
-    "use strict";
-
-    // NAVBAR SECTION
-
-    let hamburgerImg = document.querySelector(".ham1");
-    let mobileMenu = document.querySelector(".mobile-menu");
-    let headerContainer = document.querySelector(".mobile-header-container");
-
-    let slideInMobileMenu = () => {
-        mobileMenu.classList.toggle("open");
-        hamburgerImg.classList.toggle("active");
-        headerContainer.classList.toggle("purp-container-background");
-    }
-
-    hamburgerImg.addEventListener("click",slideInMobileMenu);
-
-    // HERO SECTION
-
-    let heroLedeBtn = document.querySelector(".hero-lede-btn");
-    let heroLedeBtnArrow = document.querySelector(".fa-arrow-right");
-
-
-    let growHeroLedeBtnFunc = () =>{
-        heroLedeBtn.classList.toggle()
-    }
-    heroLedeBtn.addEventListener("click",growHeroLedeBtnFunc)
-</script>
+<script src="js/navbarScript.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>

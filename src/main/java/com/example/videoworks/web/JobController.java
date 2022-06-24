@@ -46,12 +46,6 @@ public class JobController {
         jobService.addJob(newJob, auth);
     }
 
-    // @PostMapping("{username}")
-    // public void createJob(@PathVariable String username, @RequestBody CreateJobDto dto) {
-    //     Job newJob = new Job();
-    //     jobService.addJob(dto, newJob, username);
-    // }
-
     @PutMapping("{id}")
     public void updateJob(@PathVariable Long id, @RequestBody Job updatedJob) {
         jobService.updateJob(id, updatedJob);
