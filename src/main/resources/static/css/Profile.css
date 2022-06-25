@@ -1,286 +1,331 @@
-/* using flex-box instead of grid */
-.latest-services-title,
-.profile-reviews-title {
-    font-size: clamp(3.3rem, 2.875rem + 2.4286vw, 5rem);
+.profile-div{
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 4rem 0 2rem 0;
-    color: var(--white);
-    text-transform: uppercase;
-    letter-spacing: var(--spacing8);
+    overflow: hidden;
 }
 
-.profile-details {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 55px;
-}
-.seller-profile-description-wrapper {
-    position: relative;
-    max-width: 650px;
+.profile-divider {
+    width: calc(100% - 60px);
+    max-width: 1400px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    padding-top: 60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
-/*.seller-profile-description-wrapper .fa-pencil{*/
-/*    position: absolute;*/
-/*   top: -16px;*/
-/*    right: 0;*/
-/*}*/
-.profile-pic-div {
-    position: relative;
+
+/*PROFILE SELLER SECTION*/
+.profile-seller{
     width: 300px;
+    height: 100%;
+    margin-bottom: auto;
 }
-.profile-pic-div #upload-btn {
-    position: absolute;
-    bottom: 45px;
-    /*right:117px;*/
-    height: 53px;
+
+.profile-seller__user-image-wrapper{
+    position: relative;
     width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(17, 17, 17, 0.69);
-    font-size: 1.4rem;
-    text-align: center;
-}
-.profile-pic-div .main-profile-img {
-    clip-path: ellipse(33% 40% at 50% 50%);
-    width: 300px;
+    margin: 0 auto 90px auto;
 }
 
-.profile-details .profile-username {
-    font-size: 8rem;
-    font-weight: 200;
-    text-align: left;
-    margin-bottom: 3.5rem;
-    line-height: 1.2;
+.profile-seller__user-image{
+    clip-path: circle(50% at 50% 50%);
+    width: 60%;
+    pointer-events: none;
+    /*scale: 1.4;*/
 }
 
-.profile-details-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.user-edit {
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around; */
-    /* width: 500px; */
+.profile-seller__contact-dropdown{
+    min-width: 250px;
     position: relative;
+    bottom: 40px;
+    right: -180px;
+    cursor: pointer;
+    z-index: 99;
 }
 
-.profile-details-wrapper .profile-edit-btn {
-    width: 100px;
-    height: 37px;
-    background-color: var(--btn-accent);
-    color: whitesmoke;
-    font-size: 1.6rem;
-    letter-spacing: var(--spacing4);
-    border-radius: 3px;
-    margin-bottom: 3rem;
-    transition: opacity 450ms ease;
-    align-self: flex-start;
-    opacity: 0.3;
+.profile-seller__contact-bubble{
+    width: 80px;
+    /*top: 0;*/
+    bottom: -30px;
+    left: 10px;
+    cursor: pointer;
+    position: relative;
+    /*z-index: 90;*/
+}
+
+.profile-seller__contact-dropdown ul{
+    /*width: 100%;*/
+    max-width: 250px;
+    background: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
     position: absolute;
-    top: -42px;
-    right: 0;
-}
+    /*right: -200px;*/
+    /*bottom: -160px;*/
+    top: 100%;
+    /*transform: translateY(-25px);*/
+    opacity: 0;
+    transition: transform 350ms ease-in-out,opacity 350ms ease-in-out;
+    pointer-events: none;
 
-.profile-details-wrapper .profile-edit-btn:hover {
+}
+.profile-seller__contact-dropdown ul.slidedown{
+    transform: translateY(55px);
     opacity: 1;
+    pointer-events: all;
 }
-/* PROFILE NAVIGATION */
-.profile-navigation {
-    margin-bottom: 3rem;
-    max-width: 650px;
-    margin: 0 auto;
+
+
+.profile-seller__contact-dropdown ul li{
+    transition: background-color 400ms ease-in-out;
+    /*padding: 20px;*/
+    cursor: pointer;
+
 }
-.profile-navigation ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+.profile-seller__user-image-wrapper ul li:not(.profile-seller__user-image-wrapper ul li:last-child){
+    border-bottom: #dcdcdc solid 1px;
+}
+.profile-seller__user-image-wrapper ul li:hover{
+    background-color: #d9c6ff;
+
+}
+.profile-seller__contact-dropdown ul a{
+    color: var(--main-black);
+    font-size: 1.8rem;
+    /*transition: color .9s ease-in-out;*/
+    display: inline-block;
+    padding: 15px;
+    text-decoration: underline;
+    /*z-index: 1;*/
+    cursor: pointer;
+}
+.profile-seller__contact-dropdown ul i{
+    color: var(--main-black);
+    margin-right: 2rem;
+    /*transition: color .9s ease-in-out;*/
+
+}
+
+/*BIO*/
+.profile-seller__seller-name{
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5rem;
+    text-align: left;
+}
+.profile-seller__talent-description{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.profile-seller__seller-bio-title{
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+.profile-seller__seller-bio{
+    font-size: 2rem;
+}
+/*PROFILE ELEMENTS*/
+.profile-elements{
+    flex: 1;
     justify-content: start;
 }
-.profile-navigation ul li a {
-    font-size: 2rem;
-    font-weight: 300;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    cursor: pointer;
-    padding: 10px;
-}
 
-/* SERVICES PROFILE CARDS */
-.services-profile-card__flex-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 1.2rem;
-    max-width: 1000px;
-}
-
-.services-profile__username-wrapper {
-    padding: 0 25px;
-}
-
-.services-profile__cards {
-    background-color: var(--orange);
-    width: 300px;
-    border-radius: 13px;
-    position: relative;
-
+.section-cards{
+    width:90%;
+    min-width: 280px;
+    background-color: #131313;
+    border-radius: 15px;
     overflow: hidden;
-    padding-bottom: 10px;
-    border: 3px solid black;
+    margin: 0 auto;
+
+    padding: 10px 25px 25px 25px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
-.services-profile__cards::after {
+.profile-services{
+    margin-bottom: 30px;
+}
+.profile-services p, .fa-clock{
+    color: var(--white);
+}
+
+.profile-section-titles{
+    font-size:3rem;
+    font-weight: 400;
+    padding-bottom: 4px;
+    margin-bottom: 25px;
+    position: relative;
+    color: var(--white);
+}
+.profile-section-titles::before{
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100px;
-    top: 0;
-    background: linear-gradient(to bottom, rgb(51, 51, 51), transparent);
-}
-.services-profile__cards img {
-    /* position: absolute; */
-    background-size: cover;
-    background-position: 50px 150px;
-    width: 300px;
-    height: 300px;
-    aspect-ratio: 1/1;
-}
-
-.services-profile-card__username {
-    color: var(--white);
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: var(--spacing4);
-    margin: 10px 0 0 10px;
-
-    position: absolute;
-    top: 0;
-    z-index: 55;
-}
-.services-profile-card__description,
-.services-profile-card__price {
-    color: var(--white);
-    font-size: 1.8rem;
-}
-
-.services-profile__cards-bottom {
-    padding: 0 10px 0 10px;
-}
-
-/* Card Description Wrapper */
-.services-profile-card__description-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 2.5rem;
-}
-.services-profile-card__ratings {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--white);
+    height: 3px;
+    width: 24px;
+    background-color: #525252;
+    bottom: 0;
     border-radius: 15px;
-    padding: 5px 15px;
-}
-.services-profile-card__ratings .fa-star,
-.services-profile-card__ratings-percent {
-    color: goldenrod;
-    padding-right: 2px;
-}
-.services-profile-card__ratings-jobs {
-    color: rgb(107, 107, 107);
-}
-.services-profile-card-price-span {
-    font-size: 2.5rem;
-    color: rgb(230, 229, 229);
-}
-.services-card-hyperlinks:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    cursor: pointer;
-    color: white;
 }
 
-/* REVIEWS SECTION */
-.services-profile__reviews-container {
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center; */
-    margin: 0 auto;
-    /* gap: 1.2rem; */
-    max-width: 1000px;
-}
-
-.new-review_customer-wrapper {
+/*SERVICES CARDS*/
+.profile-services__card{
     width: 100%;
-    margin-bottom: 65px;
-    border-bottom: 2px solid rgb(200, 200, 200);
-    padding-bottom: 20px;
-}
-
-.customer-username-wrapper {
+    height: fit-content;
+    background-color: var(--purple);
+    padding: 18px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
-    margin-bottom: 1.5rem;
 }
-.customer-username {
-    font-size: 2.5rem;
-    display: inline-block;
-    margin-right: 5px;
+
+.profile-services__card:not(.profile-services__card:last-of-type){
+    margin-bottom: 15px;
 }
-.reviews__customer-rating {
-    color: gold;
-    font-size: 1.5rem;
-    padding-left: 2px;
+
+.profile-services__service-image{
+    width: 80px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-.customer-username-wrapper .fa-star {
-    color: gold;
-    font-size: 1.8rem;
+.profile-services__profile-details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+    flex: 1;
+
 }
-.new-review_customer-review {
-    letter-spacing: 0.03em;
-    max-width: fit-content;
+.profile-details__element-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* FOR MEDIA QUERY */
-@media screen and (min-width: 768px) {
-    .profile-details .profile-username {
-        font-size: 10rem;
-        font-weight: 200;
+/*.profile-details__element-wrapper .fa-crown{*/
+/*    color: var(--main-black);*/
+/*    margin-right: 1rem;*/
+/*}*/
+.profile-details__title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.profile-details__title:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.profile-details-delivery-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.profile-details__booking-btn{
+    width: 110px;
+    height: 35px;
+    /*background-color: #fa9069;*/
+    background-color: var(--pink);
+    /*border: var(--orange) solid 2px;*/
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor:pointer;
+    transition: all 250ms ease;
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.profile-details__booking-btn:hover{
+    background: #c070a4;
+    color: var(--white);
+}
+.profile-details__booking-btn:active{
+    transform: scale(.9);
+}
+
+
+/*PROFILE REVIEWS*/
+.profile-reviews-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profile-reviews-wrapper > img{
+    width: 13%;
+    min-width: 90px;
+    border-radius: 50%;
+    /*border: black solid 2px;*/
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+
+/*MEDIA QUERIES FOR MOBILE AND TABLET*/
+@media screen and (max-width: 880px) {
+
+    .profile-divider {
+        flex-direction: column;
+        gap: 45px;
+        width: calc(100% - 10px);
+    }
+    .profile-services__service-image{
+        /*width: 50%;*/
+        max-width: 80px;
+        align-self: start;
+    }
+    .profile-elements{
+        width: 100%;
+    }
+    .profile-services__title{
+        font-size:2.5rem;
+        font-weight: 400;
+        padding-bottom: 4px;
+        margin-bottom: 25px;
+        position: relative;
+        color: var(--white);
+    }
+    .profile-services__card{
+        overflow: hidden;
+    }
+    .profile-details__title{
+        font-size: 1.7rem;
+        font-weight: 500;
         text-align: left;
-        margin-bottom: 3rem;
-        line-height: 1.2;
+    }
+    .profile-details-delivery-container{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        /*width: 100%;*/
+        gap: 6px;
+    }
+    .profile-details__booking-btn{
+        width: 100px;
+        height: 30px;
+        color: var(--white);
+        font-size: 1.4rem;
+    }
+
+
+
+
+    /*    BUBBLE DROPDOWN*/
+    .profile-seller__contact-dropdown{
+        bottom: 30px;
+        right: -50px;
+    }
+
+
+
+    .profile-seller__contact-dropdown ul{
+
+        transition: all 350ms ease-in-out;
+
     }
 }
-/* .profile-details {
-	display: flex;
-	align-items: center;
-	justify-content: start;
-}
-.profile-details img {
-	clip-path: ellipse(33% 40% at 50% 50%);
-	width: 300px;
-}
-
-.profile-details .profile-username {
-	font-size: 9rem;
-	font-weight: 200;
-}
-
-.profile-details-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: start;
-} */
