@@ -5,13 +5,13 @@ public class CreateJobDto {
     private String title;
     private String description;
     private Double price;
-    private String photo;
+    private String category;
 
-    public CreateJobDto(String title, String description, Double price, String photo) {
+    public CreateJobDto(String title, String description, Double price, String category) {
         this.title = title;
         this.description = description;
         this.price = price;
-        this.photo = photo;
+        this.category = category;
     }
 
     public CreateJobDto() {
@@ -42,11 +42,11 @@ public class CreateJobDto {
         this.price = price;
     }
 
-    public String getPhoto() {
-        return photo;
+    public String getCategory() {
+        return category;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

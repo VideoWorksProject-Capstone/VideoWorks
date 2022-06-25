@@ -9,7 +9,6 @@ export default function Login(props) {
             <title>Log In</title>
         </head>
         <body>
-
             <div class="login-wrap">
                 <div class="login-html">
                     <label for="tab-1" class="tab">Sign In</label>
@@ -38,4 +37,5 @@ export default function Login(props) {
         </html>
     `;
 }
-createView( "/login");
+
+createView( "/profile");

@@ -940,6 +940,12 @@ body {
     transition: all 350ms ease;
 }
 
+.user-avatar-image {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
 .media-element:hover .user-avatar-box{
     border-radius: 25px;
     width: 205px;

@@ -1,11 +1,10 @@
-import Home, {bookEvent} from "./views/Home.js";
+import Home from "./views/Home.js";
 import Error404 from "./views/Error404.js";
 import Loading from "./views/Loading.js";
 import Login from "./views/Login.js";
 import LoginEvent from "./auth.js";
 import Register, {RegisterEvent} from "./views/Register.js";
 import Profile, {createJobEvent} from "./views/Profile.js";
-
 
 /**
  * Returns the route object for a specific route based on the given URI
@@ -16,17 +15,16 @@ export default function router(URI) {
     const routes = {
         '/': {
             returnView: Home,
-            state: {jobs:'/api/services'},
+            state: {jobs: '/api/services/job'},
             uri: '/',
             title: 'Home',
-            viewEvent: bookEvent
         },
         '/profile': {
             returnView: Profile,
             state: {user: '/api/users/me'},
             uri: '/profile',
             title: "Profile",
-            viewEvent: createJobEvent
+            viewEvent: createJobEvent()
         },
         '/login': {
             returnView: Login,

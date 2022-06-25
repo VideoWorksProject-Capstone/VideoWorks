@@ -1,5 +1,4 @@
 "use strict"
-
 $(() => {
     $('#edit-preferences').click(function(){
         $('#edit-preferences-modal').addClass('is-active');

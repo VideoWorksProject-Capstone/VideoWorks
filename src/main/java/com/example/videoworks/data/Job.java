@@ -18,7 +18,7 @@ public class Job {
     private String title;
     private String description;
     private Double price;
-    private String photo;
+    private String category;
 
     @ManyToOne
     @JsonIgnoreProperties({"services", "password"})
@@ -28,13 +28,13 @@ public class Job {
     @JsonIgnoreProperties("job")
     private List<Booking> bookings = new ArrayList<>();
 
-    public Job(Long id, String title, String description, Double price, String photo, User user, List<Booking> bookings) {
+    public Job(Long id, String title, String description, Double price, String photo, User user, String category, List<Booking> bookings) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.price = price;
-        this.photo = photo;
         this.user = user;
+        this.category = category;
         this.bookings = bookings;
     }
 
@@ -74,20 +74,20 @@ public class Job {
         this.price = price;
     }
 
-    public String getPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(String photo) {
-        this.photo = photo;
-    }
-
     public User getUser() {
         return user;
     }
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public List<Booking> getBookings() {
@@ -105,7 +105,6 @@ public class Job {
                 ", title=" + title +
                 ", description=" + description +
                 ", price=" + price +
-                ", photo=" + photo +
                 '}';
     }
 }

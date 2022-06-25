@@ -9,11 +9,3 @@ VALUES (1, 1),
        (3, 1),
        (3, 2),
        (4, 1);
-
-INSERT INTO categories (name, photo)
-VALUES ('Music', '../static/img/music.png'),
-       ('Tutoring', '../static/img/tutoring.png'),
-       ('Reading', '../static/img/reading.png'),
-       ('DJ', '../static/img/dj.png'),
-       ('Cooking', '../static/img/cooking.png'),
-       ('Speaking', '../static/img/speaking.png');

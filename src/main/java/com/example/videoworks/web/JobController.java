@@ -21,7 +21,7 @@ public class JobController {
         this.jobService = jobService;
     }
 
-    @GetMapping
+    @GetMapping("job")
     public List<Job> getAll() {
         return jobService.getJobList();
     }
@@ -45,12 +45,6 @@ public class JobController {
     public void createJob(@RequestBody Job newJob, OAuth2Authentication auth) {
         jobService.addJob(newJob, auth);
     }
-
-    // @PostMapping("{username}")
-    // public void createJob(@PathVariable String username, @RequestBody CreateJobDto dto) {
-    //     Job newJob = new Job();
-    //     jobService.addJob(dto, newJob, username);
-    // }
 
     @PutMapping("{id}")
     public void updateJob(@PathVariable Long id, @RequestBody Job updatedJob) {

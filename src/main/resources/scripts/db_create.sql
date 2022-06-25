@@ -6,7 +6,6 @@ USE videoworks;
 
 DROP TABLE IF EXISTS user_roles;
 DROP TABLE IF EXISTS bookings;
-DROP TABLE IF EXISTS categories;
 DROP TABLE IF EXISTS services;
 DROP TABLE IF EXISTS roles;
 DROP TABLE IF EXISTS users;
@@ -40,7 +39,7 @@ CREATE TABLE IF NOT EXISTS services (
     title           VARCHAR(60)     NOT NULL,
     description     TEXT            NOT NULL,
     price           DOUBLE          NOT NULL,
-    photo           BLOB            NOT NULL,
+    category        BLOB            NOT NULL,
     user_id         BIGINT          NOT NULL,
     foreign key (user_id) references users(id)
 );
