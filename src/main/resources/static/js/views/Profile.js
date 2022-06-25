@@ -12,15 +12,26 @@ export default function Profile(props) {
             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
             <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
             <title>VidoeWorks | Profile</title>
+            
         </head>
         <body>
-            <div id="hero-area-section">
-                <div class="hero-area-section-wrapper">
-                    <div class="profile-container">
-                    
-                        <!-- PROFILE HEADER -->
-                    
-                        <div class="profile-details-wrapper">
+        <main class="profile-div">
+            <section class="profile-divider">
+                <!--Begin Profile Seller-->
+                <div class="profile-seller">
+                    <div class="profile-seller__user-image-wrapper">
+                        <img src="../../img/smiling-woman1.jpg" alt="" class="profile-seller__user-image">
+                        <img src="../../img/Chat.png" alt="" tabindex="0" class="profile-seller__contact-bubble">
+                        <div class="profile-seller__contact-dropdown" tabindex="0">
+                            <ul>
+                                <li tabindex="0"><a href="#">Get a quote <i class="fa-solid fa-arrow-right"></i></a></li>
+                                <li
+                                        tabindex="0"><a href="https://google.com">Ask a question
+                                    <i class="fa-solid fa-arrow-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                                    <div class="profile-details-wrapper">
                             <div class="profile-details">
                                 <div class="profile-pic-div">                     
                                     <input type="image" class="main-profile-img" id="profile-photo" src="${props.user.photo}" alt="user" readonly> 
@@ -40,40 +51,117 @@ export default function Profile(props) {
                         </div>            
                         </div>
                         
-                        <!-- SERVICES -->
-                        
-                        <main class="services-profile">
-                            <div class="services-profile__services-container">
-                                <h3 class="latest-services-title">Services</h3>
-                                    <div id="create-job">           
-                                        <label for="job-title">Title</label>
-                                        <input type="text" id="job-title" placeholder="Title">
-                                        <br>
-                                        <label for="job-category">Select a category</label>
-                                        <select name="category" id="job-category">
-                                            <option value="./img/music.png">Music</option>
-                                            <option value="./img/tutoring.png">Tutoring</option>
-                                            <option value="./img/reading.png">Reading</option>
-                                            <option value="./img/dj.png">DJ</option>
-                                            <option value="./img/cooking.png">Cooking</option>
-                                            <option value="./img/speaking.png">Speaking</option>
-                                        </select>
-                                        <br>    
-                                        <label for="job-description">Description</label>                
-                                        <textarea type="text" id="job-description" placeholder="Description"></textarea>
-                                        <br>
-                                        <label for="job-price">Rate per hour</label>
-                                        <input type="number" id="job-price" placeholder="$0.00/hr">                      
-                                        <br>
-                                        <input type="button" id="submit-btn" value="Create Service +"/>
-                                    </div>
-                                                   ${props.user.jobs.map(job => getJobCard(job)).join('')}
+                <!--End Profile Seller-->
+                <!--Begin Profile-Elements-->
+                <section class="profile-elements">
+                    <div class="profile-services section-cards">
+                        <h2 class="profile-services__title profile-section-titles">Services Offered</h2>
+                        <div class="profile-services__card">
+                            <img src="https://source.unsplash.com/200x200" alt="random"
+                                 class="profile-services__service-image">
+                            <div class="profile-services__profile-details">
+                                <div class="profile-details__element-wrapper">
+                                    <!--                            <i class="fa-solid fa-crown"></i>-->
+                                    <p class="profile-details__title">I will DJ your party for 4 hours</p>
+                                </div>
+                                <div class="profile-details-delivery-container">
+                                    <p class="profile-details__delivery-time"><i class="fa-regular fa-clock"></i> 2 day
+                                        delivery</p>
+                                    <button class="profile-details__booking-btn">Book Now</button>
                                 </div>
                             </div>
-                        </main>
+                        </div>
+                        <div class="profile-services__card">
+                            <img src="https://source.unsplash.com/200x200" alt="random"
+                                 class="profile-services__service-image">
+                            <div class="profile-services__profile-details">
+                                <div class="profile-details__element-wrapper">
+                                    <!--                            <i class="fa-solid fa-crown"></i>-->
+                                    <p class="profile-details__title">I will DJ your party for 4 hours</p>
+                                </div>
+                                <div class="profile-details-delivery-container">
+                                    <p class="profile-details__delivery-time"><i class="fa-regular fa-clock"></i> 2 day
+                                        delivery</p>
+                                    <button class="profile-details__booking-btn">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-services__card">
+                            <img src="https://source.unsplash.com/200x200" alt="random"
+                                 class="profile-services__service-image">
+                            <div class="profile-services__profile-details">
+                                <div class="profile-details__element-wrapper">
+                                    <!--                            <i class="fa-solid fa-crown"></i>-->
+                                    <p class="profile-details__title">I will DJ your party for 4 hours</p>
+                                </div>
+                                <div class="profile-details-delivery-container">
+                                    <p class="profile-details__delivery-time"><i class="fa-regular fa-clock"></i> 2 day
+                                        delivery</p>
+                                    <button class="profile-details__booking-btn">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-services__card">
+                            <img src="https://source.unsplash.com/200x200" alt="random"
+                                 class="profile-services__service-image">
+                            <div class="profile-services__profile-details">
+                                <div class="profile-details__element-wrapper">
+                                    <!--                            <i class="fa-solid fa-crown"></i>-->
+                                    <p class="profile-details__title">I will DJ your party for 4 hours</p>
+                                </div>
+                                <div class="profile-details-delivery-container">
+                                    <p class="profile-details__delivery-time"><i class="fa-regular fa-clock"></i> 2 day
+                                        delivery</p>
+                                    <button class="profile-details__booking-btn">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-services__card">
+                            <img src="https://source.unsplash.com/200x200" alt="random"
+                                 class="profile-services__service-image">
+                            <div class="profile-services__profile-details">
+                                <div class="profile-details__element-wrapper">
+                                    <!--                            <i class="fa-solid fa-crown"></i>-->
+                                    <p class="profile-details__title">I will DJ your party for 4 hours</p>
+                                </div>
+                                <div class="profile-details-delivery-container">
+                                    <p class="profile-details__delivery-time"><i class="fa-regular fa-clock"></i> 2 day
+                                        delivery</p>
+                                    <button class="profile-details__booking-btn">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-services__card">
+                            <img src="https://source.unsplash.com/200x200" alt="random"
+                                 class="profile-services__service-image">
+                            <div class="profile-services__profile-details">
+                                <div class="profile-details__element-wrapper">
+                                    <!--                            <i class="fa-solid fa-crown"></i>-->
+                                    <p class="profile-details__title">I will DJ your party for 4 hours</p>
+                                </div>
+                                <div class="profile-details-delivery-container">
+                                    <p class="profile-details__delivery-time"><i class="fa-regular fa-clock"></i> 2 day
+                                        delivery</p>
+                                    <button class="profile-details__booking-btn">Book Now</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>    
-            </div>
+                    <section class="profile-reviews section-cards">
+                        <h2 class="profile-reviews__title profile-section-titles">Reviews</h2>
+                        <div class="profile-reviews-wrapper">
+                            <img src="https://source.unsplash.com/800x800/?fruit,red" alt="">
+                            <img src="https://source.unsplash.com/800x800/?fruit,yellow" alt="">
+                            <img src="https://source.unsplash.com/800x800/?fruit,blue" alt="">
+                            <img src="https://source.unsplash.com/800x800/?fruit,green" alt="">
+                            <img src="https://source.unsplash.com/800x800/?fruit,orange" alt="">
+                            <img src="https://source.unsplash.com/800x800/?fruit" alt="">
+                        </div>
+                    </section>
+                </section>
+                <!--End Profile-Elements-->
+            </section>
+        </main>
         </body>
         </html>
     `;
@@ -138,7 +226,7 @@ export function createJobEvent() {
 }
 
 export function editJobEvent() {
-    $(document).on('click', '.edit-btn', function(e) {
+    $(document).on('click', '.edit-btn', function (e) {
         console.log("button clicked");
         e.preventDefault();
 
