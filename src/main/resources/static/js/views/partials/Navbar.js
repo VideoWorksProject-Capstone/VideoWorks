@@ -29,20 +29,18 @@ export default function Navbar(props) {
                 <li><a href="/profile" data-link>Profile</a></li>
                 <li><a href="/login" data-link>Login</a></li>
                 <li><a href="/register" data-link>Register</a></li>
-                <li><a href="/support" data-link>Support</a></li>
             </ul>
         </div>
         <header class="large-header-container">
             <nav class="large-nav">
                 <ul class="large-menu__list">
-                    <li><a href="/categories" data-link>Categories</a></li>
+                    <li><a href="/categories-section" data-link>Categories</a></li>
                     <li><a href="/profile" data-link>Profile</a></li>
                     <li class="large-logo-wrapper">
-                        <h1 id="large-logo"><a href="/" data-link>video<span>Works</span></a></h1>
+                        <h1 id="large-logo"><a href="/" data-link>videoWorks</a></h1>
                     </li>
                     <li><a href="/login" data-link>Login</a></li>
                     <li><a href="/register" data-link>Register</a></li>
-                    <li><a href="/support" data-link>Support</a></li>
                 </ul>
                 <!--            <div class="large-nav-login-btn-wrapper">-->
                 <!--                <button class="large-nav-login-btn">Login</button>-->
