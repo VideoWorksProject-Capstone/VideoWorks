@@ -1275,7 +1275,7 @@ body {
     border-radius: 13px;
     overflow: hidden;
     width: 270px;
-    background-color: var(--green);
+    background-color: var(--purple);
     box-shadow: 0 7px 21px 0 rgb(0 0 0 / 10%);
     padding-bottom: 20px;
 }

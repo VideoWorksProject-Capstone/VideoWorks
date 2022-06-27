@@ -41,6 +41,7 @@ CREATE TABLE IF NOT EXISTS services (
     price           DOUBLE          NOT NULL,
     category        BLOB            NOT NULL,
     user_id         BIGINT          NOT NULL,
+    photo           BLOB            NOT NULL,
     foreign key (user_id) references users(id)
 );
 

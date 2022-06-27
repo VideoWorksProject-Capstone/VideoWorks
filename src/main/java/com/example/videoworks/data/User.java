@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 @DynamicUpdate
 public class User {
 
@@ -22,6 +22,7 @@ public class User {
     private String password;
     private String bio;
     private String photo = "./img/default-user.png";
+    private String message;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"))
@@ -48,7 +49,7 @@ public class User {
         this.bookings = bookings;
     }
 
-    public User(){
+    public User() {
 
     }
 
@@ -131,6 +132,15 @@ public class User {
     public void setBookings(List<Booking> bookings) {
         this.bookings = bookings;
     }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
 
     @Override
     public String toString() {

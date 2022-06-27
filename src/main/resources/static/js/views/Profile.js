@@ -34,16 +34,18 @@ export default function Profile(props) {
                                     <div class="profile-details-wrapper">
                             <div class="profile-details">
                                 <div class="profile-pic-div">                     
-                                    <input type="image" class="main-profile-img" id="profile-photo" src="${props.user.photo}" alt="user" readonly> 
+                                    <input width="250" height="250" type="image" class="main-profile-img" id="profile-photo" src="${props.user.photo}" alt="user" readonly> 
                                     <input type="file" name="img-file" id="img-file"/>
                                     <label for="img-file" id="upload-btn">Choose photo</label>
                                 </div>
+                                <br>
                                 <div class="user-edit">
                                     <h2 class="profile-username">${props.user.name}</h2>
-                                    <button class="profile-edit-btn">Edit</button>
+<!--                                    <button class="profile-edit-btn">Edit</button>-->
                                 </div>
                             </div>
                         </div>        
+                        <br>
                         <div class="seller-profile-description-wrapper">
                             <div>
                                 <p class="seller-profile-description">${props.user.bio}</p>
