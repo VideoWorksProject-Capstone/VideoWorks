@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+root{
+    --main-black:#1111;
+    --main-purple:#28203f;
+    --btn-accent: #4C2FA1;
+    --white:whitesmoke;
+    --left-gradient: #5F3CAF;
+    --right-gradient:#4c2fa1;
+    --text-accent:#a47cf6;
+    /*avatar accent colors*/
+    --green:#b9d7b5;
+    --blue:#70afd5;
+    --pink:#e497c9 ;
+    --purple: #776BCE;
+    --orange:coral;
+    /*card colors*/
+    --lt-purple: #D3C7F5;
+}
+
+body{
+    background-image: url("https://cdn.wallpapersafari.com/93/21/sKyreg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card{
+    background-image: url("https://cdn.wallpapersafari.com/93/21/sKyreg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #111111;
+    mso-border-shadow: yes;
+    color: white;
+}
+#mainNavigation a {
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    text-shadow:1px 1px 2px rgba(0,0,0,0.4);
+    padding: 10px;
+}
+
+.dropdown-menu {
+    background:white;
+}
+a.dropdown-toggle {
+    color:#dfdfdf !important
+}
+a.dropdown-item:hover {
+    color:#03727d !important
+}
+.nav-item a{
+    color:#dfdfdf;
+}
+.nav-item a:hover {
+    color:#fff
+}
+.nav-item{
+    min-width:12vw;
+}
+#mainNavigation {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:123;
+    padding-bottom:90px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+#navbarNavDropdown.collapsing .navbar-nav,
+#navbarNavDropdown.show .navbar-nav{
+    background:white;
+    opacity: 65%;
+    padding:12px;
+}
+
+/*login form*/
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background-image: url("https://cdn.wallpapersafari.com/93/21/sKyreg.jpg");
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+#profile-photo{
+    padding-top: 90px;
+}
+
+
+/*register css*/
+
+/* TYPOGRAPHY */
+/* COLORS */
+/* MIXINS RESPONSIVE */
+/* GENERAL STYLES */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: "Alata", sans-serif;
+    color: black;
+    font-weight: 400;
+}
+
+/* TEXT */
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 500;
+}
+
+/* SPACING */
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.containerTxt {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* FLEXBOX */
+.flex {
+    display: flex;
+}
+.flex-jc-sb {
+    justify-content: space-between;
+}
+.flex-jc-c {
+    justify-content: center;
+}
+.flex-jc-sa {
+    justify-content: space-around;
+}
+.flex-jc-fe {
+    justify-content: flex-end;
+}
+.flex-ai-c {
+    align-items: center;
+}
+.flex-ai-s {
+    align-items: start;
+}
+.flex-ai-fe {
+    align-items: flex-end;
+}
+.flex-fd-c {
+    flex-direction: column;
+}
+.flex-js-c {
+    justify-self: center;
+}
+.flex-js-fe {
+    justify-self: end;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.attribution a {
+    color: #3e52a3;
+}
+
+/* HEADER */
+body.open {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    overflow: hidden;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    header {
+        background-image: url("https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-hero.jpg");
+    }
+}
+header .hero {
+    color: white;
+    flex: 1;
+    align-content: flex-start;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+header .hero h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    border: white solid 0.2rem;
+    padding: 2rem;
+    display: inline-block;
+}
+@media (min-width: 768px) {
+    header .hero h1 {
+        font-size: 7rem;
+        width: auto;
+    }
+}
+
+/* HOVER LINKS NAV */
+@keyframes underlineNav {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes anim-menu {
+    0% {
+        transform: translateX(100%) scale(1.4, 1);
+    }
+    100% {
+        transform: translateX(0%) scale(1, 1);
+    }
+}
+/* SERVICES */
+/* ABOUT SECTION */
+.interactive {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+@media (min-width: 768px) {
+    .interactive {
+        grid-template-columns: 1fr 0.5fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+.interactive-img {
+    grid-row: 1/-1;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .interactive-img {
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+}
+.interactive-img img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+@media (min-width: 768px) {
+    .interactive-img img {
+        width: auto;
+    }
+}
+.interactive-txt {
+    background-color: white;
+    padding: 4rem 4rem 0 4rem;
+    grid-row: 2;
+    grid-column: 2/-1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .interactive-txt {
+        justify-content: flex-end;
+        align-items: center;
+        text-align: left;
+    }
+}
+.interactive-txt h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.interactive-txt p {
+    color: #8c8c8c;
+    max-width: 80%;
+}
+@media (min-width: 768px) {
+    .interactive-txt p {
+        text-align: left;
+    }
+}
+
+/* OUR CREATIONS SECTION */
+.creations {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .creations {
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr max(50rem) max(50rem);
+    }
+}
+.creations h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .creations h2 {
+        text-align: left;
+        grid-row: 1;
+        grid-column: 1/span 3;
+    }
+}
+.creations button {
+    background-color: white;
+    border-radius: 0%;
+    border: solid black 0.1rem;
+    padding: 0.5rem 4rem;
+    text-transform: uppercase;
+    font-family: "Alata", sans-serif;
+    letter-spacing: 0.1rem;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+    grid-row: 10;
+}
+@media (min-width: 768px) {
+    .creations button {
+        justify-self: end;
+        grid-row: 1;
+        grid-column: 4/span 1;
+        margin: 0;
+    }
+}
+.creations button:hover {
+    background-color: black;
+    border: solid white 0.1rem;
+    color: white;
+}
+.creations div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 0.3s;
+    min-height: 20rem;
+    background-position: center top;
+}
+.creations div::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: white;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.3s;
+}
+.creations div:hover::after {
+    opacity: 0.5;
+}
+.creations div a {
+    color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    transition: 0.3s;
+    padding: 2rem;
+    font-size: 2rem;
+}
+@media (min-width: 768px) {
+    .creations div a {
+        font-size: 3rem;
+        padding: 3rem;
+    }
+}
+.creations div:hover a {
+    color: black;
+}
+.creations-deepearth {
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-deep-earth.jpg);
+}
+@media (min-width: 768px) {
+    .creations-deepearth {
+        background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-deep-earth.jpg);
+    }
+}
+.creations-nightarcade {
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-night-arcade.jpg);
+}
+@media (min-width: 768px) {
+    .creations-nightarcade {
+        background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-night-arcade.jpg);
+    }
+}
+.creations-soccerteam {
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-soccer-team.jpg);
+}
+@media (min-width: 768px) {
+    .creations-soccerteam {
+        background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-soccer-team.jpg);
+    }
+}
+.creations-thegrid {
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-grid.jpg);
+}
+@media (min-width: 768px) {
+    .creations-thegrid {
+        background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-grid.jpg);
+    }
+}
+.creations-fromup {
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-from-above.jpg);
+}
+@media (min-width: 768px) {
+    .creations-fromup {
+        background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-from-above.jpg);
+    }
+}
+.creations-pocketborealis {
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-pocket-borealis.jpg);
+}
+@media (min-width: 768px) {
+    .creations-pocketborealis {
+        background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-pocket-borealis.jpg);
+    }
+}
+.creations-curiosity {
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-curiosity.jpg);
+}
+@media (min-width: 768px) {
+    .creations-curiosity {
+        background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-curiosity.jpg);
+    }
+}
+.creations-makeit {
+    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-fisheye.jpg);
+}
+@media (min-width: 768px) {
+    .creations-makeit {
+        background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-fisheye.jpg);
+    }
+}
+
+/* FOOTER */
+footer {
+    margin-top: 8rem;
+    background-color: black;
+    color: white;
+}
+footer > div {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+@media (min-width: 768px) {
+    footer > div {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+footer > div div {
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    footer .footer-navigation {
+        grid-row: 2/span 1;
+        grid-column: 1/span 1;
+    }
+}
+footer .footer-navigation ul li {
+    padding: 1rem 0;
+}
+@media (min-width: 768px) {
+    footer .footer-navigation ul {
+        flex-direction: row;
+    }
+    footer .footer-navigation ul:first-child a {
+        margin: 1rem 1rem 1rem 0;
+    }
+}
+@media (min-width: 768px) {
+    footer .footer-logo {
+        justify-content: flex-start;
+    }
+}
+@media (min-width: 768px) {
+    footer .footer-social {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+footer .footer-copyright {
+    color: #8c8c8c;
+}
+@media (min-width: 768px) {
+    footer .footer-copyright {
+        justify-content: flex-end;
+    }
+}
+footer .footer a {
+    position: relative;
+    margin: 1rem 1rem;
+    color: white;
+}
+footer .footer a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 0.2rem;
+    top: 120%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    transition: all 200ms ease-in-out;
+}
+footer .footer a:hover::after {
+    animation: underlineNav 0.2s linear forwards;
+}

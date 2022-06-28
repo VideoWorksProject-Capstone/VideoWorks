@@ -7,173 +7,113 @@ export default function Home(props) {
     return `
         <body>
         <!--Mobile First-->
-        <div class="hero-area">
-            <!--    Removed navbar-->
-            <main id="hero-area-section">
-                <div class="hero-area-section-wrapper">
-                    <div class="hero-area-section-wrapper__main">
-                        <section class="hero-area-lede">
-                            <h2>Talented Virtual Creators.<br>At Your Service.</h2>
-                            <br>
-                            <p>Connect with hand-picked talent, that is vetted and expertly matched to fit your needs.
-                            </p>
-                            <button class="hero-area-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i>
-                            </button>
-                            <input type="search" name="search-services" id="">
-                        </section>
-                        <section class="hero-area-graphic,floating-woman-animation">
-                            <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady" width="500" height="500">
-                        </section>
+        <!-- MAIN -->
+        <main>
+            <!-- INTERACTIVE VR -->
+            <section id="about" class="container">
+                <div class="interactive">
+                    <div class="interactive-img">
+                        <img src="https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-interactive.jpg" alt="Leader interactive VR">
                     </div>
-                    <section class="hero-area-slider">
-                        <h2 id="hero-area-slider-title" class="hero-area-slider-title section-titles">Categories</h2>
-                        <div class="media-scroller scroller-controls">
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/Artist.png" alt="DJ BOOTH" class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/Black Man.png" alt="face avatar" class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>Host an unforgettable event with our VIP Dj's from around the world </p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Virtual DJ's</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/Asian Man.png" alt="DJ BOOTH"
-                                         class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/Astronaut.png" alt="face avatar"
-                                     class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>Learn to cook your favorite dish with one of our elite chef's</p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Culinary Arts</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/Muslim Woman.png" alt="DJ BOOTH" class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/Black Woman.png" alt="face avatar" class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>Our tutor's cover a wide range of topics</p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Online Tutor's</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/Black Woman.png" alt="DJ BOOTH" class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/College Student.png" alt="face avatar" class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>Books are better when you can hear them</p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Book Reading's</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/College Student.png" alt="DJ BOOTH" class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/College Student.png" alt="face avatar" class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>Let our producers mix and master your songs with studio quality</p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Music Mastering</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/Designer.png" alt="DJ BOOTH" class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/Designer.png" alt="face avatar" class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>Frontend, backend, fullstack. end-to-end IT solutions</p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Development & IT</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/Doctor.png" alt="DJ BOOTH" class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/Doctor.png" alt="face avatar" class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>World-class design - At your service</p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Digital Designers</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/Farmer.png" alt="DJ BOOTH" class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/Farmer.png" alt="face avatar" class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>Convert your visitors into leads and then into paying customers</p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Online Marketing</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                            <div class="category-cards">
-                                <div class="category-image-container">
-                                    <img src="../../img/avatars/Muslim Woman.png" alt="DJ BOOTH" class="category-cards__img">
-                                </div>
-                                <div class="category-cards__shape"></div>
-                                <img src="../../img/avatars/Muslim Woman.png" alt="face avatar" class="category-cards__person-popup">
-                                <div class="category-cards__description">
-                                    <p>We handle your business affairs so you and help your business grow</p>
-                                </div>
-                                <div class="category-cards__details">
-                                    <p class="category-cards__details__title">Business</p>
-                                    <a href="#">Get Started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    <div class="interactive-txt">
+                        <h2>The leader in interactive VR</h2>
+                        <p>Founded in 2022, Loopstudios has been producing world-class virtual reality
+                            projects for some of the best companies around the globe. Our award-winning
+                            creations have transformed businesses through digital experiences that bind
+                            to their brand.</p>
+                    </div>
                 </div>
-            </main>
-        </div>
-        <!--End of hero-area section-->
-        <!--Start of Wheel-->
-        <!--*****-->
-        <!--START CATEGORY SECTION-->
-        <section class="homepage-category-section">
-            <div class="homepage-category-section__title-wrapper">
-                <h2 id="categories-section" class="section-titles">Seller Spotlight</h2>
-            </div>
-            <div class="category-grid">
-                <!--loosely following BEM-->
-                ${props.jobs.map(job => getHomeJobCard(job)).join('')}
-            </div>
-        </section>
+            </section>
+
+            <!-- OUR CREATIONS -->
+            <section id="products" class="container">
+                <div class="creations color-inherit">
+                    <h2>Our creations</h2>
+
+                    <button>See all</button>
+
+                    <!-- GALLERY -->
+                    <div class="creations-deepearth flex flex-ai-fe">
+                        <a href="">
+                            <h3>Deep<br>earth</h3>
+                        </a>
+                    </div>
+
+                    <div class="creations-nightarcade flex flex-ai-fe">
+                        <a href="">
+                            <h3>Night<br>arcade</h3>
+                        </a>
+                    </div>
+
+                    <div class="creations-soccerteam flex flex-ai-fe">
+                        <a href="">
+                            <h3>Soccer<br>team VR</h3>
+                        </a>
+                    </div>
+
+                    <div class="creations-thegrid flex flex-ai-fe">
+                        <a href="">
+                            <h3>The<br>grid</h3>
+                        </a>
+                    </div>
+
+                    <div class="creations-fromup flex flex-ai-fe">
+                        <a href="">
+                            <h3>From up<br>above VR</h3>
+                        </a>
+                    </div>
+
+                    <div class="creations-pocketborealis flex flex-ai-fe">
+                        <a href="">
+                            <h3>Pocket<br>borealis</h3>
+                        </a>
+                    </div>
+
+                    <div class="creations-curiosity flex flex-ai-fe">
+                        <a href="">
+                            <h3>The<br>curiosity</h3>
+                        </a>
+                    </div>
+
+                    <div class="creations-makeit flex flex-ai-fe">
+                        <a href="">
+                            <h3>Make it<br>fisheye</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer container">
+                <!-- LOGO -->
+                <div class="footer-logo flex flex-jc-c">
+                    <img src=" alt="Logo">
+                </div>
+
+                <!-- NAVIGATION -->
+                <div class="footer-navigation">
+                    <ul class="flex flex-ai-c flex-fd-c">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="footer-social">
+                    <ul class="flex flex-ai-c flex-jc-c">
+                        <li><a href=""><img src="" alt="Facebook"></a></li>
+                        <li><a href=""><img src="" alt="Twitter"></a></li>
+                        <li><a href=""><img src=""></a></li>
+                        <li><a href=""><img src="" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+        </html>
         </body>
     `;
 }

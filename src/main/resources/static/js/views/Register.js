@@ -9,39 +9,52 @@ export default function Register(){
             <meta charset="UTF-8"/>
             <title>Register</title>
         </head>
-        <body>
-        <div class="login-wrap">
-            <div class="login-html">
-                <label for="tab-2" class="tab">Sign Up</label>
-                <form class="login-form">
-                    <div class="sign-up-htm">
-                        <div class="group">
-                        <label for="name" class="label">Name</label>
-                        <input id="name" name="name" class="input" type="text"/>
-                        </div>
-                        <div class="group">
-                        <label for="username" class="label">Username</label>
-                        <input id="username" name="username" class="input" type="text"/>
-                        </div>
-                        <div class="group">
-                        <label for="email" class="label">Email</label>
-                        <input id="email" type="email" class="input" name="email">
-                        </div>
-                        <div class="group">
-                        <label for="password" class="label">Password</label>
-                        <input id="password" name="password" class="input" type="password" data-type="password"/>
-                        </div>
-                        <div class="group">
-                        <label for="boi" class="label">Tell us about yourself</label>
-                        <input id="bio" name="bio" class="input" type="text"/>
-                        </div>
-                        <div class="group">
-                        <input class="button" type="button" value="Register"/>
+        <section class="vh-100 bg-image"
+            <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+                <div class="container h-100">
+                    <div class="row d-flex justify-content-center align-items-center h-100">
+                        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                            <div class="card" style="border-radius: 15px;">
+                                <div class="card-body p-5">
+                                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+                                    <form>
+
+                                        <div class="form-outline mb-3">
+                                            <label for="name" class="label">Name</label>
+                                            <input id="name" name="name" class="form-control form-control-md" type="text"/> 
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <label for="username" class="label">Username</label>
+                                            <input id="username" name="username" class="form-control form-control-lg" type="text"/>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label for="email" class="label">Email</label>
+                                            <input id="email" type="email" class="form-control form-control-lg" name="email">
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label for="password" class="label">Password</label>
+                                            <input id="password" name="password" class="form-control form-control-lg" type="password" data-type="password"/>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <label for="boi" class="label">Tell us about yourself</label>
+                                            <input id="bio" name="bio" class="form-control form-control-lg" type="text"/>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                                <input class="button" type="button" value="Register"/>
+                                        </div>
+
+                                        <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/login" data-link>Login</a></p>
+
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
+        </section>
         </body>
         </html>
     `;
