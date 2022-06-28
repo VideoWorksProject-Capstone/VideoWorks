@@ -1,7 +1,7 @@
 import {getHeaders} from "../auth.js";
 import createView from "../createView.js";
 
-const BASE_URL = "http://lovalhost:8080/api/services"
+const BASE_URL = "http://localhost:8080/api/services"
 
 export default function Profile(props) {
     return `
@@ -79,12 +79,11 @@ export default function Profile(props) {
     `;
 }
 
-// export function JobEvent() {
-//     getJobCard();
-//     createJobEvent();
-//     editJobEvent();
-//     deleteJobEvent();
-// }
+export function JobEvent() {
+    createJobEvent();
+    editJobEvent();
+    deleteJobEvent();
+}
 
 export function getJobCard(job) {
     return `
@@ -97,13 +96,15 @@ export function getJobCard(job) {
                         <div class="services-profile-card__description-wrapper">
                             <p class="services-profile-card-price">${job.price}</p>
                         </div>
+                        <button type="submit" id="save-btn" class="btn btn-primary save-btn" data-id="${job.id}">Save</button>
+                        <button type="submit" id="delete-btn" class="btn btn-danger delete-btn" data-id="${job.id}">Delete</button>
                     </div>        
                 </div>
             </div>
 `
 }
 
-export function createJobEvent() {
+function createJobEvent() {
     $(document).on('click', '#submit-btn', function (e) {
         console.log("button clicked");
         e.preventDefault();
@@ -137,18 +138,20 @@ export function createJobEvent() {
     })
 }
 
-export function editJobEvent() {
-    $(document).on('click', '.edit-btn', function(e) {
+function editJobEvent() {
+    $(document).on('click', '.save-btn', function(e) {
         console.log("button clicked");
         e.preventDefault();
 
-        const jobTitle = $(`.card-title-${$(this).data("id")}`).text();
-        const jobDescription = $(`.card-description-${$(this).data("id")}`).text();
-        const jobPrice = $(`.card-price-${$(this).data("id")}`).text();
+        const jobCategory = $(`.card-category-${$(this).data("id")}`).text();
+        const jobTitle = $(`.services-profile-card__username-${$(this).data("id")}`).text();
+        const jobDescription = $(`.services-profile-card__description-${$(this).data("id")}`).text();
+        const jobPrice = $(`.services-profile-card-price-${$(this).data("id")}`).text();
 
         const request = {
             method: "PUT",
             body: JSON.stringify({
+                category: jobCategory,
                 title: jobTitle,
                 description: jobDescription,
                 price: jobPrice
@@ -164,7 +167,7 @@ export function editJobEvent() {
     })
 }
 
-export function deleteJobEvent() {
+function deleteJobEvent() {
     $(document).on('click', '.delete-btn', function (e) {
         console.log("button clicked");
         e.preventDefault();

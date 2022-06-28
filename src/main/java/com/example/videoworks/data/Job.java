@@ -10,6 +10,7 @@ import java.util.List;
 @Entity
 @Table(name = "services")
 @DynamicUpdate
+@JsonIgnoreProperties("bookings")
 public class Job {
 
     @Id
@@ -21,11 +22,11 @@ public class Job {
     private String category;
 
     @ManyToOne
-    @JsonIgnoreProperties({"services", "password"})
+    @JsonIgnoreProperties({"services", "password", "bookings"})
     private User user;
 
     @OneToMany(mappedBy = "job")
-    @JsonIgnoreProperties("job")
+    @JsonIgnoreProperties({"job", "bookings"})
     private List<Booking> bookings = new ArrayList<>();
 
     public Job(Long id, String title, String description, Double price, String photo, User user, String category, List<Booking> bookings) {

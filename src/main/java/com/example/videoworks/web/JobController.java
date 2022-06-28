@@ -21,6 +21,11 @@ public class JobController {
         this.jobService = jobService;
     }
 
+    @GetMapping("category")
+    public List<Job> getByCategory(@RequestParam String category) {
+        return jobService.getJobByCategory(category);
+    }
+
     @GetMapping("job")
     public List<Job> getAll() {
         return jobService.getJobList();

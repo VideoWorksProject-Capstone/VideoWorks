@@ -23,6 +23,10 @@ public class JobService {
         return jobRepository.findAll();
     }
 
+    public List<Job> getJobByCategory(String category) {
+        return jobRepository.findByCategory(category);
+    }
+
     public List<Job> getJobByTitleKeyword(String keyword) {
         return jobRepository.searchByTitleLike(keyword);
     }

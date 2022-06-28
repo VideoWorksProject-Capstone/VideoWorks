@@ -10,25 +10,26 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "bookings")
 @DynamicUpdate
+@JsonIgnoreProperties({"bookings", "jobs", "password"})
 public class Booking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String localDate;
+    private String dateTime = String.valueOf(LocalDate.now());
     private String email;
 
     @ManyToOne
-    @JsonIgnoreProperties({"bookings"})
+    @JsonIgnoreProperties({"bookings", "jobs", "password"})
     private User user;
 
     @ManyToOne
-    @JsonIgnoreProperties({"bookings"})
+    @JsonIgnoreProperties({"bookings", "user"})
     private Job job;
 
-    public Booking(Long id, String localDate, String email, User user, Job job) {
+    public Booking(Long id, String dateTime, String email, User user, Job job) {
         this.id = id;
-        this.localDate = localDate;
+        this.dateTime = dateTime;
         this.email = email;
         this.user = user;
         this.job = job;
@@ -46,12 +47,12 @@ public class Booking {
         this.id = id;
     }
 
-    public String getLocalDate() {
-        return localDate;
+    public String getDateTime() {
+        return dateTime;
     }
 
-    public void setDateTime(String localDate) {
-        this.localDate = localDate;
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 
     public String getEmail() {

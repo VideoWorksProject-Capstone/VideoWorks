@@ -32,6 +32,7 @@ public class BookingService {
         newBooking.setEmail(auth.getName());
         User user = usersRepository.findByEmail(email).get();
         newBooking.setUser(user);
+        System.out.println(newBooking.getDateTime());
         bookingRepository.save(newBooking);
     }
 }

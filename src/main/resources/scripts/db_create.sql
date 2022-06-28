@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS services (
 
 CREATE TABLE IF NOT EXISTS bookings (
     id              BIGINT          NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    dateTime        DATETIME        NOT NULL,
+    date            VARCHAR(60)     NOT NULL DEFAULT,
     email           VARCHAR(60)     NOT NULL,
     user_id         BIGINT          NOT NULL,
     service_id      BIGINT          NOT NULL,

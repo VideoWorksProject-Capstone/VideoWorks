@@ -12,4 +12,5 @@ public interface JobRepository extends JpaRepository<Job, Long> {
     List<Job> searchByTitleLike(@Param("term") String term);
 
     List <Job> findByUser(User user);
+    List <Job> findByCategory(String category);
 }

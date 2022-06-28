@@ -1230,6 +1230,17 @@ body {
     cursor: pointer;
     color: white;
 }
+#save-btn {
+    height: 20px;
+    width: 50px;
+    border-radius: 15px;
+}
+#delete-btn {
+    height: 20px;
+    width: 50px;
+    border-radius: 15px;
+    background-color: indianred;
+}
 
 /* REVIEWS SECTION */
 .services-profile__reviews-container {
