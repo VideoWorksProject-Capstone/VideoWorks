@@ -193,8 +193,7 @@ export function getHomeJobCard(job) {
                     <div class="media-element__border"></div>
                     <p class="media-element__creator-description">${job.description}</p>
                     <div class="creator-price-box">
-                        <p>$<span class="creator-price-box__amount">${job.price}</span>/hr</p>
-             
+                        <p>$<span class="creator-price-box__amount">${job.price}</span>/hr</p> 
     <form action="/form" method="post">
                 <div>Name:</div>
                 <input type="text" name="name"/>
