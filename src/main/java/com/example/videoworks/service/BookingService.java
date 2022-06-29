@@ -29,13 +29,16 @@ public class BookingService {
         return bookingRepository.findByJob(job);
     }
 
-    public void addBooking(Booking newBooking, Long id, String dateTime, OAuth2Authentication auth) {
+    public void addBooking(Long id, String dateTime, OAuth2Authentication auth) {
+        Booking newBooking = new Booking();
         String email = auth.getName();
         // newBooking.setEmail(auth.getName());
         User user = usersRepository.findByEmail(email).get();
         Job jobId = jobRepository.findById(id).get();
+        newBooking.setDateTime(dateTime);
         newBooking.setUser(user);
         newBooking.setJob(jobId);
+        newBooking.setEmail(email);
         bookingRepository.save(newBooking);
     }
 }

@@ -20,7 +20,6 @@ export default function Home(props) {
                     <h2>At Your Service.</h2>
                     <p>Connect with hand-picked talent, that is vetted and expertly matched to fit your needs.</p>
                     <button class="hero-area-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
-                    <input type="search" name="search-services" id="">
                 </section>
                 <section class="hero-area-graphic">
                     <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady" width="279px" height="356">
@@ -31,10 +30,10 @@ export default function Home(props) {
                     <div class="media-scroller scroller-controls">
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/djbooth.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/woman.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>Host an unforgettable event with our VIP Dj's from around the world </p>
                             </div>
@@ -45,10 +44,10 @@ export default function Home(props) {
                         </div>
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/culinaryarts.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/farmer.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>Learn to cook your favorite dish with one of our elite chef's</p>
                             </div>
@@ -59,10 +58,10 @@ export default function Home(props) {
                         </div>
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/onlinetutor.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/nerdwoman.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>Our tutor's cover a wide range of topics</p>
                             </div>
@@ -73,10 +72,10 @@ export default function Home(props) {
                         </div>
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/bookreading.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/collegestudent.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>Books are better when you can hear them</p>
                             </div>
@@ -87,10 +86,10 @@ export default function Home(props) {
                         </div>
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/musicmastering.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/blackwoman.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>Let our producers mix and master your songs with studio quality</p>
                             </div>
@@ -101,10 +100,10 @@ export default function Home(props) {
                         </div>
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/technology.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/designer.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>Frontend, backend, fullstack. end-to-end IT solutions</p>
                             </div>
@@ -115,10 +114,10 @@ export default function Home(props) {
                         </div>
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/digitaldesign.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/artist.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>World-class design - At your service</p>
                             </div>
@@ -129,10 +128,10 @@ export default function Home(props) {
                         </div>
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/onlinemarketing.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/muslimwoman.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>Convert your visitors into leads and then into paying customers</p>
                             </div>
@@ -143,10 +142,10 @@ export default function Home(props) {
                         </div>
                         <div class="category-cards">
                             <div class="category-image-container">
-                                <img src="" alt="DJ BOOTH" class="category-cards__img">
+                                <img src="img/business.png" alt="DJ BOOTH" class="category-cards__img">
                             </div>
                             <div class="category-cards__shape"></div>
-                            <img src="" alt="face avatar" class="category-cards__person-popup">
+                            <img src="img/asianman.png" alt="face avatar" class="category-cards__person-popup">
                             <div class="category-cards__description">
                                 <p>We handle your business affairs so you and help your business grow</p>
                             </div>

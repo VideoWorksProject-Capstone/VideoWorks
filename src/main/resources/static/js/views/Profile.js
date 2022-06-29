@@ -4,6 +4,7 @@ import createView from "../createView.js";
 const BASE_URL = "http://localhost:8080/api/services"
 
 export default function Profile(props) {
+    console.log(props.user);
     return `
         <!DOCTYPE html>
         <html lang="en" xmlns="http://www.w3.org/1999/html">
@@ -78,7 +79,7 @@ export default function Profile(props) {
                         <div class="bookings-profile">
                             <h2 class="profile-services__title profile-section-titles">Bookings</h2>
                             <div>
-                              
+                                
                             </div>
                         </div>                                           
                     </section>
@@ -114,17 +115,22 @@ function getJobCard(job) {
         </div>
 `
 }
-
-function getBookings(booking) {
+// ${props.user.bookings.map(booking => getBookingCard(booking)).join('')}
+function getBookingCard(booking) {
     return `
-        <div class="booking-card">
-            <p>${booking.job.title}</p>
-            <br>
-            <p>${booking.dateTime}</p>
-            <br>
-            <p>${booking.email}</p>
+        <div class="profile-services__card" id="${booking.id}" data-id="${booking.id}">              
+            <div class="profile-services__profile-ddetails">
+                <div class="profile-details__element-wrapper">
+                    <input class="profile-details__title" value="${booking.job.title}" readonly>
+                </div>
+                <div class="profile-details-delivery-container">
+                    <input class="services-profile-card__description" value="${booking.dateTime}" readonly>        
+                    <button type="submit" data-edit-id="${job.id}">Edit</button>
+                    <button type="submit" id="delete-btn" data-delete-id="${job.id}">Delete</button>                   
+                </div>
+            </div>        
         </div>
-    `
+`
 }
 
 function createJobEvent() {
