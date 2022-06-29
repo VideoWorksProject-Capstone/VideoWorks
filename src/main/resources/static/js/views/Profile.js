@@ -1,7 +1,7 @@
 import {getHeaders} from "../auth.js";
 import createView from "../createView.js";
 
-const BASE_URL = "http://lovalhost:8080/api/services"
+const BASE_URL = "http://localhost:8080/api/services"
 
 export default function Profile(props) {
     return `

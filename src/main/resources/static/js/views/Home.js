@@ -20,7 +20,7 @@ export default function Home(props) {
                     <input type="search" name="search-services" id="">
                 </section>
                 <section class="hero-area-graphic">
-                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">
+<!--                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady">-->
                 </section>
             </div>
             <section class="hero-area-slider">
@@ -190,7 +190,7 @@ export function getHomeJobCard(job) {
                     <div class="media-element__border"></div>
                     <p class="media-element__creator-description">${job.description}</p>
                     <div class="creator-price-box">
-                        <p>$<span class="creator-price-box__amount">${job.price}</span>/hr</p>
+                        <p>$<span class="creator-price-box__amount">${job.price}</span></p>
                     </div>
                 </div>
 `
