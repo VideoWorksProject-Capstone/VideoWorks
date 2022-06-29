@@ -33,6 +33,6 @@ public class BookingService {
         // newBooking.setEmail(auth.getName());
         User user = usersRepository.findByEmail(email).get();
         Job job = jobRepository.findById(id).get();
-        bookingRepository.save(booking);
+//        bookingRepository.save(booking);
     }
 }

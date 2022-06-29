@@ -25,7 +25,7 @@ export default function Navbar(props) {
         <div class="mobile-menu">
             <ul class="mobile-menu__list">
                 <li><a href="/" data-link>Home</a></li>
-                <li><a href="/categories" data-link>Categories</a></li>
+                <li><a href="/about" data-link>Categories</a></li>
                 <li><a href="/profile" data-link>Profile</a></li>
                 <li><a href="/login" data-link>Login</a></li>
                 <li><a href="/register" data-link>Register</a></li>
@@ -34,7 +34,7 @@ export default function Navbar(props) {
         <header class="large-header-container">
             <nav class="large-nav">
                 <ul class="large-menu__list">
-                    <li><a href="/categories" data-link>Categories</a></li>
+                    <li><a href="/about" data-link>About</a></li>
                     <li><a href="/profile" data-link>Profile</a></li>
                     <li class="large-logo-wrapper">
                         <h1 id="large-logo"><a href="/" data-link>videoWorks</a></h1>
