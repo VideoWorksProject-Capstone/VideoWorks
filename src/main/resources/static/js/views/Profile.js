@@ -69,12 +69,18 @@ export default function Profile(props) {
                         
                     <section class="profile-elements">
                         <div class="services-profile__services-container">
-                            <h2 class="profile-services__title profile-section-titles">Services Offered</h2>
+                            <h2 class="profile-services__title profile-section-titles">Services</h2>
                             <div>
                                       ${props.user.jobs.map(job => getJobCard(job)).join('')}
                                      
                             </div>   
-                        </div>                                             
+                        </div>  
+                        <div class="bookings-profile">
+                            <h2 class="profile-services__title profile-section-titles">Bookings</h2>
+                            <div>
+                              
+                            </div>
+                        </div>                                           
                     </section>
                 </section>
             </main>
@@ -107,6 +113,18 @@ function getJobCard(job) {
             </div>        
         </div>
 `
+}
+
+function getBookings(booking) {
+    return `
+        <div class="booking-card">
+            <p>${booking.job.title}</p>
+            <br>
+            <p>${booking.dateTime}</p>
+            <br>
+            <p>${booking.email}</p>
+        </div>
+    `
 }
 
 function createJobEvent() {

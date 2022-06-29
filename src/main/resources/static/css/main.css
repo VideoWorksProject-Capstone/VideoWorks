@@ -1129,6 +1129,14 @@ body {
     flex: 1;
 
 }
+
+.booking-card {
+    height: 200px;
+    width: 200px;
+    background-color: #70afd5;
+    border-radius: 10px;
+}
+
 .profile-details__element-wrapper{
     display: flex;
     align-items: center;

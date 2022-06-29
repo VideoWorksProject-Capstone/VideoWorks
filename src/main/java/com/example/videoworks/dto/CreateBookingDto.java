@@ -4,21 +4,21 @@ import java.time.LocalDateTime;
 
 public class CreateBookingDto {
 
-    private LocalDateTime dateTime;
+    private String dateTime;
 
     public CreateBookingDto() {
 
     }
 
-    public CreateBookingDto(LocalDateTime dateTime) {
+    public CreateBookingDto(String dateTime) {
         this.dateTime = dateTime;
     }
 
-    public LocalDateTime getDateTime() {
+    public String getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(LocalDateTime dateTime) {
+    public void setDateTime(String dateTime) {
         this.dateTime = dateTime;
     }
 }

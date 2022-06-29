@@ -1,6 +1,7 @@
 package com.example.videoworks.service;
 
 import com.example.videoworks.data.*;
+import com.example.videoworks.dto.CreateBookingDto;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.stereotype.Service;
 
@@ -28,11 +29,13 @@ public class BookingService {
         return bookingRepository.findByJob(job);
     }
 
-    public void addBooking(Long id, String dateTime, OAuth2Authentication auth) {
+    public void addBooking(Booking newBooking, Long id, String dateTime, OAuth2Authentication auth) {
         String email = auth.getName();
         // newBooking.setEmail(auth.getName());
         User user = usersRepository.findByEmail(email).get();
-        Job job = jobRepository.findById(id).get();
-        bookingRepository.save(booking);
+        Job jobId = jobRepository.findById(id).get();
+        newBooking.setUser(user);
+        newBooking.setJob(jobId);
+        bookingRepository.save(newBooking);
     }
 }

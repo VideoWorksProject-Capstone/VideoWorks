@@ -22,7 +22,10 @@ export default function router(URI) {
         },
         '/profile': {
             returnView: Profile,
-            state: {user: '/api/users/me'},
+            state: {
+                user: '/api/users/me',
+                bookings: '/api/users/job'
+            },
             uri: '/profile',
             title: "Profile",
             viewEvent: JobEvent

@@ -223,7 +223,7 @@ export function createBookingEvent() {
         e.preventDefault();
         let newBooking = {
             dateTime: $("#booking-date").val(),
-            job: $("#jobId").val()
+            jobId: $("#jobId").val()
             // user: $("#userId").val()
         }
 
@@ -232,7 +232,7 @@ export function createBookingEvent() {
             headers: getHeaders(),
         }
         console.log(request);
-        fetch(`http://localhost:8080/api/bookings/create?dateTime=${newBooking.dateTime}&jobId=${newBooking.job}`, request)
+        fetch(`http://localhost:8080/api/bookings/create?dateTime=${newBooking.dateTime}&jobId=${newBooking.jobId}`, request)
             .then((response) => {
                 console.log(response.status)
                 //redirect to view events page
