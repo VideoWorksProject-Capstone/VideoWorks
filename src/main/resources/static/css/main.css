@@ -6,9 +6,7 @@
 *::before,
 *::after {
     box-sizing: inherit;
-    margin: 0;
     padding: 0;
-    border: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -36,13 +34,12 @@ html {
 /*Set section heading font*/
 h1, h2, h3, h4, h5, h6, button, label, p, i, a {
     font-family: 'Poppins', sans-serif;
-    color: var(--white);
+    /*color: var(--white);*/
 }
 
 /* Set core body defaults */
 body {
     min-height: 100vh;
-    background-color: #111;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 
@@ -371,9 +368,8 @@ select {
 
 body {
     margin: 0;
-    color: white;
     background: #111111;
-    font: 600 16px/18px 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .login-wrap {
@@ -493,7 +489,7 @@ body {
 
 /*TODO: hero-area SECTION*/
 .hero-area {
-    background-color: #111;
+    /*background-color: #111;*/
     width: 100%;
     padding-bottom: 100px;
     overflow: hidden;
@@ -544,7 +540,6 @@ body {
     height: 5px;
     bottom: 0;
     left: 0;
-    background-color: var(--white);
 }
 
 .hero-area-lede-btn {
@@ -559,7 +554,6 @@ body {
     background-color: var(--btn-accent);
     letter-spacing: var(--spacing10);
     cursor: pointer;
-    color: var(--white);
     transition: color 450ms ease, padding-right 450ms ease;
 }
 
@@ -1087,7 +1081,7 @@ body {
 .profile-services__card{
     width: 100%;
     height: fit-content;
-    background-color: var(--purple);
+    background-color: #131313;
     padding: 18px;
     border-radius: 15px;
     display: flex;

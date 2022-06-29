@@ -31,7 +31,6 @@ export default function Profile(props) {
                                 <br>
                                 <div class="user-edit">
                                     <h2 class="profile-username">${props.user.name}</h2>
-                                    <button class="profile-edit-btn">Edit</button>
                                 </div>
                             </div>
                         </div>     
