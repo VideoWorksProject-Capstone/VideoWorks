@@ -28,21 +28,27 @@ html {
     font-size: 10px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
 }
 
 /*Set section heading font*/
 h1, h2, h3, h4, h5, h6, button, label, p, i, a {
     font-family: 'Poppins', sans-serif;
-    /*color: var(--white);*/
+    color: var(--white);
 }
+
+.profile-details-delete-btn1, .profile-details-delete-btn2 {
+    color: var(--main-black);
+}
+
 
 /* Set core body defaults */
 body {
+    margin: 0;
+    background: #111111;
+    font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-
 }
 
 body.no-scroll {
@@ -364,13 +370,6 @@ select {
 
 
 /*start of login css*/
-
-
-body {
-    margin: 0;
-    background: #111111;
-    font-family: 'Poppins', sans-serif;
-}
 
 .login-wrap {
     width: 100%;
@@ -907,7 +906,7 @@ body {
 /*end of grid layout*/
 
 /*Start of profile*/
-.profile-div{
+.profile-div {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -918,33 +917,33 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     padding-top: 60px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     gap: 25px;
     flex-wrap: wrap;
 }
 
 /*PROFILE SELLER SECTION*/
-.profile-seller{
+.profile-seller {
     width: 300px;
     height: 100%;
     margin-bottom: auto;
 }
 
-.profile-seller__user-image-wrapper{
+.profile-seller__user-image-wrapper {
     position: relative;
     width: 100%;
     margin: 0 auto 90px auto;
 }
 
-.profile-seller__user-image{
+.profile-seller__user-image {
     clip-path: circle(50% at 50% 50%);
     width: 60%;
     pointer-events: none;
     /*scale: 1.4;*/
 }
 
-.profile-seller__contact-dropdown{
+.profile-seller__contact-dropdown {
     min-width: 250px;
     position: relative;
     bottom: 40px;
@@ -953,7 +952,7 @@ body {
     z-index: 99;
 }
 
-.profile-seller__contact-bubble{
+.profile-seller__contact-bubble {
     width: 80px;
     /*top: 0;*/
     bottom: -30px;
@@ -963,7 +962,7 @@ body {
     /*z-index: 90;*/
 }
 
-.profile-seller__contact-dropdown ul{
+.profile-seller__contact-dropdown ul {
     /*width: 100%;*/
     max-width: 250px;
     background: var(--white);
@@ -975,31 +974,35 @@ body {
     top: 100%;
     /*transform: translateY(-25px);*/
     opacity: 0;
-    transition: transform 350ms ease-in-out,opacity 350ms ease-in-out;
+    transition: transform 350ms ease-in-out, opacity 350ms ease-in-out;
     pointer-events: none;
 
 }
-.profile-seller__contact-dropdown ul.slidedown{
+
+.profile-seller__contact-dropdown ul.slidedown {
     transform: translateY(55px);
     opacity: 1;
     pointer-events: all;
 }
 
 
-.profile-seller__contact-dropdown ul li{
+.profile-seller__contact-dropdown ul li {
     transition: background-color 400ms ease-in-out;
     /*padding: 20px;*/
     cursor: pointer;
 
 }
-.profile-seller__user-image-wrapper ul li:not(.profile-seller__user-image-wrapper ul li:last-child){
+
+.profile-seller__user-image-wrapper ul li:not(.profile-seller__user-image-wrapper ul li:last-child) {
     border-bottom: #dcdcdc solid 1px;
 }
-.profile-seller__user-image-wrapper ul li:hover{
+
+.profile-seller__user-image-wrapper ul li:hover {
     background-color: #d9c6ff;
 
 }
-.profile-seller__contact-dropdown ul a{
+
+.profile-seller__contact-dropdown ul a {
     color: var(--main-black);
     font-size: 1.8rem;
     /*transition: color .9s ease-in-out;*/
@@ -1009,7 +1012,8 @@ body {
     /*z-index: 1;*/
     cursor: pointer;
 }
-.profile-seller__contact-dropdown ul i{
+
+.profile-seller__contact-dropdown ul i {
     color: var(--main-black);
     margin-right: 2rem;
     /*transition: color .9s ease-in-out;*/
@@ -1017,32 +1021,36 @@ body {
 }
 
 /*BIO*/
-.profile-seller__seller-name{
+.profile-seller__seller-name {
     font-size: 5.5rem;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 5rem;
     text-align: left;
 }
-.profile-seller__talent-description{
+
+.profile-seller__talent-description {
     font-size: 2.5rem;
     font-weight: 400;
 }
-.profile-seller__seller-bio-title{
+
+.profile-seller__seller-bio-title {
     font-size: 5.5rem;
     font-weight: 700;
 }
-.profile-seller__seller-bio{
+
+.profile-seller__seller-bio {
     font-size: 2rem;
 }
+
 /*PROFILE ELEMENTS*/
-.profile-elements{
+.profile-elements {
     flex: 1;
     justify-content: start;
 }
 
-.section-cards{
-    width:90%;
+.section-cards {
+    width: 90%;
     min-width: 280px;
     background-color: #131313;
     border-radius: 15px;
@@ -1052,22 +1060,25 @@ body {
     padding: 10px 25px 25px 25px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
-.profile-services{
+
+.profile-services {
     margin-bottom: 30px;
 }
-.profile-services p, .fa-clock{
+
+.profile-services p, .fa-clock {
     color: var(--white);
 }
 
-.profile-section-titles{
-    font-size:3rem;
+.profile-section-titles {
+    font-size: 3rem;
     font-weight: 400;
     padding-bottom: 4px;
     margin-bottom: 25px;
     position: relative;
     color: var(--white);
 }
-.profile-section-titles::before{
+
+.profile-section-titles::before {
     content: "";
     position: absolute;
     height: 3px;
@@ -1078,7 +1089,7 @@ body {
 }
 
 /*SERVICES CARDS*/
-.profile-services__card{
+.profile-services__card {
     width: 100%;
     height: fit-content;
     background-color: #131313;
@@ -1104,16 +1115,17 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.profile-services__card:not(.profile-services__card:last-of-type){
+.profile-services__card:not(.profile-services__card:last-of-type) {
     margin-bottom: 15px;
 }
 
-.profile-services__service-image{
+.profile-services__service-image {
     width: 80px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-.profile-services__profile-details{
+
+.profile-services__profile-details {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -1131,30 +1143,34 @@ body {
     border-radius: 10px;
 }
 
-.profile-details__element-wrapper{
+.profile-details__element-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /*.profile-details__element-wrapper .fa-crown{*/
 /*    color: var(--main-black);*/
 /*    margin-right: 1rem;*/
 /*}*/
-.profile-details__title{
+.profile-details__title {
     font-size: 2rem;
     font-weight: 500;
 }
-.profile-details__title:hover{
+
+.profile-details__title:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-.profile-details-delivery-container{
+
+.profile-details-delivery-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.profile-details__booking-btn{
+
+.profile-details__booking-btn {
     width: 110px;
     height: 35px;
     /*background-color: #fa9069;*/
@@ -1164,34 +1180,36 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     border-radius: 6px;
-    cursor:pointer;
+    cursor: pointer;
     transition: all 250ms ease;
     /*box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
-.profile-details__booking-btn:hover{
+
+.profile-details__booking-btn:hover {
     background: #c070a4;
     color: var(--white);
 }
-.profile-details__booking-btn:active{
+
+.profile-details__booking-btn:active {
     transform: scale(.9);
 }
 
 
 /*PROFILE REVIEWS*/
-.profile-reviews-wrapper{
+.profile-reviews-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.profile-reviews-wrapper > img{
+
+.profile-reviews-wrapper > img {
     width: 13%;
     min-width: 90px;
     border-radius: 50%;
     /*border: black solid 2px;*/
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-
 
 
 /*MEDIA QUERIES FOR MOBILE AND TABLET*/
@@ -1202,31 +1220,37 @@ body {
         gap: 45px;
         width: calc(100% - 10px);
     }
-    .profile-services__service-image{
+
+    .profile-services__service-image {
         /*width: 50%;*/
         max-width: 80px;
         align-self: start;
     }
-    .profile-elements{
+
+    .profile-elements {
         width: 100%;
     }
-    .profile-services__title{
-        font-size:2.5rem;
+
+    .profile-services__title {
+        font-size: 2.5rem;
         font-weight: 400;
         padding-bottom: 4px;
         margin-bottom: 25px;
         position: relative;
         color: var(--white);
     }
-    .profile-services__card{
+
+    .profile-services__card {
         overflow: hidden;
     }
-    .profile-details__title{
+
+    .profile-details__title {
         font-size: 1.7rem;
         font-weight: 500;
         text-align: left;
     }
-    .profile-details-delivery-container{
+
+    .profile-details-delivery-container {
         display: flex;
         align-items: start;
         justify-content: center;
@@ -1234,7 +1258,8 @@ body {
         /*width: 100%;*/
         gap: 6px;
     }
-    .profile-details__booking-btn{
+
+    .profile-details__booking-btn {
         width: 100px;
         height: 30px;
         color: var(--white);
@@ -1242,22 +1267,20 @@ body {
     }
 
 
-
-
     /*    BUBBLE DROPDOWN*/
-    .profile-seller__contact-dropdown{
+    .profile-seller__contact-dropdown {
         bottom: 30px;
         right: -50px;
     }
 
 
-
-    .profile-seller__contact-dropdown ul{
+    .profile-seller__contact-dropdown ul {
 
         transition: all 350ms ease-in-out;
 
     }
 }
+
 /*start of slider.css*/
 
 /*media scroller*/

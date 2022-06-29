@@ -107,8 +107,8 @@ function getJobCard(job) {
                 <div class="profile-details-delivery-container">
                     <input class="services-profile-card__description" value="${job.description}" readonly>        
                     <input class="services-profile-card-price" value="${job.price}" readonly>  
-                    <button type="submit" data-edit-id="${job.id}">Edit</button>
-                    <button type="submit" id="delete-btn" data-delete-id="${job.id}">Delete</button>                   
+                    <button type="submit" class="profile-details-delete-btn1" data-edit-id="${job.id}">Edit</button>
+                    <button type="submit" class="profile-details-delete-btn2" id="delete-btn" data-delete-id="${job.id}">Delete</button>                   
                 </div>
             </div>        
         </div>

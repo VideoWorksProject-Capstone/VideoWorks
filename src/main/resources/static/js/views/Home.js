@@ -12,17 +12,14 @@ export default function Home(props) {
         <div class="hero-area-section-wrapper">
             <div class="hero-area-section-wrapper__main">
                 <section class="hero-area-lede">
-                    <br>
-                    <h2>Talented Virtual</h2>
-                    <br>
-                    <h2>Creators.</h2>
-                    <br>
+                    <h2>Talented Virtual</h2>  
+                    <h2>Creators.</h2>        
                     <h2>At Your Service.</h2>
                     <p>Connect with hand-picked talent, that is vetted and expertly matched to fit your needs.</p>
                     <button class="hero-area-lede-btn">Get Started <i class="fa-solid fa-arrow-right"></i></button>
                 </section>
                 <section class="hero-area-graphic">
-                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady" width="279px" height="356">
+                    <img src="../../img/MetaverseGirl(1).png" alt="" class="falling-lady" width="500px">
                 </section>
             </div>
                 <section class="hero-area-slider">
