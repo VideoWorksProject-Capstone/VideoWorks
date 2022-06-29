@@ -25,7 +25,7 @@ export default function Navbar(props) {
         <div class="mobile-menu">
             <ul class="mobile-menu__list">
                 <li><a href="/" data-link>Home</a></li>
-                <li><a href="/about" data-link>Categories</a></li>
+                <li><a href="/about" data-link>About</a></li>
                 <li><a href="/profile" data-link>Profile</a></li>
                 <li><a href="/login" data-link>Login</a></li>
                 <li><a href="/register" data-link>Register</a></li>

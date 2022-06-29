@@ -40,7 +40,7 @@ export default function router(URI) {
             state: {},
             uri: '/about',
             title: "About",
-            viewEvent: About
+            viewEvent:  About
         },
         '/error': {
             returnView: Error404,
