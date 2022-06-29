@@ -5,6 +5,7 @@ import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BookingService {
@@ -27,12 +28,11 @@ public class BookingService {
         return bookingRepository.findByJob(job);
     }
 
-    public void addBooking(Booking newBooking, OAuth2Authentication auth) {
+    public void addBooking(Long id, String dateTime, OAuth2Authentication auth) {
         String email = auth.getName();
-        newBooking.setEmail(auth.getName());
+        // newBooking.setEmail(auth.getName());
         User user = usersRepository.findByEmail(email).get();
-        newBooking.setUser(user);
-        System.out.println(newBooking.getDateTime());
-        bookingRepository.save(newBooking);
+        Job job = jobRepository.findById(id).get();
+        bookingRepository.save(booking);
     }
 }

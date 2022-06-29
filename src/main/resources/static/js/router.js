@@ -1,4 +1,4 @@
-import Home from "./views/Home.js";
+import Home, {createBookingEvent} from "./views/Home.js";
 import Error404 from "./views/Error404.js";
 import Loading from "./views/Loading.js";
 import Login from "./views/Login.js";
@@ -18,13 +18,14 @@ export default function router(URI) {
             state: {jobs: '/api/services/job'},
             uri: '/',
             title: 'Home',
+            viewEvent: createBookingEvent
         },
         '/profile': {
             returnView: Profile,
             state: {user: '/api/users/me'},
             uri: '/profile',
             title: "Profile",
-            viewEvent: JobEvent()
+            viewEvent: JobEvent
         },
         '/login': {
             returnView: Login,

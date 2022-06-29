@@ -31,7 +31,7 @@ public class BookingController {
     }
 
     @PostMapping("create")
-    public void createBooking(@RequestBody Booking newBooking, OAuth2Authentication auth) {
-        bookingService.addBooking(newBooking, auth);
+    public void createBooking(@RequestParam Long id, @RequestParam String dateTime, OAuth2Authentication auth) {
+        bookingService.addBooking(id, dateTime, auth);
     }
 }

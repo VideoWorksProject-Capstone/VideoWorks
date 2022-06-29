@@ -39,6 +39,8 @@ public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter
                 .permitAll()
                 .antMatchers("/api/users/create")
                 .permitAll()
+                .antMatchers("/api/")
+                .permitAll()
                 .antMatchers("/**")
                 .permitAll()
                 .anyRequest().authenticated()
