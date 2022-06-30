@@ -65,7 +65,7 @@ export function RegisterEvent(){
             body: JSON.stringify(reqBody)
         }
 
-        fetch("http://localhost:8080/api/users/create", options)
+        fetch("https://videoworks.fulgentcorp.com:8080/api/users/create", options)
             .then(response => {
                 console.log(response)
                 console.log(response.status);

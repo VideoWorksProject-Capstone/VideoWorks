@@ -1,11 +1,11 @@
 import {getHeaders} from "../auth.js";
 import createView from "../createView.js";
 
-const BASE_URL = "http://localhost:8080/api/services"
+const BASE_URL = "https://videoworks.fulgentcorp.com:8080/api/services"
 
 export default function Profile(props) {
     console.log(props.user);
-    return `
+    return ` 
         <!DOCTYPE html>
         <html lang="en" xmlns="http://www.w3.org/1999/html">
         <head>
@@ -155,7 +155,7 @@ function createJobEvent() {
             body: JSON.stringify(newJob)
         }
 
-        fetch("http://localhost:8080/api/services/create", request)
+        fetch("https://videoworks.fulgentcorp.com:8080/api/services/create", request)
             .then((response) => {
                 console.log(response.status)
                 //redirect to view events page

@@ -235,7 +235,7 @@ export function createBookingEvent() {
             headers: getHeaders(),
         }
         console.log(request);
-        fetch(`http://localhost:8080/api/bookings/create?dateTime=${newBooking.dateTime}&jobId=${newBooking.jobId}`, request)
+        fetch(`https://videoworks.fulgentcorp.com:8080/api/bookings/create?dateTime=${newBooking.dateTime}&jobId=${newBooking.jobId}`, request)
             .then((response) => {
                 console.log(response.status)
                 //redirect to view events page
