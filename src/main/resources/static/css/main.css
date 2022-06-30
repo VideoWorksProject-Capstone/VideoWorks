@@ -1717,7 +1717,7 @@ body .container {
     margin: 40px 0;
 }
 
-body .container .card #category-grid  {
+body .container .card .category-grid  {
     position: relative;
     /*min-width: 350px;*/
     height: 600px;
@@ -1818,11 +1818,25 @@ body .container .card .box .content a:hover {
 }
 
 .text-grp{
-    display:block;
+    display:flex;
     position: relative;
     left: 5px;
     top: 10px;
     z-index: 10;
     align-content: center;
     justify-content: center;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-content: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input[type="button" i]{
+    margin: 0 auto;
+    padding: 5px;
 }
