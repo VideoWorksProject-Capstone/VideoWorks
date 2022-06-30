@@ -165,11 +165,17 @@ export default function Home(props) {
     <div class="homepage-category-section__title-wrapper">
         <h2 id="categories-section" class="section-titles">Seller Spotlight</h2>
     </div>
-<div class="category-grid">
-    <!--loosely following BEM-->
-    ${props.jobs.map(job => getHomeJobCard(job)).join('')}
-
-</div>
+    <div class="category-grid">
+   <div class="container">
+  <div class="card,category-grid">
+    <div class="box">
+      <div class="category-grid">
+        ${props.jobs.map(job => getHomeJobCard(job)).join('')}
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
 </section>        
         </body>
     `;
@@ -194,19 +200,20 @@ function getHomeJobCard(job) {
                     </div>
                     <div class="booking-form">
                         <form action="/form" method="post">
-                            <input id="jobId" value="${job.id}">
-                            <label for="name">Name: </label>
-                            <input type="text" name="name" id="booking-name">
+                            <input class="text-grp" id="jobId" value="${job.id}">
+                            
+                            <label class="text-grp" for="name">Name: </label>
+                            <input class="text-grp" type="text" name="name" id="booking-name">
+                          <br>
+                            <label class="text-grp" for="email">Email: </label>
+                            <input class="text-grp" type="text" name="email" id="booking-email">
                             <br>
-                            <label for="email">Email: </label>
-                            <input type="text" name="email" id="booking-email">
-                            <br>
-                            <label for="date">Date (YYYY-MM-DD): </label>
-                            <input type="text" name="date" id="booking-date">
-                            <br>
-                            <label for="comments">Comments: </label>
-                            <textarea name="comments" id="booking-comments" cols="30" rows="10" placeholder="Is there anything you would like us to know about this booking?"></textarea>
-                            <br>
+                            <label class="text-grp"  for="date">Date (YYYY-MM-DD): </label>
+                            <input class="text-grp" type="text" name="date" id="booking-date">
+                            
+                            <label class="text-grp" for="comments">Comments: </label>
+                            <textarea  class="text-grp" name="comments" id="booking-comments" cols="30" rows="10" placeholder="Is there anything you would like us to know about this booking?"></textarea>
+                        <br>
                             <input type="button" id="book-btn" value="Book Service">
                         </form>
                     </div>
@@ -232,7 +239,7 @@ export function createBookingEvent() {
             .then((response) => {
                 console.log(response.status)
                 //redirect to view events page
-               // createView("/");
+                // createView("/");
             }).catch(function (err) {
             console.log("There was an error of " + err)
         })
