@@ -1840,3 +1840,16 @@ input[type="button" i]{
     margin: 0 auto;
     padding: 5px;
 }
+
+.profile-services__profile-ddetails{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.main-profile-img{
+    border-radius: 25%;
+
+}
